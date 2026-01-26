@@ -28,6 +28,7 @@ def process_the_text(text):
             st.write(pair["english"])
         with col3:
             play_tts(pair["german"], "de")
+            play_tts(pair["english"], "en")
 
         st.divider()
 
