@@ -1,0 +1,11 @@
+# Ignore audio files
+*.mp3
+
+# Ignore PyCharm / IntelliJ files
+.idea/
+
+# Optional (recommended)
+__pycache__/
+*.pyc
+.venv/
+.env
