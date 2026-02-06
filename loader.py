@@ -6,8 +6,7 @@ from googletrans import Translator
 from audio_handler import make_bilingual_mp3, make_audio_byte
 
 # Run once (or keep, it will not re-download)
-nltk.download("punkt")
-nltk.download("punkt_tab")
+
 
 # SifrazaDeepl6!
 # 0de8b866-1e19-4e03-be74-88f457d89ccd:fx
@@ -26,6 +25,8 @@ def translate_de_to_en(text):
 
 def make_sentence_pairs(original_text):
     async def _async_impl():
+        nltk.download("punkt")
+        nltk.download("punkt_tab")
         german_sentences = sent_tokenize(original_text, language="german")
         pairs = []
 
@@ -43,12 +44,3 @@ def make_sentence_pairs(original_text):
 
     return asyncio.run(_async_impl())
 
-# sentences = extract_sentences("text_de.txt")
-pairs = make_sentence_pairs("")
-make_bilingual_mp3(pairs,"all_pairs.mp3",2)
-
-print("==========================================================================================")
-for pair in pairs:
-    print("GER: " + pair["german"])
-    print("ENG: " + pair["english"])
-    print("==========================================================================================")
