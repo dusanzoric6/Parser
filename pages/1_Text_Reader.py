@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+import re
 
 FOLDER_PATH = "textFiles"
 
@@ -27,6 +28,20 @@ def read_text_file_safely(path):
         return None, None, f"Failed to read file. Last error: {last_error or e}"
 
 
+# --------- Text Formatting: Insert blank line after every 10 sentences ---------
+def format_text_every_10_sentences(text):
+    # Split into sentences using basic punctuation detection
+    sentences = re.split(r'(?<=[.!?])\s+', text.strip())
+    formatted = []
+
+    for i, sentence in enumerate(sentences, start=1):
+        formatted.append(sentence)
+        if i % 10 == 0:
+            formatted.append("")  # empty line
+
+    return "\n".join(formatted)
+
+
 # --------- UI ---------
 if not os.path.exists(FOLDER_PATH):
     st.error(f"Folder not found: {FOLDER_PATH}")
@@ -46,5 +61,7 @@ else:
             if err:
                 st.error(err)
             else:
+                formatted = format_text_every_10_sentences(content)
+
                 st.caption(f"Encoding used: **{encoding_used}**")
-                st.text_area("Content", content, height=600)
+                st.text_area("Content (formatted)", formatted, height=800)
