@@ -38,6 +38,8 @@ def format_text_every_10_sentences(text):
         formatted.append(sentence)
         if i % 10 == 0:
             formatted.append("")  # empty line
+            formatted.append(f"{i}")  # empty line
+            formatted.append("")  # empty line
 
     return "\n".join(formatted)
 
