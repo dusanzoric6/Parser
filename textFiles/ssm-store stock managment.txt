@@ -1,0 +1,89 @@
+Ich mache das jetzt und verlasse dann die App.
+Änderungen werden nicht gespeichert und ich beginne wieder von vorne.
+Die Person, die die Übersetzung verwaltet, hat die Kontrolle über die allgemeinen Übersetzungseinstellungen.
+Wir haben nun die Schnittstelle für die synchrone Bestandsabfrage integriert. Das bedeutet, dass beim Aufrufen eines Artikels die Daten erscheinen, sofern die Anzeige so umgesetzt ist, auch wenn wir noch keine echten Artikelstammdaten haben.
+Bei jedem Klick auf die Lupe erscheint eine zufällige Auswahl von drei Artikeln. Ich probiere gerade einen anderen Artikel aus.
+Das lässt sich nicht wirklich steuern. Es ist tatsächlich zufällig.
+Hier sehen wir es beispielsweise. Jetzt habe ich einen Artikel, und wir sehen den aktuellen Bestand von 537 Stück.
+Dies sind echte Daten aus der Testumgebung, die über die synchrone Schnittstelle aus dem Altsystem, also dem Dokumentenarchiv, abgefragt wurden. Die Artikelnummer wird an die Schnittstelle gesendet, und diese ruft die Bestandsinformationen ab.
+Der Bestand von 537 wird ebenfalls für diesen Artikel im Inventurmodul eingetragen. Das ist unser erster Durchbruch für die synchrone Abfrage für alle Neo-Anwendungen.
+Das wird integriert.
+Das ist der zweite Punkt. Der dritte Punkt ist etwas, das wir noch testen wollen.
+Ich habe ein Standardverhalten. In allen Vollsortiment-Apps wird für die Mengeneingabe mit Plus- und Minus‑Tasten gearbeitet.
+In manchen Dialogen ist das bei Penny ebenfalls so, aber in anderen gibt es eine andere Oberfläche, nämlich den sogenannten Mengenschieberegler.
+Wir haben das nun so implementiert, dass es nicht final ist. Wir wollen es testen und herausfinden, was für die Nutzer am einfachsten ist.
+Es ist einfacher, Abschreibemengen über Plus‑ und Minus‑Tasten hochzuzählen, und das Scannen wird dadurch nicht beeinflusst. Ich kann also weiter hochscannen.
+Scannen und Hochzählen bleiben weiterhin verfügbar. Wir möchten aber testen, wie sich die Eingabe über das Mengenverhältnis anfühlt.
+Zu Testzwecken kann man in der App nun relativ einfach zwischen beiden Varianten wechseln, um Look‑and‑Feel auszuprobieren und Nutzerfeedback einzuholen.
+Die Frage ist bereits beantwortet.
+Das funktioniert genauso beim Real‑Picker. Ich wollte fragen, was das ist.
+Gut. Nun, Mengenwahl über Schieberegler.
+Es gibt verschiedene Bezeichnungen für diese Funktion.
+Das möchten wir ausprobieren und Feedback einholen. Was ist besser?
+Wo liegen die Vorteile der jeweiligen Lösungen?
+Man muss es den Nutzern möglichst einfach machen. Den vierten Punkt kann ich mit dem MDE physisch nicht gut zeigen, nämlich das Hochzählen per Scan.
+Ich habe aber ein Video, deshalb erscheint diese Funktion auch auf anderen Geräten. Die übliche Funktion ist, dass ich einen Artikel scanne, um ihn zu erfassen.
+Wenn ich ihn zweimal scanne, wird die Menge einfach hochgezählt. Mit jedem Scan steigt sie weiter.
+Hier sieht man auch, was wir letztes Mal hatten: Beim Auswählen des Artikels startet die Ansicht mit dem aktuellen Bestand von 537, und sobald ich eine Einheit abschreibe, erscheint der neue Bestand.
+Der alte Bestand wird durchgestrichen dargestellt, und der neue Zielbestand richtet sich nach meiner Eingabe.
+Die Frage nach Waren, die nach Gewicht verkauft werden, beantworten wir später.
+Gewichtsartikel sind aufgrund ihrer Komplexität aktuell nicht berücksichtigt, weil wir nicht wissen, wie wir deren Stammdaten strukturiert bekommen. Wenn wir sie aber als Stückartikel verwalten, könnten sie ebenfalls hochgezählt werden.
+Idealerweise auch dann, wenn der Barcode diese Information enthält.
+Das kommt später.
+Gibt es weitere Fragen?
+Ich sehe keine. Dann geht es weiter mit dem nächsten Thema.
+Ein kurzes Update zur Ponen‑Schnittstelle:
+Wir arbeiten weiterhin an der Implementierung. Wir hatten die Stormata‑Daten bereits angebunden.
+Wir haben sie etwas nachjustiert. Wir haben analysiert, welche Daten enthalten sind, um zu bewerten, ob sie für unseren Anwendungsfall geeignet sind.
+Es sieht gut aus.
+Einige technische Anpassungen wurden vorgenommen. Die Artikelstammdaten sind ebenfalls angebunden.
+Wir arbeiten weiter daran. Der Dienst, der die Stammdaten verwaltet, konsumiert und bereitstellt, hat erste abrufbare Endpunkte.
+Diese können abgefragt werden, sodass die Informationen wiederverwendet werden können. Wir haben uns auch mit der Race‑Phase befasst und bewerten, welche Auswirkungen das auf uns hat und was passiert, wenn wir wie bisher weitermachen.
+Wir setzen die Implementierung fort.
+Als nächstes wollen wir den REF‑Service fertigstellen und anschließend die Bestandsdaten integrieren.
+Gibt es Fragen? Wenn nicht, geht es weiter mit dem nächsten Thema.
+Der Überblick über die Darstellung von Beständen in verschiedenen Anwendungen wird weiter ausgearbeitet.
+Es gibt ein Beispiel aus der Abschreibungs‑App, wo die Bestandsinformationen eines Produkts eingeblendet werden.
+Dies ist Teil des übergreifenden Ziels für die Bestellung im Markt.
+Diese Darstellung kann auch in der Bestell‑App genutzt werden, wo ebenfalls der aktuelle Bestand angezeigt wird.
+Die Anwendungen laufen auf der Zielplattform.
+Die neue Plattform wird für einen Großteil der Anwendungen genutzt, da wir CCD‑konform werden wollen.
+Die Systeme sind farblich gekennzeichnet, da weiterhin Kommunikation mit verschiedenen Altsystemen erforderlich ist, da diese noch eine Zeit lang Bestände verwalten.
+Aktuell funktionieren einige Kommunikationskanäle bereits.
+Wir arbeiten eng mit den Plattformteams zusammen, um sicherzustellen, dass diese Verbindungen mit gültigen Zertifikaten funktionieren und authentifiziert sind.
+Wir haben umfangreich getestet, sowohl für das eine als auch für das andere System, und sind zufrieden mit der aktuellen Stabilität.
+Dennoch gibt es noch Aufgaben. Der Fortschritt ist im Status orange markiert.
+Als nächstes möchten wir die Markstammdaten anbinden. Diese werden über Kafka und einen Schema‑Registry‑Dienst bereitgestellt, der aktuell noch auf dem Altsystem läuft.
+Wenn die Migration abgeschlossen ist, werden auch diese Komponenten grün markiert sein.
+Es gibt weiterhin Kommunikationskanäle, die aktuell rot markiert sind, insbesondere die Kommunikation zwischen Diensten auf der Zielplattform.
+Daran wird derzeit gearbeitet, und sie soll in kommenden Sprints fertiggestellt werden.
+Wir sind insgesamt so weit, dass der synchrone Dienst auf der Zielplattform stabil betrieben werden kann.
+In den kommenden Sprints werden wir stabilisieren, eine Staging‑Umgebung bereitstellen und weitere Tests durchführen.
+Nun geht es weiter mit der Vorstellung des aktuellen UX‑Stands.
+Wir arbeiten intensiv an den Prozessen für Umlagerungen und haben zunächst die bestehenden Prozesse analysiert und anschließend den Zielprozess abgeleitet.
+Wir haben festgestellt, dass der neue Prozess aus Elementen besteht, die sowohl aus bestehenden Penny‑Prozessen als auch aus Rewe‑Prozessen stammen und künftig kombiniert werden.
+Auf dieser Basis wurde der neue Prozess entwickelt.
+Wichtige Änderungen wurden identifiziert und erläutert.
+Die Geschäftsprozesse haben sich nur geringfügig verändert, die größten Änderungen betreffen die Erstellung der Umlagerung auf dem mobilen Gerät sowie die Nutzung von NVE‑Labels zur Sendungsverfolgung.
+Bei eigenen Transporten ohne Logistik bleibt die Umlagerung weiterhin ohne NVE möglich.
+Die Benutzeroberfläche wird sich optisch verändern, funktional bleibt vieles gleich.
+Erste Wireframes entstehen und wir vertiefen Details.
+Wir prüfen, welche Informationen auf jedem Bildschirm angezeigt werden müssen und welche Artikeldaten erforderlich sind.
+Wir betrachten Randfälle wie Mischkartons oder Vorgänger‑/Nachfolgerartikel.
+Es ist notwendig, eng mit dem neuen Inventurmodul zusammenzuarbeiten, um konsistente Lösungen zu entwickeln.
+Einige Fragen sind noch offen und werden in den kommenden Sprints geklärt.
+Unabhängig von Umlagerungen haben wir uns erneut auf Fehlerbehandlung in der Abschreibung konzentriert.
+Der Anwendungsfall für sehr hohe Mengen ist fertiggestellt und geht in die Entwicklung.
+Um zu vermeiden, dass versehentlich zu hohe Mengen eingegeben werden, gibt es eine erste und eine zweite Warnung.
+Weitere Fehlerfälle wie fehlendes WLAN, plötzliche Verbindungsverluste oder nicht vorhandene Artikel werden bearbeitet.
+Wir erarbeiten, wie diese Informationen angezeigt werden und welche Auswirkungen sie haben.
+Der Kick‑off für das Story‑Management findet statt, dort werden Arbeitsweise und Abläufe definiert.
+Ein Prozessüberblick wird folgen.
+Ein Überblick über die kommenden Wochen wurde dargestellt.
+In der synchronen Bestandsabfrage arbeiten wir weiter mit der Anbindung der Stammdaten.
+Der Dienst auf der Plattform soll stabilisiert werden.
+Für die Abschreibung werden Sonderfälle und Fehlerbehandlung weiter umgesetzt, inklusive WLAN‑Ausfall.
+Die Versorgung des Dokumentenarchivs für Abschreibungsfälle soll technisch angebunden werden, um Daten über eine Fassade an die klassischen Systeme zu übertragen.
+In der Umlagerung werden Konzept, User‑Journey und erste Mockups weiter ausgearbeitet.
+Zum Abschluss wurde gefragt, ob es Fragen gibt.
+Vielen Dank für die Teilnahme und einen schönen Tag.

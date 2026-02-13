@@ -62,7 +62,14 @@ def process_the_text(text):
 # UI
 # ---------------------------------------------
 st.title("Text Processor")
-st.write("Enter your text below or open the **Text Reader** page from the sidebar.")
+text_col1, text_col2 = st.columns(2)
+with text_col1:
+    st.write("Enter your text below or open the **Text Reader** page from the sidebar.")
+with text_col2:
+    # Remove text button
+    if st.button("Remove text"):
+        st.session_state.input_text = ""
+        user_text = ""
 
 # Load previously entered text
 user_text = st.text_area(
