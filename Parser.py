@@ -48,7 +48,7 @@ def process_the_text(text):
             st.write(pair["german"])
 
         with col2:
-            st.markdown(f"**🇬🇧 English {i}**")
+            st.markdown(f"**🇬🇧 English {i}** by {pair["provider"]}")
             st.write(pair["english"])
 
         with col3:
@@ -61,7 +61,7 @@ def process_the_text(text):
 # ---------------------------------------------
 # UI
 # ---------------------------------------------
-st.title("Text Processor")
+# st.title("Text Processor")
 text_col1, text_col2 = st.columns(2)
 with text_col1:
     st.write("Enter your text below or open the **Text Reader** page from the sidebar.")

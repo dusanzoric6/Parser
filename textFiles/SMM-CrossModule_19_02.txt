@@ -1,0 +1,364 @@
+Damir:
+Sollen wir es anders machen, oder was funktioniert nicht?
+Stanchev, Stanislav ist der Übersetzungsmanager mit Kontrolle über die allgemeinen Übersetzungseinstellungen.
+Dann legen wir los. Wir haben ein neues Board bzw. ein neues Design.
+Ich habe alle Informationen, die wir bisher hatten — die liegen noch oben links geparkt. Nichts ist verloren.
+Und was wir jetzt hier haben, ist im Grunde ein neues Agenda‑Board mit einer Struktur, die wir vorgeschlagen haben, damit wir diese Meeting‑Reihe wiederverwenden können. Immer dieselbe Struktur – von links nach rechts –, damit jeder weiß, wo welche Informationen zu finden sind.
+Genau. Ich würde sagen, wir starten mit den konkreten Inhalten.
+Dann gebe ich jetzt an Larissa weiter, sie macht den ersten Teil.
+
+Larissa:
+Genau, ich mache meinen ersten Teil und danach übernehmen wir weiter.
+Wir haben den Termin in sechs Abschnitte unterteilt. Die Struktur ist immer gleich, damit jeder weiß, wo wir stehen, was kommt, was man hören kann und welchen Input man geben soll.
+Für den Einstieg dachten wir an einen kurzen Willkommensteil. Das sollte nicht lange dauern, etwa eine bis fünf Minuten, damit jeder ein Gefühl bekommt, was ihn erwartet.
+Nicht auf persönlicher Ebene, sondern eher: Wie läuft es gerade im Team?
+Gibt es Blocker? Läuft alles gut?
+Wir haben unten ein paar Beispiele ergänzt, z. B. Vera Artikelberg, der Fehler in der Testumgebung — etwas, das vielleicht nicht nur mein Team betrifft, sondern auch andere interessieren könnte.
+Es ist wirklich nur kurz, man muss nicht immer etwas dazu sagen — einfach um die Stimmung im Cross‑Team zu erfassen.
+Ihr könnt das gerne jetzt ausprobieren. Aktuell stehen noch Namen drin, aber es kann auch nur ein Beispiel sein.
+Maximal fünf Minuten, aber es muss nicht ausgereizt werden. Wenn wir früher fertig sind, machen wir gleich weiter.
+
+Damir:
+Wir haben hier auch einen „Parkplatz“. Wenn wir merken, dass es nichts zu besprechen gibt, gehen wir nach einer Minute dorthin, und wir springen direkt weiter.
+Passt das so? Oder fragt euch: „Wozu überhaupt?“
+
+Rafy:
+Alles gut.
+
+Larissa:
+Gut, dann weiter zum zweiten Teil.
+Wir haben aus dem früheren Feedback gelernt, dass viele wissen wollen, woran die einzelnen Teams aktuell arbeiten. Ob es Themen gibt, die das gesamte Cluster betreffen.
+Das wäre nun der Bereich „Was gibt es Neues in den Produkten?“.
+Jedes Produkt hat seinen eigenen Bereich, den es kurz vor dem Meeting befüllt. Es müssen nicht immer Updates sein — aber wenn, dann: Woran arbeitet ihr gerade?
+Beispielsweise bei Grow: Migration zu RTP.
+Jedes Team hat etwa drei Minuten, um kurz die Themen vorzustellen — mit Schwierigkeiten oder positiven Dingen.
+Wenn es Interesse an einem Thema gibt, können wir das oben markieren.
+Zum Beispiel: „Ich möchte mehr zu Thema X wissen.“
+Dann greifen wir diese Themen später auf und besprechen sie ausführlicher.
+Das Befüllen der Bereiche ist Aufgabe der jeweiligen Teams — für dieses und das nächste Meeting.
+Ich werde das sonst vergessen. Ist das in Ordnung?
+
+Damir:
+Wichtig: Das soll kein Mini‑Review ersetzen.
+Es ist nur ein kurzer Überblick, was im Produkt‑Pipeline ist, was für andere relevant sein könnte.
+Das Dot‑Voting soll helfen herauszufinden, ob wir später in die Tiefe gehen.
+Aber wir wollen hier nicht eine Stunde verbringen. Am Ende gibt es dafür einen eigenen Diskussionsblock.
+Und es ist völlig okay, wenn es keinerlei Updates gibt.
+
+Larissa:
+Es muss auch keine Präsentation sein. Ein paar Sätze reichen.
+Die Karten helfen nur, sich kurz zu notieren, was andere interessieren könnte.
+Auch hier gilt: Wenn ihr fertig seid, geht nach unten, und wir machen weiter.
+Es ist auf 20 Minuten begrenzt — muss aber nicht voll genutzt werden.
+Der nächste Agendapunkt wäre dann das spezielle Cross‑Cluster‑Modul‑Team. Das sind geplante Themen, die für alle relevant sind.
+Das entspricht dem bekannten Zeitslot für Themenpräsentationen aus der Vergangenheit.
+Wenn es kein Thema gibt, wird der Abschnitt übersprungen.
+Beispiel: Letzte Woche hat Ines die Metriken vorgestellt — das wäre die Art von Slot.
+
+Damir:
+Die Präsentation muss nicht in diesem Board erfolgen. Ihr könnt direkt aus Confluence, aus Apps oder Diagrammen präsentieren. Das hier ist nur ein Platzhalter.
+
+Larissa:
+Dann übergebe ich an Damir.
+
+Damir:
+Der nächste Slot ist das allgemeine Board.
+Früher hatten wir mehrere Boards: allgemeine Themen, Anfragen an ALP usw.
+Jetzt haben wir nur noch ein einziges Board. Alles kommt hierhin.
+ALP nutzt ihr internes Confluence‑Board weiter, aber unsere Anfragen gehen nicht mehr dorthin.
+Stefan, wir müssen schauen, ob wir Dinge aus Confluence hierher übertragen, damit nichts verloren geht.
+Alles, was mindestens zwei Module betrifft oder relevant ist, kann hier platziert werden.
+Der Moderator muss auf die Zeit achten — keine langen Diskussionen.
+Früher haben wir 45 Minuten an einem Punkt gehangen.
+Jetzt wollen wir nur kurze Statusberichte. Tiefe Diskussionen verschieben wir in den letzten Block oder in separate Meetings.
+Derjenige, der eine Karte erstellt hat, ist der „Topic Owner“.
+Beispiel: Ich habe die Frage gestellt, wie Artikel funktionieren, wenn sie miteinander verknüpft sind. Dann bin ich dafür verantwortlich, Updates einzutragen — keine Romane, aber stichpunktartige Fortschritte.
+Wir sollten nicht nur Karten anlegen, sondern auch dokumentieren, was passiert ist.
+
+Larissa:
+Die Information kommt nicht vom Category Management.
+
+Raum:
+Eigentlich stammt diese Information im alten System vom Category Management.
+Im neuen System geben sie diese E‑Artikel aber nicht mehr mit.
+Wir bekommen von ihnen nur die Artikel, die bestellbar sind.
+Wir müssen das mit Category Management noch besprechen – das ist der aktuelle Stand.
+
+Damir:
+Kannst du das bitte mitnehmen und klären?
+Wenn du Beispiele brauchst, gebe ich dir ein paar Artikel, damit ihr das prüfen könnt.
+Diese Artikel sind für uns extrem wichtig. Wir müssen sie haben, sonst funktioniert die App nicht.
+
+Raum:
+Das hat Auswirkungen auf die Agenda heute.
+Wenn wir diese Artikel nicht bekommen, stehen wir wieder da, wo wir im Dezember waren.
+Dann müssen wir innerhalb der SMM‑Domäne gemeinsam überlegen, wie wir das lösen,
+auch weil wir diese E‑Artikel in der Artikelinfo anzeigen wollen.
+Wir müssen das selbst lösen, aber dafür brauchen wir eure Daten und müssen eure Use Cases verstehen.
+Aus meiner Sicht ist CM aktuell der Bottleneck, weil sie keine E‑Artikel liefern.
+Ich frage heute in deren Termin nach, ob es Neuigkeiten gibt.
+
+Damir:
+Gut.
+Dann warten wir die Rückmeldung ab.
+Wenn wir mehr Abstimmung brauchen, machen wir das zusammen.
+Die Karte lassen wir vorerst stehen.
+
+Damir:
+Nächstes Thema: Wie gehen wir mit Artikeln um, die mehrere RINs / Qualitäten haben – das AMD‑Thema.
+Wir hatten uns das angesehen und festgestellt, dass einige Artikel fälschlicherweise mehrfach zugeordnet wurden.
+Wahrscheinlich ein Fehler oder migrationsbedingt.
+Das sollte ohnehin irgendwann bereinigt werden — ich erinnere mich aber nicht, wann das geplant war.
+
+Raum:
+Wir haben dazu von Andreas Rühle bisher keine Antwort bekommen.
+Ich frage an anderer Stelle nochmal nach.
+
+Katharina:
+Ist das überhaupt noch relevant?
+
+Damir:
+Meiner Meinung nach: Ja.
+
+Katharina:
+Es gab damals Artikel, die keine automatischen Informationen erhalten haben
+und daher in einem falschen Trade‑Item‑Knoten gelandet sind.
+Deshalb hatten sie verschiedene RINs, obwohl sie zusammengehören.
+
+Damir:
+Ich kläre das mit Silke oder Andreas Rühle:
+Ist das Thema abgeschlossen oder wird es erst nächstes Jahr bereinigt?
+Ich erinnere mich, dass es irgendwann mit einem der Migration‑Steps passieren sollte.
+
+Katharina:
+Ja, das war die Aussage:
+Mit einem der nächsten TA‑Schritte soll das bereinigt werden.
+
+Damir:
+Alles klar, ich übernehme das Thema.
+
+Damir:
+Nächstes Thema:
+Währungen bzw. Doppelwährungen im Fall einer Landesumstellung.
+Wir haben gestern im Meeting gesehen, dass wir enorm viele Attribute haben — Währung war eines davon.
+Ich erinnere mich, dass wir in AMD sowohl eine Einkaufs‑ als auch eine Verkaufskurs‑Währung gesehen haben.
+Müssen wir das weiterverfolgen?
+
+Raum:
+Soweit ich weiß, bekommen wir die Währung vom Category Management.
+
+Damir:
+Das Thema steht hier aber noch zur Diskussion.
+
+Raum:
+Wir bekommen normalerweise die Währung vom Preismanagement – vor allem den VK‑Kurs.
+In Bayern gibt es das Beispiel mit Bulgarien:
+Wenn ein Land auf den Euro umstellt, gibt es eine Übergangsphase, in der zwei Währungen angezeigt werden müssen.
+Das war die ursprüngliche Frage.
+Wir können das später am Nachmittag mitnehmen.
+
+Damir:
+Ist das ein Edge Case?
+
+Raum:
+Schaut ihr überhaupt die Währung aus AMD an?
+Ich habe dort ein Währungsfeld gesehen.
+Das kam im RINFAS‑Arbeitskreis auf.
+
+Martin:
+Ich weiß nicht, warum ein Artikel eine Währung haben sollte.
+Ich fände das eher ungewöhnlich.
+
+Damir:
+Für uns ist wichtig, dass der Artikel eine Währung hat,
+damit klar ist, in welcher Währung wir rechnen sollen.
+
+Raum:
+Ich weiß, dass darüber gesprochen wurde — aber ich habe es nicht im Detail mitbekommen.
+Bisher waren Artikel nicht länderspezifisch.
+Das ändert sich jetzt: Ein Artikel wird künftig an ein Land gebunden sein. Ist das korrekt?
+
+Martin:
+So ist es für RINFAS.
+Die Daten werden für jedes Land separat geliefert.
+Das wurde so kommuniziert.
+Aber:
+Wenn ein Land die Währung wechselt, möchte Category Management vermutlich beide Währungen liefern –
+damit die Apps keine eigenen Umrechnungen vornehmen müssen.
+Selbst zu rechnen halte ich für unrealistisch.
+Ich gehe davon aus, dass die Daten bereits umgerechnet geliefert werden.
+
+Raum:
+Und wie ist das bei den RIAG‑Legacy‑Systemen?
+Hat jedes Land eigene Artikel oder teilen sich Länder wie Österreich und Italien Artikel?
+Ich kenne die Details nicht.
+
+Damir:
+Wir sind zeitlich schon weit fortgeschritten.
+
+Raum:
+Okay, ich stelle keine weiteren Fragen.
+
+Damir:
+Nein, stell sie ruhig — aber wir sollten zum nächsten Thema übergehen.
+Für mich ist das eher ein Spezialfall.
+Im Moment haben wir größere Probleme.
+
+Raum:
+Ja, das stimmt.
+
+Damir:
+Deshalb schlage ich vor, dass wir das Thema „Zweitwährung“ erstmal ruhen lassen.
+Wir verfolgen es nicht aktiv weiter.
+Aber grundsätzlich brauchen wir die Information, welche Währung ein Artikel hat.
+Wo das Attribut letztlich herkommt, sollten wir im großen Attribut‑Arbeitskreis klären.
+
+Raum:
+Von mir bekommst du dafür zwei Daumen hoch.
+Ich tue einfach so, als wäre ich „alle“.
+
+Damir:
+Wenn es keine Einwände gibt, bleibt es dabei.
+
+Raum:
+Ich finde übrigens den Namen „RINFAS“ immer noch merkwürdig.
+
+Martin:
+Trotzdem noch einmal die Frage: Warum muss das intern geklärt werden?
+Oben steht doch eigentlich, dass die Information grundsätzlich vom Category Management kommt.
+Ist das also wirklich noch eine offene Frage, oder verstehe ich etwas falsch?
+
+Damir:
+Vielleicht kommt es am Ende wirklich vom Category Management.
+Wir warten auf deren Entscheidung — irgendwo auf Artikelebene müssen wir die Information haben.
+Vielleicht erfolgt die Zusammenführung über den Artikelhub.
+Dort bekommen wir ja auch die Preise und andere Attribute.
+AMD hat mit Währung und Preisen eigentlich nichts zu tun.
+Aber wir müssen sicherstellen, dass das Attribut existiert und verfügbar ist.
+
+Raum:
+Ich frage heute im CM‑Termin nach.
+Die Preismanagement‑Kollegen sind wahrscheinlich auch dabei.
+Es dürfte eher ein CM‑Thema sein als ein AMD‑Thema.
+Ich versuche eine erste Antwort zu bekommen.
+
+Damir:
+Gut. Dann mache ich später eine saubere Karte dazu.
+Für den Moment lassen wir die bestehende Karte stehen und warten auf dein Update nächste Woche.
+
+Damir:
+Damit kommen wir zum nächsten Block.
+Wir sind schon leicht über der Zeit.
+Wir müssen noch die Terminserie besprechen.
+Ich schlage vor:
+Wir verlängern den Termin grundsätzlich auf 90 Minuten.
+Wenn jemand nicht so lange kann – völlig okay.
+Aber wir haben dann die Möglichkeit, mehr Themen gründlich zu besprechen.
+
+Damir:
+Nächste Woche bleibt das gleiche Thema bestehen: Moderation‑Einführung.
+Gibt es weitere Themen, die ihr für nächste Woche gerne aufnehmen wollt?
+
+Raum:
+Aus einem der letzten Meetings hatten wir das Thema Teststrategie.
+Wir wollten es in dieser Runde besprechen, um es zu standardisieren.
+
+Damir:
+Wurde das nicht wegen RINFAS zurückgestellt?
+Also: Es ist noch relevant, aber nicht mehr ganz oben.
+
+Martin:
+Was meinst du mit „Teststrategie“?
+Eine interne Team‑Strategie oder etwas Übergeordnetes?
+
+Raum:
+Unser Test‑Automation‑Engineer war damals dabei, und auch die aus anderen Produkten.
+Sie haben für ihre Teams individuelle Teststrategien erarbeitet.
+Die Idee war, diese hier im SMM‑Umfeld zu vergleichen,
+um gemeinsame Standards zu entwickeln.
+
+Damir:
+Ich erinnere mich:
+Jedes Team sollte eine Teststrategie haben.
+Und wir wollten sie dann hier vergleichen: Wo unterscheiden wir uns? Wo sind wir gleich?
+Aber aktuell wurde die Priorität gesenkt.
+
+Martin:
+Das ist etwas anderes als die QA‑Akzeptanztests.
+Die Akzeptanztests schauen auf Integrationen und Abhängigkeiten.
+Die Teststrategie, von der du sprichst, betrifft
+Unit‑Tests, automatisierte GUI‑Tests, Komponenten‑Tests usw.
+Ein kleinerer Scope — aber trotzdem wichtig.
+
+Damir:
+Genau das meine ich auch.
+Nicht die großen QA‑Themen.
+
+Rafy:
+Wir haben damals nur die Vorlage ausgefüllt.
+Ich glaube, vor zwei Wochen gab es ein kleines Treffen dazu.
+Ich war aber nicht dabei.
+
+Raum:
+Das war nicht das Treffen — wir waren da im RINFAS‑Workshop.
+Deshalb ist das Thema wieder aufgekommen.
+
+Martin:
+Grundsätzlich ist es kein Top‑1‑Thema,
+aber irgendwann sollten wir es angehen –
+damit nicht Team A und Team B völlig unterschiedliche Strategien haben
+und man testautomationsseitig ständig umdenken muss.
+
+Damir:
+Sehe ich auch so.
+Wir können nächste Woche kurz drüber sprechen —
+aber ich weiß nicht, ob jemand hier genug Infos hat, wie es weitergeht.
+
+Raum:
+In meiner Vorstellung würden sich die Test‑Automation‑Engineers austauschen.
+
+Damir:
+Wir haben keinen dedizierten Test‑Automation‑Engineer.
+Bei uns machen das aktuell die Entwickler gemeinsam mit PO und RA.
+Deshalb ist es schwierig, das hier zu lösen.
+Lass uns das Thema vorerst parken.
+
+Raum:
+Wenn kein Bedarf besteht, müssen wir es nicht aufnehmen.
+Ich wollte es nur erwähnen.
+
+Damir:
+Wen könnten wir fragen, um herauszufinden, wie es weitergeht?
+
+Rafy:
+Ich würde bei den POs nachfragen.
+Das Thema kam ursprünglich von den Cluster Leads – also eher top‑down.
+Vielleicht hören wir dort, ob es komplett depriorisiert wurde oder nur pausiert.
+Im Moment kann kaum jemand in dieser Runde etwas daran ändern.
+
+Damir:
+Guter Punkt.
+Also bitte jeder einmal bei PO oder Cluster Lead nachfragen.
+Dann sprechen wir nächste Woche nochmal kurz drüber.
+
+Katharina:
+Bei uns wurde das Thema aktiv zurückgestellt —
+wegen RINFAS.
+Vielleicht wissen wir nächste Woche mehr.
+
+Damir:
+Ich denke auch:
+RINFAS abschließen, dann Teststrategie wieder aufnehmen.
+Gut — wir reden nächste Woche nochmal darüber.
+
+Katharina:
+Julia arbeitet im Hintergrund wohl noch daran.
+Sie hatte mich nach mehr Informationen gefragt, aber ich konnte ihr wenig geben,
+weil wir das Thema hier nicht weiterverfolgt haben.
+Aber es scheint nicht vollständig gestoppt zu sein.
+
+Damir:
+Gut.
+Dann sind wir für heute durch.
+Ich wünsche allen einen schönen Tag.
+Tschüss!

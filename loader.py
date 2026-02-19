@@ -8,20 +8,38 @@ from audio_handler import make_bilingual_mp3, make_audio_byte
 # Run once (or keep, it will not re-download)
 
 
-# SifrazaDeepl6!
-# 0de8b866-1e19-4e03-be74-88f457d89ccd:fx
+DEEPL_API_KEY = "0de8b866-1e19-4e03-be74-88f457d89ccd:fx"
 
+deepl_translator = deepl.Translator(DEEPL_API_KEY)
+google_translator = Translator()
 
-# translator = Translator()
-translator = deepl.Translator("0de8b866-1e19-4e03-be74-88f457d89ccd:fx")
+def safe_translate(text, source="DE", target="EN-GB"):
+    """
+    Try DeepL first. If it fails (invalid token, quota exceeded, etc.)
+    fall back to Google Translate.
+    """
+    # --- Try DeepL ---
+    try:
+        result = deepl_translator.translate_text(
+            text,
+            source_lang=source,
+            target_lang=target
+        )
+        return result.text, "deepl"
 
-def translate_de_to_en(text):
-    result = translator.translate_text(
-        text,
-        source_lang="DE",
-        target_lang="EN-US"
-    )
-    return result.text
+    except Exception as e:
+        # Detect DeepL key/limit / auth errors
+        print("DeepL failed → switching to Google Translate:", str(e))
+
+    # --- Fall back to Google ---
+    try:
+        g = google_translator.translate(text, src=source.lower(), dest=target.lower())
+        return g.text, "google"
+
+    except Exception as e:
+        print("Google Translate also failed:", str(e))
+        return None, "failed"
+
 
 def make_sentence_pairs(original_text):
     async def _async_impl():
@@ -31,13 +49,12 @@ def make_sentence_pairs(original_text):
         pairs = []
 
         for de in german_sentences:
-            # result = await translator.translate(de, src="de", dest="en")
-            result = translator.translate_text(de,source_lang="DE",target_lang="EN-GB")
+            result, provider = safe_translate(de,source="DE",target="EN-GB")
 
             pairs.append({
                 "german": de.replace("\n", " "),
-                "english": result.text.replace("\n", " "),
-                "audio_german":make_audio_byte(de, "de")
+                "english": result.replace("\n", " "),
+                "provider" : provider
             })
 
         return pairs
