@@ -3,7 +3,6 @@ import nltk
 import asyncio
 from nltk.tokenize import sent_tokenize
 from googletrans import Translator
-from audio_handler import make_bilingual_mp3, make_audio_byte
 
 # Run once (or keep, it will not re-download)
 
@@ -52,8 +51,8 @@ def make_sentence_pairs(original_text):
             result, provider = safe_translate(de,source="DE",target="EN-GB")
 
             pairs.append({
-                "german": de.replace("\n", " "),
-                "english": result.replace("\n", " "),
+                "german": de.replace("\n", " ") if de else "",
+                "english": result.replace("\n", " ") if result else "",
                 "provider" : provider
             })
 

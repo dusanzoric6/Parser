@@ -1,0 +1,2160 @@
+IB
+Issels, Bernd
+11:06
+You are now three teams in total, as I understand it.
+
+Gatzweiler, Stephan is the translation manager with control over general translation settings.
+IB
+Issels, Bernd
+11:06
+But you're working on a Girard board, is that right?
+
+IB
+Issels, Bernd
+11:06
+You work on different Jira boards, one per team.
+
+PR
+Pum Raphaela
+11:06
+Exactly.
+
+IB
+Issels, Bernd
+11:06
+There you go.
+
+PR
+Pum Raphaela
+11:06
+I don't know how many teams there are now, but in any case, there are different Giroports.
+
+IB
+Issels, Bernd
+11:06
+Okay.
+
+IB
+Issels, Bernd
+11:06
+Okay. Are you satisfied with the boards in the cloud?
+
+BM
+Bosch Martinez, Francisco
+11:06
+Not yet.
+
+IB
+Issels, Bernd
+11:06
+Not yet.
+
+HT
+Holst, Tobias
+11:06
+No, but that's coming now, I think, in this month or next month or something, right?
+
+GT
+Göck, Thomas Ralf
+11:06
+Not that either.
+
+IB
+Issels, Bernd
+11:06
+Okay.
+
+GT
+Göck, Thomas Ralf
+11:06
+Yes.
+
+IB
+Issels, Bernd
+11:07
+No, fine. No, I'm just wondering how I can demonstrate that now.
+
+IB
+Issels, Bernd
+11:07
+I could demonstrate it in the cloud now, and it's just a little bit different, but I'll just do it here on the migration environment. It's also a little easier there, I'd say.
+
+IB
+Issels, Bernd
+11:07
+No, okay. How does that work?
+
+IB
+Issels, Bernd
+11:07
+Do you guys have any test tool players you've used so far? You have, right?
+
+IB
+Issels, Bernd
+11:07
+Partially, yes, but not all of us.
+
+HT
+Holst, Tobias
+11:07
+Yes, but not all of them.
+
+IB
+Issels, Bernd
+11:07
+Okay.
+
+PR
+Pum Raphaela
+11:07
+No.
+
+IB
+Issels, Bernd
+11:07
+Okay.
+
+PR
+Pum Raphaela
+11:07
+For us.
+
+IB
+Issels, Bernd
+11:07
+No, because there are parallels, of course, to X-Way. Basically, the structure is actually quite similar. I can take another look at that.
+
+IB
+Issels, Bernd
+11:07
+So, you get quite a lot of recognition there. So.
+
+IB
+Issels, Bernd
+11:07
+Then let's just move on to the migration environment. And then I would say, let's just start with a brief overview of the navigation here.
+
+IB
+Issels, Bernd
+11:07
+If X-Ray is now installed. Thanks to you up there, there's an X-Ray tab.
+
+IB
+Issels, Bernd
+11:07
+But when you open it, you'll see various sub-items that you can use to search for tests, prerequisites, tests, test executions, i.e., all the X-Ray artifacts that are now, so to speak, when X-Ray is applied to the project, will be added. That's definitely very helpful.
+
+IB
+Issels, Bernd
+11:08
+Here you can take a look around if you want to search for a process. Because, well, X-Way is a Jira plug-in.
+
+IB
+Issels, Bernd
+11:08
+And sometimes it's a little difficult to get used to at first that when you search for something in X-Ray, it then becomes a new Jira ticket. That then has a process key.
+
+IB
+Issels, Bernd
+11:08
+Just like here, however, there is then an X-Ray process and, accordingly, the whole thing is of course a bit enlarged by the processes. You then have a bit of a ticket flood at the beginning, so you have to get used to that.
+
+IB
+Issels, Bernd
+11:08
+But you can get used to it relatively easily here via this dropdown menu for the individual artifacts. So, I'll have to move it over.
+
+IB
+Issels, Bernd
+11:09
+So, if we now go to create.
+
+IB
+Issels, Bernd
+11:09
+So. Then you can see the process types here.
+
+IB
+Issels, Bernd
+11:09
+There you will see the new Test X-Ray and then here at the bottom the four other artifact types. Test Z, Test Execution.
+
+IB
+Issels, Bernd
+11:09
+Precondition and Test Plan. We'll get to that in a moment, the individual types.
+
+IB
+Issels, Bernd
+11:09
+Let's just start with a simple test case. Let's take this one.
+
+IB
+Issels, Bernd
+11:09
+Take
+
+IB
+Issels, Bernd
+11:10
+So, now you have to then here on the right
+
+IB
+Issels, Bernd
+11:10
+snap in the corner.
+
+IB
+Issels, Bernd
+11:10
+So, and then you get into the details.
+
+IB
+Issels, Bernd
+11:10
+It takes a while, but it's the test environment. So.
+
+IB
+Issels, Bernd
+11:10
+Now you have the test details here. That means the test steps.
+
+IB
+Issels, Bernd
+11:10
+If you now click on Add Step and say New. Then you have this three-part division here.
+
+IB
+Issels, Bernd
+11:10
+First, action. What do you want to do?
+
+IB
+Issels, Bernd
+11:10
+Then you have the data here, test data for example. And then you have the expected result here.
+
+IB
+Issels, Bernd
+11:10
+Just like a Spira. So, now just step 1.
+
+IB
+Issels, Bernd
+11:10
+Some sample data. That's okay.
+
+IB
+Issels, Bernd
+11:10
+So, then you always have to do this: click on add down here. This is important, because otherwise it won't save it.
+
+IB
+Issels, Bernd
+11:10
+And then when you want to add another step, you have to click Add Step again here. Yes.
+
+ZD
+Zoric Dusan
+11:11
+Yes. Is it a good idea to record this?
+
+ZD
+Zoric Dusan
+11:11
+Usually when you when somebody is presenting a tool that we're going to use later I find it useful to have a recording so you can use it as a manual later on.
+
+IB
+Issels, Bernd
+11:11
+I I mean, a recording of this session.
+
+IB
+Issels, Bernd
+11:11
+Okay.
+
+ZD
+Zoric Dusan
+11:11
+Is okay with everybody, I do think it's useful.
+
+IB
+Issels, Bernd
+11:11
+Okay. Stefan.
+
+IB
+Issels, Bernd
+11:11
+Can you maybe help with this?
+
+GS
+Gatzweiler, Stephan
+11:11
+No. So, I'm not allowed to record.
+
+IB
+Issels, Bernd
+11:11
+Okay.
+
+GS
+Gatzweiler, Stephan
+11:11
+So it's because I'm not the owner of these sessions, only the owner is allowed to if he has the right to record the session.
+
+IB
+Issels, Bernd
+11:12
+I don't have it.
+
+GS
+Gatzweiler, Stephan
+11:12
+And you have to apply for the rights beforehand. So we cannot do it on the fly.
+
+IB
+Issels, Bernd
+11:12
+ah. Okay.
+
+GS
+Gatzweiler, Stephan
+11:12
+That's not possible.
+
+ZS
+Zeidler, Stefan
+11:12
+What I can offer with a normal band with a normal snipping tool. There's also now the option to record the screen and the voice.
+
+ZS
+Zeidler, Stefan
+11:12
+So Bernd, you could just or even so do some you can also do it. Just use the snipping tool, select the screen section you want.
+
+ZS
+Zeidler, Stefan
+11:12
+So in the snipping tool you go from photo to recording button and select the screen you want to record then store it locally and then upload it to the to a SharePoint and share the link.
+
+ZD
+Zoric Dusan
+11:12
+I can't try. I'm not sure if it will allow it, but okay.
+
+ZD
+Zoric Dusan
+11:12
+Okay.
+
+ZS
+Zeidler, Stefan
+11:12
+When's a local screen recording? It works normally.
+
+ZS
+Zeidler, Stefan
+11:13
+If everybody's fine here in the round, but you can cut out only the screen without the people.
+
+ZD
+Zoric Dusan
+11:13
+Yes. I have
+
+ZS
+Zeidler, Stefan
+11:13
+And so I think it should be okay.
+
+ZS
+Zeidler, Stefan
+11:13
+That's all of them.
+
+ZD
+Zoric Dusan
+11:13
+Okay. That's fine.
+
+IB
+Issels, Bernd
+11:13
+Yeah, if it's
+
+ZS
+Zeidler, Stefan
+11:13
+Welcome the option in the snipping tool.
+
+ZD
+Zoric Dusan
+11:13
+Yes, yes. Yes, I have.
+
+ZD
+Zoric Dusan
+11:13
+I can cut off. So it's only screen, no faces.
+
+ZD
+Zoric Dusan
+11:13
+And yeah. And let's see, will this
+
+ZS
+Zeidler, Stefan
+11:13
+But when you started Count 321 and then we know and you can tell us when you started. And then Bent can continue.
+
+ZD
+Zoric Dusan
+11:13
+Okay. You can please continue.
+
+IB
+Issels, Bernd
+11:13
+Okay. Thank you.
+
+IB
+Issels, Bernd
+11:13
+Okay. But anyway, we have a lot of video material.
+
+IB
+Issels, Bernd
+11:14
+For x-ray. In our confluence page.
+
+IB
+Issels, Bernd
+11:14
+So I've learned it with YouTube videos. So it's quite easy.
+
+IB
+Issels, Bernd
+11:14
+It's in English and it's very well explained there. If you're interested you have the link in the chat now.
+
+ZD
+Zoric Dusan
+11:14
+Okay.
+
+IB
+Issels, Bernd
+11:14
+Okay. Then, exactly, let's move on to the next step.
+
+IB
+Issels, Bernd
+11:14
+There, we'll just say "Add step" again and "New."
+
+IB
+Issels, Bernd
+11:14
+So, click on Add again. There.
+
+IB
+Issels, Bernd
+11:14
+Now we have a test case with two steps. You can also expand this in a step dialog.
+
+IB
+Issels, Bernd
+11:14
+Then you have the whole thing a little bigger. You can also move the steps around.
+
+IB
+Issels, Bernd
+11:14
+Here on the side, you can either use the mouse to click on the icon and then move the step down, or you can use the arrow to move the steps. And you also have the option here to change the view, from grid to list.
+
+IB
+Issels, Bernd
+11:15
+There it is, one below the other. It's a matter of preference how you like to have it.
+
+IB
+Issels, Bernd
+11:15
+So there they are side by side. Yes.
+
+IB
+Issels, Bernd
+11:15
+That's basically it for the view, what else can you do now? So, you can basically add new steps.
+
+IB
+Issels, Bernd
+11:15
+But you also have the option. Within a test case, you can call up other test cases.
+
+IB
+Issels, Bernd
+11:15
+You can do this with this function if you go here to the middle of these two test steps. With test calls.
+
+IB
+Issels, Bernd
+11:15
+So now you can basically call up a test case that we wrote earlier.
+
+IB
+Issels, Bernd
+11:15
+add it to her. There you go.
+
+IB
+Issels, Bernd
+11:16
+Let's assume that this is the case for the call.
+
+IB
+Issels, Bernd
+11:16
+So now this test case is here between the test steps, but now there are no test steps for this test case displayed. It only says here that there are two steps.
+
+IB
+Issels, Bernd
+11:16
+The test steps are only displayed when you select the test case. Of course, this has the advantage that if anything changes in this test case, it will be updated here.
+
+IB
+Issels, Bernd
+11:16
+There is another option for adding test steps here, namely via imports. You can do that here at the top by clicking on Import, then from Test.
+
+IB
+Issels, Bernd
+11:16
+And then you select a test case here. Then you get the two steps that were imported displayed here.
+
+IB
+Issels, Bernd
+11:17
+Click on all of them. Then you will see a mask for mapping the fields.
+
+IB
+Issels, Bernd
+11:17
+There, you can simply click on Confirm. Then click on Import Steps.
+
+IB
+Issels, Bernd
+11:17
+Now you have the last two steps in your stomach, which she has. So, of course, they won't be updated now if you're in the initial test case and you change something here.
+
+IB
+Issels, Bernd
+11:17
+This is not reflected here.
+
+BM
+Bosch Martinez, Francisco
+11:17
+in the first import version.
+
+IB
+Issels, Bernd
+11:17
+In the first version, yes, exactly. So here in this test, that's how it is, because here you can also see the steps.
+
+BM
+Bosch Martinez, Francisco
+11:17
+Could you briefly repeat how you imported it, please?
+
+IB
+Issels, Bernd
+11:17
+The import, i.e. the steps, is simply to import the above or this, the first one, yes.
+
+BM
+Bosch Martinez, Francisco
+11:17
+not this last one, the first one, the entire one
+
+IB
+Issels, Bernd
+11:17
+If you're in between these test steps, this test retrieval goes here, it opens here.
+
+BM
+Bosch Martinez, Francisco
+11:18
+Thank you.
+
+IB
+Issels, Bernd
+11:18
+Okay. There.
+
+IB
+Issels, Bernd
+11:18
+Now we have created a test case. There is one more special feature in X-Way.
+
+IB
+Issels, Bernd
+11:18
+There is a so-called precondition, which you can create. This is then another separate process type.
+
+IB
+Issels, Bernd
+11:18
+Die Precondition
+
+IB
+Issels, Bernd
+11:18
+So, Just say the preconditions for the test case are that Jusa is logged into the system.
+
+IB
+Issels, Bernd
+11:18
+So, a classic prerequisite somewhere for a test. You can create that now.
+
+IB
+Issels, Bernd
+11:18
+And then you can see these preconditions down here in the test.
+
+IB
+Issels, Bernd
+11:19
+There he is. So, because that would be a classic thing to do, something a player would have to include in the description.
+
+IB
+Issels, Bernd
+11:19
+Here you have it, so to speak, as a separate process, and you can then assign it to any test cases you want.
+
+IB
+Issels, Bernd
+11:19
+Okay. Then maybe something a little shorter here.
+
+BM
+Bosch Martinez, Francisco
+11:19
+Is it a prerequisite?
+
+IB
+Issels, Bernd
+11:19
+Yes.
+
+BM
+Bosch Martinez, Francisco
+11:19
+When is it used?
+
+IB
+Issels, Bernd
+11:19
+If you have, let's say, something, a prerequisite that you don't necessarily want to write in as a test step. I mean, if you say that the user is logged in, that's not really a test step in that sense, but simply a condition that has to be met before you can start the test.
+
+IB
+Issels, Bernd
+11:19
+Only that's the ulterior motive. And that, as I said, if you use players, you look at that in the description at the top and here you have it as a separate process.
+
+BM
+Bosch Martinez, Francisco
+11:20
+All right.
+
+IB
+Issels, Bernd
+11:20
+Exactly. Perhaps a brief note here.
+
+IB
+Issels, Bernd
+11:20
+Namely, these XY processes, they all have their own workflows. We can also briefly go over that.
+
+IB
+Issels, Bernd
+11:20
+Just to show you briefly, the basic state is in definition. Then it goes into review.
+
+IB
+Issels, Bernd
+11:20
+Then there is the status valid. And then you have the option of either putting it back or marking it as obsolete.
+
+IB
+Issels, Bernd
+11:20
+That's a bit of a special feature. So you can take a test case to the next state, but you can't close it in that sense, because you want to say, a test case is closed.
+
+IB
+Issels, Bernd
+11:20
+So it's finished, so you can run it. That would be valid.
+
+IB
+Issels, Bernd
+11:20
+Or it's really outdated, so you don't use it anymore. So that would basically be more of a completed status.
+
+IB
+Issels, Bernd
+11:21
+But since that's a bit ambiguous, this completed status, what you have, is it still usable or is it obsolete? That's why it was agreed to use this workflow with these end states, either valid or obsolete.
+
+BM
+Bosch Martinez, Francisco
+11:21
+Yes, Cloud is the same workflow.
+
+IB
+Issels, Bernd
+11:21
+in the cloud, then I think there's another one set before indefinite, which is then in creation. That's basically when you just want to create a test, but don't have any test steps in it yet, just a test header.
+
+IB
+Issels, Bernd
+11:21
+Then it is in creation and when you start with the test step definition, it can go into definition. Otherwise, it's the same.
+
+IB
+Issels, Bernd
+11:21
+So. Now we have created a test case.
+
+IB
+Issels, Bernd
+11:21
+Then I would say, let's just run it now. And here at the bottom is the Test Runs area.
+
+IB
+Issels, Bernd
+11:22
+There. It doesn't have any test runs yet.
+
+IB
+Issels, Bernd
+11:22
+Let's say "Execute" and then "New test runs."
+
+IB
+Issels, Bernd
+11:22
+And then you see here, he's closing it for a test run, actually making a new ticket. And he says here, this is a kind of squat exercise for our test case.
+
+IB
+Issels, Bernd
+11:22
+And down here he has checked the box for immediate execution. Right.
+
+IB
+Issels, Bernd
+11:22
+That means if we now click on Create, it will immediately go into test execution.
+
+IB
+Issels, Bernd
+11:22
+So. And this is what it looks like.
+
+IB
+Issels, Bernd
+11:22
+Up here, we have a header area. With different execution statuses.
+
+IB
+Issels, Bernd
+11:22
+You now have two options. You can now run this test in the status up here directly and say, for example, that it has passed or failed.
+
+IB
+Issels, Bernd
+11:23
+But what we actually want, since we have defined test steps, is for them to be at the bottom. Right.
+
+IB
+Issels, Bernd
+11:23
+And then you can do this here, as you can also do in Spira, for each test step, set the status. So, that's what we can do.
+
+IB
+Issels, Bernd
+11:23
+Let's say here, they both passed. So now you can see, so to speak, here with the two, that's the test case we just ran via this test call in between, these test steps.
+
+IB
+Issels, Bernd
+11:23
+And here you can now see the two steps. Right.
+
+IB
+Issels, Bernd
+11:23
+Let's mark that as passed too. Let's say this one is failed.
+
+IB
+Issels, Bernd
+11:23
+Now you have the option of entering comments here. You can enter a defect here.
+
+IB
+Issels, Bernd
+11:23
+You can add evidence, screenshots, and files here. You have a lot of freedom in how you structure this.
+
+IB
+Issels, Bernd
+11:23
+You can also do this here, if you open this up, you can actually see the result here, you can also just insert an image or a link or write something. What we can do is simply create a defect and click on the plus sign at the bottom.
+
+IB
+Issels, Bernd
+11:24
+And then he immediately creates a Jira ticket of the type "bug" for us. That's not possible.
+
+IB
+Issels, Bernd
+11:24
+Create.
+
+IB
+Issels, Bernd
+11:24
+This is how you can hear our error process in Shira right here. That is, of course, much more practical than it was in Spira back then.
+
+IB
+Issels, Bernd
+11:24
+There we also have a little bit of data synchronization. That was always a bit cumbersome, but here, of course, you have everything in one place right away.
+
+IB
+Issels, Bernd
+11:25
+Okay. So, let's open it up again, it fits.
+
+IB
+Issels, Bernd
+11:25
+And this one too. And then we're done with our test steps.
+
+IB
+Issels, Bernd
+11:25
+Then you can see up here, because a test step is set to Fail, the overall status of this test case is also Fail. Then we can simply go here to return to test execution.
+
+IB
+Issels, Bernd
+11:25
+then you can also see the execution status. Go to the bottom again and you'll see the status Fail, so if you do want to edit it again now.
+
+IB
+Issels, Bernd
+11:25
+This test execution. Then you have this arrow on the side.
+
+IB
+Issels, Bernd
+11:25
+Can you click on the execution details here again? And then you're back here in our series mask with the steps.
+
+HT
+Holst, Tobias
+11:26
+I once had a quick question about this.
+
+IB
+Issels, Bernd
+11:26
+Yes.
+
+HT
+Holst, Tobias
+11:26
+These are, everything is now very manual. We are now also in basic training, but I'm asking anyway because we are dealing with Spierer and ReadyAPI today, which is basically a link we have built up so that you can create an automated test case, which then also updates the status accordingly.
+
+HT
+Holst, Tobias
+11:26
+And is something like that generally possible in X-Ray? I know the question is a bit broad, but is it generally possible? Or
+
+IB
+Issels, Bernd
+11:26
+that it is generally possible, yes.
+
+HT
+Holst, Tobias
+11:26
+Okay, so it's not that you really have to sit there and then gradually go through everything or click on fail and so on.
+
+IB
+Issels, Bernd
+11:26
+No, no.
+
+HT
+Holst, Tobias
+11:26
+I can see that as a step I'll try when the test cases are running automatically anyway, and here too, the display is updated automatically. Okay.
+
+IB
+Issels, Bernd
+11:26
+Ja. Exactly.
+
+IB
+Issels, Bernd
+11:26
+That works, there are also colleagues of ours who already built solutions here, the test automation engineers. So it's basically possible.
+
+HT
+Holst, Tobias
+11:27
+And you are generally also the ones, if I understand correctly, who make up Team EQA for precisely such questions, when we then have the tool. I think we'll only get that when we've completed the migration from Jira.
+
+HT
+Holst, Tobias
+11:27
+Maybe we'll have to submit a request now. I'll clarify that or explain it further.
+
+HT
+Holst, Tobias
+11:27
+Once we have that, we'll probably also need to do that the first time we use it. That means you will be the contact persons we can turn to.
+
+IB
+Issels, Bernd
+11:27
+Yes. Exactly.
+
+HT
+Holst, Tobias
+11:27
+What options are there for you, i.e., with you again at a later date?
+
+IB
+Issels, Bernd
+11:27
+Yes, that's basically the link I'm putting here.
+
+HT
+Holst, Tobias
+11:27
+Do you have a process or something for that?
+
+IB
+Issels, Bernd
+11:27
+Here are basically all the contact options.
+
+HT
+Holst, Tobias
+11:27
+Oh, I see.
+
+IB
+Issels, Bernd
+11:27
+We have a Teams channel, an email distribution list, and a service request form, of course, if there's something more complex. So, you can use these channels to get in touch with us.
+
+HT
+Holst, Tobias
+11:28
+Okay, I didn't mean to get at you like that, but it just kinda got to me before I could get it out of my head, so I thought I'd just put the questions out there real quick.
+
+IB
+Issels, Bernd
+11:28
+Everything's fine. No, everything's fine.
+
+IB
+Issels, Bernd
+11:28
+Totally fine. Okay.
+
+IB
+Issels, Bernd
+11:28
+So. Now we have run this test case.
+
+IB
+Issels, Bernd
+11:28
+There. And now there's another advantage of X-Ray thanks to this integration with Jira, you can also display test coverage.
+
+IB
+Issels, Bernd
+11:28
+That means if you have a requirement, a story. you can then use this story to link test cases?
+
+IB
+Issels, Bernd
+11:28
+And then use that to show what the test status is for the story? So, if we take a look there, now I just had to check, I have a story here somewhere.
+
+IB
+Issels, Bernd
+11:28
+A requirement here. Right.
+
+IB
+Issels, Bernd
+11:28
+You can now see that here. Up here in the header area, you have this requirement status.
+
+IB
+Issels, Bernd
+11:29
+It's currently set to Uncovered because we don't have a test case added yet. You can see that here at the bottom in the Test Coverage area.
+
+IB
+Issels, Bernd
+11:29
+Go to Add Test and select Test here.
+
+IB
+Issels, Bernd
+11:29
+So. And now I'll take a look, that was this one.
+
+IB
+Issels, Bernd
+11:29
+Let's take that one now.
+
+IB
+Issels, Bernd
+11:29
+So, just like that, it's already up here. The status has changed to NADOK because our test case just failed. If you hover your mouse over it, there is now a test in here, which is displayed here, and it is marked as not okay.
+
+IB
+Issels, Bernd
+11:29
+There you go. This is displayed by default. If you don't want this test coverage with this requirement status, you still have the option here at the top to enter keywords OTA, i.e., without test coverage.
+
+IB
+Issels, Bernd
+11:30
+And when you save that, it disappears at the bottom. I'm not doing it now because it's a bit tricky to remove it again.
+
+IB
+Issels, Bernd
+11:30
+But keyword OTA. This allows you to remove it from the bottom.
+
+IB
+Issels, Bernd
+11:30
+But I think it's a very helpful feature here.
+
+IB
+Issels, Bernd
+11:30
+"Okay." There.
+
+IB
+Issels, Bernd
+11:30
+That's how it is for now. The topic block on test cases.
+
+IB
+Issels, Bernd
+11:30
+Explanations. And links.
+
+IB
+Issels, Bernd
+11:30
+Do you have any questions so far?"
+
+IB
+Issels, Bernd
+11:30
+Okay. Let's move on.
+
+IB
+Issels, Bernd
+11:30
+X-Ray is not just a tool for creating test cases or executing tests. It is also a test management tool.
+
+IB
+Issels, Bernd
+11:30
+For structuring tests and test cases. And for that, there is first of all here, if you click on the tab, the so-called test repository.
+
+IB
+Issels, Bernd
+11:31
+Those who have worked with Spira before. will be familiar with this.
+
+IB
+Issels, Bernd
+11:31
+It's there too. There is also one for test cases.
+
+IB
+Issels, Bernd
+11:31
+Wait a minute. That doesn't work here on the migration environment.
+
+IB
+Issels, Bernd
+11:31
+Now I just have to take a look.
+
+IB
+Issels, Bernd
+11:31
+Hey, what's up today? It's supposed to pass, but there's something here on the left, there's also a menu tree like that.
+
+IB
+Issels, Bernd
+11:31
+So. Now you can access the test repository.
+
+IB
+Issels, Bernd
+11:31
+There. Here you have the option of creating different folders and subfolders.
+
+IB
+Issels, Bernd
+11:31
+We can just give that a try. Then you have to click on the plus sign down here.
+
+IB
+Issels, Bernd
+11:32
+Here is the new folder.
+
+IB
+Issels, Bernd
+11:32
+Okay, I'll do it. Start ordering.
+
+IB
+Issels, Bernd
+11:32
+So, our test cases, okay, we can now see quite a few of them in the test project, of course.
+
+IB
+Issels, Bernd
+11:32
+These test cases or the test case that I just created are not yet assigned to a folder, so you can set that here in this wise folder.
+
+IB
+Issels, Bernd
+11:32
+There he is.
+
+IB
+Issels, Bernd
+11:32
+So, if you now put it in the folder, just drag it down here.
+
+IB
+Issels, Bernd
+11:32
+We had the two of them ready for the import call. So, if you want to have subfolders, click here again on the plus sign.
+
+IB
+Issels, Bernd
+11:32
+Wait, now I've done it wrong again. You have to
+
+GS
+Gatzweiler, Stephan
+11:33
+We have
+
+IB
+Issels, Bernd
+11:33
+It was a question, wasn't it? Oh, I see, it wasn't.
+
+IB
+Issels, Bernd
+11:33
+Not meant for us.
+
+BM
+Bosch Martinez, Francisco
+11:33
+Stefan has spoken, feeling homesick.
+
+IB
+Issels, Bernd
+11:33
+Ah, all right. Everything's fine.
+
+BM
+Bosch Martinez, Francisco
+11:33
+That's my logical classification to make here, so that you can test the test cases later.
+
+IB
+Issels, Bernd
+11:33
+Exactly. Exactly.
+
+IB
+Issels, Bernd
+11:33
+A thematic and technical classification and structuring. However you want it.
+
+GT
+Göck, Thomas Ralf
+11:33
+It can be seen as what we have in Spira with the test cases.
+
+IB
+Issels, Bernd
+11:33
+Exactly, yes, that's basically the test cases area.
+
+GT
+Göck, Thomas Ralf
+11:33
+The counterpart, yes, okay.
+
+IB
+Issels, Bernd
+11:33
+Exactly. So, I just wanted to create a subfolder here.
+
+IB
+Issels, Bernd
+11:33
+That means new features or something like that.
+
+IB
+Issels, Bernd
+11:33
+You can then pull them on underneath. This is a little more practical than a player, I must say.
+
+IB
+Issels, Bernd
+11:34
+Just drag and drop. Exactly.
+
+IB
+Issels, Bernd
+11:34
+So that's how it basically works in terms of structuring options. So, what we have here now, of course, is a kind of structuring, which would be comparable in Spira to the test series.
+
+IB
+Issels, Bernd
+11:34
+This is available and is called a test plan here. A test plan like this can easily be created.
+
+IB
+Issels, Bernd
+11:34
+in the statement, just like any other ticket.
+
+IB
+Issels, Bernd
+11:34
+So now you have something like a template for a test plan and a test plan is always related to either, I don't know, a release, a patch, a sprint, a fix, i.e., a period of time. What you just have to do there is have other classification criteria for which you then carry out certain tests.
+
+IB
+Issels, Bernd
+11:35
+So, you can now say, yes, we'll add to this test plan now test cases. Right.
+
+IB
+Issels, Bernd
+11:35
+This one, for example. That one.
+
+IB
+Issels, Bernd
+11:35
+This one. Say "Add selection."
+
+IB
+Issels, Bernd
+11:35
+So, now you have them listed down here. Here you can also see the linked requirements.
+
+IB
+Issels, Bernd
+11:35
+Here you can also assign a task to a specific user. So here you can't enter it.
+
+IB
+Issels, Bernd
+11:35
+That would have to be done in the ticket, but you can see the case handler here. So now you can also see these test cases from the test plan, which of course has the advantage that you then have an execution status for the test plan.
+
+IB
+Issels, Bernd
+11:36
+There you go. That's how you do it, by clicking on this test plan board here.
+
+IB
+Issels, Bernd
+11:36
+It's a little hidden. Here is the link.
+
+IB
+Issels, Bernd
+11:36
+This takes you to a different view.
+
+IB
+Issels, Bernd
+11:36
+that looks a bit like our repository. And that's really how it is, yes, I would say, a series of tests that you can just do in relation to a release or a sprint or a patch.
+
+IB
+Issels, Bernd
+11:36
+You can do the same thing as with the repository here: add new folders. You can just do anything you want.
+
+IB
+Issels, Bernd
+11:36
+And one, then you do exactly the same as in the repository here in the orphans, you can click on them all and drag them over here. So now you have our test cases for the sprint here.
+
+IB
+Issels, Bernd
+11:37
+So now you can, if you right-click here. Execute them by selecting Create Test Execution.
+
+IB
+Issels, Bernd
+11:37
+Francisco, do you have a question?
+
+BM
+Bosch Martinez, Francisco
+11:37
+Yes, but maybe when you're done with it, I've seen that there are also test sets, I wanted to ask if you use them, if they are recommended.
+
+IB
+Issels, Bernd
+11:37
+Is that available?
+
+IB
+Issels, Bernd
+11:37
+Yes. I'll just create a test tour to show you how it works.
+
+IB
+Issels, Bernd
+11:37
+Now you have something like a selection mask here. You can now adjust each of these settings to select what you want to do.
+
+IB
+Issels, Bernd
+11:37
+For example, if you now want to create a fail test case that only executes that. Or you can just say, all of them, just all of them.
+
+IB
+Issels, Bernd
+11:38
+So. Then he does another test execution out there, a new ticket.
+
+IB
+Issels, Bernd
+11:38
+Right. And just now we had that when we did the test case directly, it already gave us a summary here.
+
+IB
+Issels, Bernd
+11:38
+Namely, ad hoc test for test case such and such. That's what he's doing here now.
+
+IB
+Issels, Bernd
+11:38
+Of course, because there are several test cases. That's why we can just say test.
+
+IB
+Issels, Bernd
+11:38
+And say. Create now.
+
+IB
+Issels, Bernd
+11:38
+You have to go in here. That's basically what this ticket is again for the test execution.
+
+IB
+Issels, Bernd
+11:38
+So now you have the test cases in here. So now you can use this to run the case.
+
+IB
+Issels, Bernd
+11:38
+It's basically just another way of doing it, but of course we can just give it a try. Of course, this has the advantage that we have, let's say, the past, and now we go back to our test plan.
+
+IB
+Issels, Bernd
+11:39
+And take a look at it again. Then he also has the execution status of "it fits" here.
+
+IB
+Issels, Bernd
+11:39
+The whole thing again in the test planning board. The other view.
+
+IB
+Issels, Bernd
+11:39
+So here, too, it has the green bar. So basically, it's just a different way of doing things.
+
+IB
+Issels, Bernd
+11:39
+But of course, if you have a test result for a specific release or sprint that you want to display somewhere. Is that the only way to do it?
+
+IB
+Issels, Bernd
+11:39
+Well, it just won't work by doing the tests individually from the test case. You have to be in the test plan and use the right mouse button to create a test run so that you can also see the chart here.
+
+IB
+Issels, Bernd
+11:39
+So, this test set is a little different. You know, the test set is also familiar.
+
+IB
+Issels, Bernd
+11:39
+I think it's from Spira somewhere, which is a bit more similar to this, which is a test series in Spira. Test set here is more of a bundle of test cases.
+
+IB
+Issels, Bernd
+11:40
+It's also a different type of process when we create it. There's the XY and now you say create here.
+
+IB
+Issels, Bernd
+11:40
+Okay. On the ticket and then say add tests here.
+
+IB
+Issels, Bernd
+11:40
+I'll say existing tests and we'll just take ours here. I can also use another one, this one.
+
+IB
+Issels, Bernd
+11:40
+Add selection. There you go.
+
+IB
+Issels, Bernd
+11:41
+Now it's just, let's say, a bracket around these test cases, because they represent something specific in terms of content, something in terms of time, so you're relatively free in the design, but now it basically has nothing to do with the test execution itself, it's just a bracket. What you can do, of course, is if you now have a test plan.
+
+IB
+Issels, Bernd
+11:41
+And it is said here that you can say here, firmly from the test period. And then you just grab the test set you just created.
+
+IB
+Issels, Bernd
+11:41
+So, what do you want to add? And then you say, now we probably have exactly the same ones.
+
+IB
+Issels, Bernd
+11:41
+Yes, there they are. Now he just has the tests from the test sets.
+
+BM
+Bosch Martinez, Francisco
+11:41
+But they are displayed individually. The test cases and not the... Okay.
+
+IB
+Issels, Bernd
+11:41
+Exactly. They are displayed individually.
+
+IB
+Issels, Bernd
+11:41
+Yes, exactly. You have to do them individually.
+
+IB
+Issels, Bernd
+11:41
+In that sense, so the test set itself here, that is resolved here.
+
+BM
+Bosch Martinez, Francisco
+11:41
+So, a test set cannot be executed in the same way as a test plan.
+
+IB
+Issels, Bernd
+11:42
+No.
+
+BM
+Bosch Martinez, Francisco
+11:42
+It's just a bracket, a copy. Okay.
+
+IB
+Issels, Bernd
+11:42
+Exactly. Yes.
+
+CS
+Chrissty, Sofia
+11:42
+So, for example, if you have a regression, take the same set of test cases, would it be worthwhile to use such a test set with all the discussion test cases and then execute it somehow per sprint?
+
+IB
+Issels, Bernd
+11:42
+Yes. For example.
+
+IB
+Issels, Bernd
+11:42
+Exactly. Yes, those would be examples. Exactly.
+
+BM
+Bosch Martinez, Francisco
+11:42
+Why not your test plan in that case?
+
+IB
+Issels, Bernd
+11:42
+You can do that too. So I would say, if you really want to report on a specific test plan and you want to focus specifically on these reaction tests in their status, then that would of course be a good idea to do this test set in advance from the regression test.
+
+IB
+Issels, Bernd
+11:42
+Then in the test plan, you go to the test set and simply add it here, because it's relatively easy. All you need to do is add a test set.
+
+IB
+Issels, Bernd
+11:42
+Then you automatically have all the regression tests in here. So, but in order to do the whole thing in the status, it would of course be a good idea to add this here for the regression test, quasi this test plan.
+
+IB
+Issels, Bernd
+11:43
+So basically, there are two dimensions. First, there's this reporting, so to speak, about the status, about the test execution status, and then there's this bracket.
+
+IB
+Issels, Bernd
+11:43
+And that's a little easier to do.
+
+IB
+Issels, Bernd
+11:43
+By the way, you can also do that if I have to do it again here in the test repository. You can also use the test repository directly to create a test plan.
+
+IB
+Issels, Bernd
+11:43
+You can now use the right-hand mouse button to click on it and select Create test plan. And now it asks whether you want to use the current folder structure in the target test plan board.
+
+IB
+Issels, Bernd
+11:44
+This means that what you have created here will then be transferred as it is structured here in the test plan. Another version again.
+
+IB
+Issels, Bernd
+11:44
+So, on the one hand, you can do it via a test setup, or you could also create a folder here with regression tests, for example, and then say, I'll transfer that to the test plan and say, I only want to replicate the structure. So there are various possibilities.
+
+IB
+Issels, Bernd
+11:44
+Yes, Francisco.
+
+BM
+Bosch Martinez, Francisco
+11:44
+Various, for example when we make a release, have new things and a few more on top of that. Regression tests, which are mapped so logically. Now, practically speaking, they would all be individually included in a test plan.
+
+BM
+Bosch Martinez, Francisco
+11:44
+Add or individual test plans that you then execute all lead to a release. And can you then combine test plans into another test plan?
+
+IB
+Issels, Bernd
+11:45
+That would have to be done via a folder structure. So if you now have a release, so to speak.
+
+IB
+Issels, Bernd
+11:45
+Can we just go here?
+
+IB
+Issels, Bernd
+11:45
+on the test plan
+
+IB
+Issels, Bernd
+11:45
+So. Let's just take a look at it, we can simply rename it and call it Release.
+
+IB
+Issels, Bernd
+11:45
+Release 1.0. So, for example, you could do it this way here in the test planning board.
+
+IB
+Issels, Bernd
+11:45
+We now have a folder somewhere here that we'll just call, what do I know, feature tests or something.
+
+IB
+Issels, Bernd
+11:46
+that you then have to go to the folder and create a new folder, which we'll call regression test.
+
+IB
+Issels, Bernd
+11:46
+is one possibility. Is doable.
+
+IB
+Issels, Bernd
+11:46
+Of course, you could also say you're doing release 1.0 feature testing. Test plan.
+
+IB
+Issels, Bernd
+11:46
+And you do release 1.0 regression testing. Test plan.
+
+IB
+Issels, Bernd
+11:46
+Which you prefer.
+
+BM
+Bosch Martinez, Francisco
+11:46
+Okay, yes.
+
+IB
+Issels, Bernd
+11:46
+So both are possible.
+
+BM
+Bosch Martinez, Francisco
+11:46
+Yes. Great, thank you.
+
+IB
+Issels, Bernd
+11:46
+Okay. Oh, now I just have to take a look.
+
+IB
+Issels, Bernd
+11:46
+It's kind of, I don't know, is it the same with you guys? With new features.
+
+IB
+Issels, Bernd
+11:46
+Well, I can anticipate that it's not possible. You have to do it with a workaround.
+
+CS
+Chrissty, Sofia
+11:46
+Okay.
+
+IB
+Issels, Bernd
+11:46
+He would have been able to. Some teams say, oh yes, we have exploratory testing.
+
+IB
+Issels, Bernd
+11:46
+Sure, in your case, Sophia, that was the case in another project. But if that's the case now, yes, exactly.
+
+IB
+Issels, Bernd
+11:47
+No, okay, so I don't have to do that at all. That's also in our Confluence training material.
+
+IB
+Issels, Bernd
+11:47
+So if you ever want to use it, exploratory testing, there's a workaround. But okay.
+
+IB
+Issels, Bernd
+11:47
+Otherwise. Yes.
+
+IB
+Issels, Bernd
+11:47
+What else can be done. Well, you can also do it across projects here.
+
+IB
+Issels, Bernd
+11:47
+Across different Jira projects. You can run tests here, for example, in a test plan.
+
+IB
+Issels, Bernd
+11:47
+That's also possible. You also have reporting here, but you can take a look at that.
+
+IB
+Issels, Bernd
+11:47
+X-Ray report. It's available here.
+
+IB
+Issels, Bernd
+11:47
+So, there are various reports, which you can select here at the top. Test plan report.
+
+IB
+Issels, Bernd
+11:47
+Test execution report. Test runs, etc.
+
+IB
+Issels, Bernd
+11:47
+However, they are very basic, I must say. So you can just call one up.
+
+IB
+Issels, Bernd
+11:48
+Well, that I'm here like this, with a tabular representation. It's not particularly clear.
+
+IB
+Issels, Bernd
+11:48
+However, there is one for X-Way here as well. Which you can use.
+
+IB
+Issels, Bernd
+11:48
+So now I have to, you have to, that's just how it works in Confluence. You can select these widgets there.
+
+IB
+Issels, Bernd
+11:48
+And you have to select X there. Sofia, do you know that?
+
+IB
+Issels, Bernd
+11:48
+X-Blend or X-Pend? These widgets?
+
+IB
+Issels, Bernd
+11:48
+I don't have that anymore either. So either X-Pend, where you have to look it up.
+
+IB
+Issels, Bernd
+11:48
+In Confluence Widgets or X-Blend. One of the two.
+
+IB
+Issels, Bernd
+11:48
+And then there are various reporting widgets. And they are perhaps, well, they are preferred by some teams.
+
+IB
+Issels, Bernd
+11:48
+I don't know. The checkout teams at Rewe Austria, they know their way around it very well.
+
+IB
+Issels, Bernd
+11:49
+They use something like that. And maybe it's a little more descriptive than the standard reports in here right now.
+
+IB
+Issels, Bernd
+11:49
+Yes. Otherwise, yes, test automation is just something you've already mentioned.
+
+IB
+Issels, Bernd
+11:49
+Other than that. Yes, I would just like to ask, what is your impression?
+
+IB
+Issels, Bernd
+11:49
+You tell me. That scares me off, or do you say Spira is better or okay?
+
+BM
+Bosch Martinez, Francisco
+11:49
+is only final when there are a lot of tickets created here in Jira. It may be difficult to get an overview, but we'll have to see.
+
+IB
+Issels, Bernd
+11:49
+Yes, at the beginning it really is a bit difficult. So I also got a little bit involved myself.
+
+IB
+Issels, Bernd
+11:49
+Filtering with Jira makes it a bit easier to structure things. You can do that, of course.
+
+IB
+Issels, Bernd
+11:50
+So either here at the top, using this search function, or you can just create Jira filters to then find the processes again.
+
+GT
+Göck, Thomas Ralf
+11:50
+I have another question, Bernd. The thing about creating the test within a Gira ticket is understood.
+
+GT
+Göck, Thomas Ralf
+11:50
+But how does it work with the test plan?
+
+IB
+Issels, Bernd
+11:50
+Yeah.
+
+GT
+Göck, Thomas Ralf
+11:50
+Can I, I don't see that now, how do I add it now? In other words, how do I create a set, such as a regression test, that I always want to add, and then use it as a fixed plan? Does that work the same way?
+
+IB
+Issels, Bernd
+11:50
+You Now the connection to the story, do you mean, or to the requirement?
+
+GT
+Göck, Thomas Ralf
+11:50
+Exactly, exactly.
+
+IB
+Issels, Bernd
+11:50
+Oh, no, that only works via the test case. So that's what you have to keep in mind.
+
+IB
+Issels, Bernd
+11:50
+So you can use this test plan to display. I'll have to take a look right now.
+
+GT
+Göck, Thomas Ralf
+11:50
+So, more of a manual link in the story, where you say, "In addition, there is a link to the following."
+
+IB
+Issels, Bernd
+11:50
+Yes. Exactly.
+
+IB
+Issels, Bernd
+11:50
+A link like that can always be made, of course. But you have this test coverage, which is included when you now go into the requirements.
+
+IB
+Issels, Bernd
+11:51
+You can get it here via the test case. And then you would basically have to go to the test case and then it will show you in which test plan it is included.
+
+IB
+Issels, Bernd
+11:51
+But the link between the test plan and the story doesn't exist here.
+
+GT
+Göck, Thomas Ralf
+11:51
+Okay.
+
+GT
+Göck, Thomas Ralf
+11:51
+The keyword, what do you think is better, I can now find that easier with players at the moment, because then you just add a set that has been played and then you have all the details underneath. But anyway, when I add the Test C, that works too.
+
+IB
+Issels, Bernd
+11:51
+Yes. So it's possible, yes, exactly.
+
+GT
+Göck, Thomas Ralf
+11:51
+Yes, okay, all right.
+
+IB
+Issels, Bernd
+11:51
+With a simple link, yes.
+
+CS
+Chrissty, Sofia
+11:51
+I have to go back and ask again, Bernd, if I now had a story. And I want to run the feature tests and the editorial test to see if they, no, that as, I'm against that, so I'll check it off, so to speak.
+
+CS
+Chrissty, Sofia
+11:52
+So that's a prerequisite that I have to have done and want to have done, as well as see the status. I can do that in the ticket now, or can't I?
+
+IB
+Issels, Bernd
+11:52
+You can see that then. Of course, you will then only have the test plans mapped in this sense.
+
+IB
+Issels, Bernd
+11:52
+You then have all the test cases listed below. Here you have the feature tests listed below.
+
+IB
+Issels, Bernd
+11:52
+You have the regression tests listed here below. So, if they are all on PaaS, then here at the top, the status will change to okay, and then the story is basically covered.
+
+IB
+Issels, Bernd
+11:52
+But you don't really have that distinction here.
+
+CS
+Chrissty, Sofia
+11:52
+Okay.
+
+IB
+Issels, Bernd
+11:52
+You can still, you still have a filter option somewhere here. Wait a minute, there's something else here.
+
+IB
+Issels, Bernd
+11:52
+Here you can also search by test plan. That means if you now have a test plan for regression and another for a feature test, you could just select a test plan here and then it would show up at that level.
+
+IB
+Issels, Bernd
+11:53
+But overall, across all test cases, you then don't have the distinction here, but only all test cases listed here.
+
+CS
+Chrissty, Sofia
+11:53
+Okay, but if I use the filter plan, then I can see where, if I now have a failed test, where exactly it failed, in which
+
+IB
+Issels, Bernd
+11:53
+Exactly, yes. Exactly.
+
+CS
+Chrissty, Sofia
+11:53
+Thank you.
+
+IB
+Issels, Bernd
+11:53
+Yes, well, there you definitely have to experiment a lot, I would say, if you really want to do it live. There are so many possibilities, so many variations for depicting that.
+
+IB
+Issels, Bernd
+11:53
+So I don't have a handle on all of them yet, I have to say, but I mean, I'm working with it myself, but I'm only doing it as support. But I don't have a project where I work with it.
+
+IB
+Issels, Bernd
+11:53
+That's a bit more difficult. But once you're there live, I think you'll get the hang of it.
+
+IB
+Issels, Bernd
+11:54
+Okay. Is there anything else?
+
+CS
+Chrissty, Sofia
+11:54
+I think I was just at the beginning of the comment, you should first do the GDOM migration and then get the X-Ray.
+
+IB
+Issels, Bernd
+11:54
+Yes.
+
+CS
+Chrissty, Sofia
+11:54
+That would make sense.
+
+IB
+Issels, Bernd
+11:54
+That will definitely make sense. I mean, there is a migration of test cases and test plans, so if you look at it here on-prem, you're basically setting everything up, then you can just take the artifacts, test cases, and test plans, and they'll be migrated along with everything else if you request it.
+
+IB
+Issels, Bernd
+11:54
+But what's not included are the test executions. They are not migrated.
+
+IB
+Issels, Bernd
+11:54
+So that's why it's better if you actually start with the cloud first, I would recommend. If that's the case anyway in the next month or two, then I think that's simply the better way to go.
+
+CS
+Chrissty, Sofia
+11:55
+And for the colleagues with Spira, there was also a feature that allowed them to view the Spira cases in X-Ray somehow.
+
+IB
+Issels, Bernd
+11:55
+Yes. That's probably true.
+
+IB
+Issels, Bernd
+11:55
+There is an import function, but it has the disadvantage that it really can only import text. No attachments, no images.
+
+IB
+Issels, Bernd
+11:55
+You can really only import the test case and test step descriptions with it. Of course, depending on how much you have to explain to others in Spira using images, it's not that convenient.
+
+IB
+Issels, Bernd
+11:55
+So it's really worth importing the whole thing from scratch.
+
+CS
+Chrissty, Sofia
+11:55
+Okay.
+
+GT
+Göck, Thomas Ralf
+11:55
+One more question, when we are in the cloud, then you do the activation, meaning that X-Ray can then be used, or is that standard for every product?
+
+IB
+Issels, Bernd
+11:55
+That will probably happen when you move to the cloud, I think it's requested in this form whether we want to have X-Ray there. And then it will automatically go through the Jira admins.
+
+GT
+Göck, Thomas Ralf
+11:56
+Oh, okay, yes.
+
+IB
+Issels, Bernd
+11:56
+They'll take care of it, I assume, I'm familiar with the form, I don't know, I haven't seen it yet.
+
+GT
+Göck, Thomas Ralf
+11:56
+Yes, I'll ask Theo.
+
+IB
+Issels, Bernd
+11:56
+Exactly.
+
+GT
+Göck, Thomas Ralf
+11:56
+Okay, yes, okay.
+
+IB
+Issels, Bernd
+11:56
+Only the POs get it, I think. Good.
+
+IB
+Issels, Bernd
+11:56
+Any further questions or comments?
+
+IB
+Issels, Bernd
+11:56
+Okay. Yes.
+
+IB
+Issels, Bernd
+11:56
+Then I hope to give you a little insight into that. I hope it was okay, even though it was in German and somewhat understandable thanks to the tool.
+
+IB
+Issels, Bernd
+11:56
+But it also worked with the recording. And then I would say, yes, thank you very much and good luck if you're starting with X-Ray soon.
+
+IB
+Issels, Bernd
+11:56
+Then I would like to give you a nice day. See you later.
+
+IB
+Issels, Bernd
+11:56
+Bye.
+
+IB
+Issels, Bernd
+11:56
+Right?
+
+BM
+Bosch Martinez, Francisco
+11:56
+Thank you very much, Bernd.
+
+GT
+Göck, Thomas Ralf
+11:56
+Not at all.
+
+CS
+Chrissty, Sofia
+11:56
+Thank you, band.
+
+HT
+Holst, Tobias
+11:57
+Thank you.

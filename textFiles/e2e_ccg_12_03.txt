@@ -1,0 +1,955 @@
+It will certainly not be enough to cover all the details of XDM, but for now, this is a rough overview.
+
+Gatzweiler, Stephan ist der Übersetzungsmanager und hat die Kontrolle über die allgemeinen Übersetzungseinstellungen.
+GS
+Gatzweiler, Stephan
+15:03
+Maybe we can also cover five or ten minutes for questions afterwards. And I'm sure, Oliver, if there is a further need, we can always come back to you or Marcel.
+
+GS
+Gatzweiler, Stephan
+15:03
+No, actually. Yes.
+
+BO
+Böhm, Oliver
+15:03
+No, everything's fine.
+
+GS
+Gatzweiler, Stephan
+15:03
+Perfect.
+
+BO
+Böhm, Oliver
+15:03
+No.
+
+GS
+Gatzweiler, Stephan
+15:03
+Great. Then I won't take up much more of your time, but I'll leave it to you.
+
+GS
+Gatzweiler, Stephan
+15:03
+Feel free to share your screen.
+
+BO
+Böhm, Oliver
+15:03
+Yes, great. Yes, I had you once, I recently started a practice group on the topic of this Kafka Group from the Equal division.
+
+BO
+Böhm, Oliver
+15:03
+That's why I had it on a Miro board. I hope you can just take a look at it, Stefan.
+
+BO
+Böhm, Oliver
+15:03
+You need to have it, as mentioned at the beginning, there is now a very superficial XDM presentation. Those who are familiar with XDM know how complex it can be.
+
+BO
+Böhm, Oliver
+15:03
+I'll take a look at Marion's side. We already had something similar in relation to MEDB support and the provision of market data.
+
+BO
+Böhm, Oliver
+15:04
+Some people may be familiar with XDM, but only to a very limited extent.
+
+ZD
+Zoric Dusan
+15:04
+Then I won't take up much more of your time. If I leave it to you, that's why the
+
+BO
+Böhm, Oliver
+15:04
+Well then.
+
+BO
+Böhm, Oliver
+15:04
+Yes. Yes, Stefan.
+
+BO
+Böhm, Oliver
+15:04
+Stefan had told me that I would like to try XCM in this group, and especially highlight Kafka. So I'm going to focus on the Kafka copy of individual topics for now.
+
+BO
+Böhm, Oliver
+15:04
+Including anonymization of these Kafka topics, and we can now take a look at them. In the concept, in the Miro board, we'll start with that, and I had a little bit of a timeline there.
+
+BO
+Böhm, Oliver
+15:05
+Because, of course, we also have corresponding requirements, technical requirements, before we somehow get into a program like XCM. That means.
+
+BO
+Böhm, Oliver
+15:05
+we first have to deal with that, and since there are a lot of developers here, I'm not sure whether I really need to go into great detail, but you know how it works. Of course, you have to go to the Kafka service area and use the self-service option to set up your topics and clients, and those are requirements for getting into XM later.
+
+BO
+Böhm, Oliver
+15:05
+Ultimately, this is nothing more than a database connection and a JDBC connection with a technical user. We then need the following for the Kafka topics: the source and the target.
+
+BO
+Böhm, Oliver
+15:05
+As I said, this was a presentation for the user. Perhaps Kafka is not yet familiar with it.
+
+BO
+Böhm, Oliver
+15:06
+Now I don't know how deep you are in there. I'll just go ahead and continue.
+
+BO
+Böhm, Oliver
+15:06
+If you have any questions, feel free to ask them directly. Or if the level is too advanced for you, please let me know.
+
+BO
+Böhm, Oliver
+15:06
+Exactly. Do we need sources and targets?
+
+BO
+Böhm, Oliver
+15:06
+I just have some test topics set up here. With simple example messages in JSON format.
+
+BO
+Böhm, Oliver
+15:06
+I've just shown this here because I simply wanted to, because we're still in the process of setting up the XTM, this Kafka interface, to offer it right now. And that's where it's particularly important, of course, if you look at this example, at this sample message, which is actually very small and clear, but despite all that, it contains the structure of normal Jason and also these important elements that needed to be identified.
+
+BO
+Böhm, Oliver
+15:06
+Yes, I would like to remain anonymous. And what do I want to anonymize or mask?
+
+BO
+Böhm, Oliver
+15:07
+And then, of course, there's something like my first name. Last name.
+
+BO
+Böhm, Oliver
+15:07
+Email address. And here are the prices.
+
+BO
+Böhm, Oliver
+15:07
+That I don't want to see them in my test environment afterwards as assumed, that would be Prott here in the Prott environment.
+
+BO
+Böhm, Oliver
+15:07
+In XCM, it is now the case, at least for the time being, that I have to use a domain model. I can now also do that at the same time in XDM.
+
+BO
+Böhm, Oliver
+15:07
+I had it on the screen, you can currently see the XDM application, and I'm here in the template already, but now I'm going to switch to the domain subset for the domain model. I had already set one up here, which is exactly what these entities correspond to, which you can see here on the Miro board from this Jason structure.
+
+BO
+Böhm, Oliver
+15:08
+So here are the top nodes, and I can also import them here accordingly. That means I only need to use a Jason element once.
+
+BO
+Böhm, Oliver
+15:08
+And I'll put that in, then it will pull it in. The plan for the future is to also use elements such as A-Sync-RP or, accordingly, this schema. That's a very difficult word with a brace registry to access.
+
+BO
+Böhm, Oliver
+15:08
+And then to automatically import this structure accordingly, but currently it's just that we do it by importing a file that we upload there and then we end up with this overview here. The whole thing is also configurable manually.
+
+BO
+Böhm, Oliver
+15:08
+So if I want to customize something. Would that also be possible in the XDM interface?
+
+BO
+Böhm, Oliver
+15:08
+If we do that and the domain model is the next question, that's something I already have a little bit of a teaser for, do I need anonymization? Mostly, yes.
+
+BO
+Böhm, Oliver
+15:08
+And the whole thing is then also configured accordingly. Via scripts.
+
+BO
+Böhm, Oliver
+15:09
+In my case with XDM, I'm currently still working on the domain model, which should also continue to be the case in the future for the task itself. The ability to create entity modifications and thus an entity modification in detail would look like this: a Groovy script
+
+BO
+Böhm, Oliver
+15:09
+So I just decided to go for it and put together a few things for this showcase. Anyway.
+
+BO
+Böhm, Oliver
+15:09
+And he builds it accordingly afterwards via script, including the email address from the newly selected names and also pays attention to. That's what I wanted to try out as well.
+
+BO
+Böhm, Oliver
+15:10
+I would have to, because there are two of them, so for one article I would always have two messages in the topic, which is just a different price or a different time for me as a test, because I want the suppliers, for example, to anonymize both articles after anonymization for both articles, for example, to be the same, so that they don't keep coming back to anonymize them again and again. And here, it's also where the email is put together.
+
+BO
+Böhm, Oliver
+15:10
+So that would now be working with Groovy and you, as I've heard, is that a developer group, is that actually obvious to you as well? What happens here and is also easy to implement in the end, if you want to do it yourself later.
+
+BO
+Böhm, Oliver
+15:10
+Exactly. I have the same thing again for the price.
+
+BO
+Böhm, Oliver
+15:10
+I just said to myself. There's a certain logic to it in the end, or a certain business logic that I wanted to reflect.
+
+BO
+Böhm, Oliver
+15:11
+So that's also about a seed, about the item number, and it doesn't go too far, so that a banana doesn't suddenly cost 10 euros and so on. You can do all that in this Groovy script.
+
+BO
+Böhm, Oliver
+15:11
+That's just how it is initially, to see if it works at all or not. And that was my test script that I built for this purpose.
+
+BO
+Böhm, Oliver
+15:11
+And they are now also attached to this entity, and of course I can also, depending on the situation, switch them on or off as needed, whether I want the productive data for a re-run directly or anonymized. When I have that ready, we can move on to the next step on the Miro board, and then we'll get to creating the topics.
+
+BO
+Böhm, Oliver
+15:11
+I made it easy for myself. There you can see what you need.
+
+BO
+Böhm, Oliver
+15:11
+Of course, you need the URL from the broker and the topic name, just like I've seen it so far, it's like the topic name is on Prod, Dev, Test.
+
+BO
+Böhm, Oliver
+15:12
+the same and actually only through the broker in the end, clearly identifiable in the D4C, to which environment the matter goes. And that is then where the Kafka topic is directly linked again with the domain model.
+
+BO
+Böhm, Oliver
+15:12
+For both the source and the target. I'm assuming here from pre-production to development, or rather from the development environment to pre-production.
+
+BO
+Böhm, Oliver
+15:12
+I am the target, and once you have configured it to that extent, you can already create the template. And that's actually the least of it now.
+
+BO
+Böhm, Oliver
+15:12
+So I can then simply say, where is my source and where is my target? It's just like a database connection.
+
+BO
+Böhm, Oliver
+15:12
+I can specify that here. And all in all, that's it for the first step, so I can say, okay cool, now I can just get started.
+
+BO
+Böhm, Oliver
+15:13
+But do you have to say that, of course? That's not quite the idea in XDM, and later maybe also the Kafka copies or general test data copies need to be done as well.
+
+BO
+Böhm, Oliver
+15:13
+Here I have one more small point to mention. I still have various technical settings here that are currently specific to the topic-related properties.
+
+BO
+Böhm, Oliver
+15:13
+How do I want the Kafka topic header to be copied as well, or the partition or the timestamp? I had discussed this with the Kafka experts.
+
+BO
+Böhm, Oliver
+15:13
+They recommend simply leaving it as it is, because that's what makes the most sense. But it can always happen that I don't want that.
+
+BO
+Böhm, Oliver
+15:13
+And I can also explicitly specify which partition I want or from which offset I want to copy or from which timestamp I want to copy. At least that's the situation as of today, where I have the option to select in UBS, which already delivered on that point, in that the technical selection is also added, so that I can also select by fields or elements from my JSON according to how I want to compile the messages, which I then want to copy.
+
+GS
+Gatzweiler, Stephan
+15:14
+Oliver. Are you showing anything else?
+
+GS
+Gatzweiler, Stephan
+15:14
+Because I'm just about to, I mean, I can only see the general settings and okay.
+
+BO
+Böhm, Oliver
+15:14
+No. Sorry.
+
+BO
+Böhm, Oliver
+15:14
+Yes, exactly. I have you here at this point because I now think that, I didn't know how much time I had or I would be stealing you away.
+
+BO
+Böhm, Oliver
+15:14
+Of course, these are the topics. These are the ones I showed with the broker and the topic name, and here the authentication is just, well, that's just via this token endpoint and the client as a technical user.
+
+BO
+Böhm, Oliver
+15:14
+You get that when you have a client like that. But request it from your colleagues via self-service.
+
+BO
+Böhm, Oliver
+15:15
+It's in the task template here, I'll go into that now. You can find the whole thing under the Entity Copy Task Place.
+
+BO
+Böhm, Oliver
+15:15
+That's this spot here. Where we are now also on the Mii robot.
+
+BO
+Böhm, Oliver
+15:15
+Yes, so here I just enter the source and the destination. And here I had the Kafka settings again, which I can configure.
+
+BO
+Böhm, Oliver
+15:15
+Here, for example, you can see that I only wanted to partition 4 at this point. And from offset 2, as an example, but we'll get to that in a moment.
+
+BO
+Böhm, Oliver
+15:15
+We'll skip the next volunteer. Now you can see another execution in the Mii Robot, for example, but we can also go back to that right away, because the idea is that I want to get from my product or maybe also a debt to be paid.
+
+BO
+Böhm, Oliver
+15:16
+That means I don't always want to have a hold debt as a customer. I don't always want to just look for people who will give me something.
+
+BO
+Böhm, Oliver
+15:16
+I might also want to be able to offer something as a product. So that people can consume my messages.
+
+BO
+Böhm, Oliver
+15:16
+The best examples are Marion, for example, whom I'll always be happy to mention, and the MEDB team, who said, no, I don't have any, okay, you were a bit forced by Data Runner now at night to switch to XCM. But that's actually a very good example of how people now know that you have the offer, you offer it in XDM, and they come there and can choose the markets from production after testing.
+
+BO
+Böhm, Oliver
+15:16
+And that's why we say yes, we have here at this point in XDM the opportunity. To separate functionally and technically.
+
+BO
+Böhm, Oliver
+15:16
+Does that mean you as a product or you commission us or however we create it? For example, masking, anonymization, including the
+
+BO
+Böhm, Oliver
+15:17
+And then prepare them so that you or the customer are informed about this shop, and that is this Datashop, which is included here, so that the customer can then access it. This is then accessible in this form.
+
+BO
+Böhm, Oliver
+15:17
+And then you will also see that, in the end, that would now be the view from the customer, who is now able to say, "Okay, I would like to copy the header, partition, or timestamp." And here I could choose offset partition or the timestamp from which I could choose.
+
+BO
+Böhm, Oliver
+15:17
+And then, if there is a position submit, it would in that case start directly if you adjust the rights, a request will be sent to you, the data owner. And you could then look at it and say, yes, I think that's good, let's do it, or it will be rejected because it's not wanted at that point.
+
+BO
+Böhm, Oliver
+15:18
+We can do that now, if you like. I just have this here to clarify that once again.
+
+BO
+Böhm, Oliver
+15:18
+That's the target topic, and this is the source topic, I have 20 topics. 20 messages I created.
+
+BO
+Böhm, Oliver
+15:18
+The first ten and then the second ten ultimately only represent a different price, so perhaps a newer message there. Here you can find this article, "One kilo of bananas," and with ID11 it's also this one kilo of bananas article, and if I now simply say, for example, that I'm only interested in the partition scenes, then I see, ah cool, there are four messages here that I now simply want to have, and I actually only want to have them from offset 1, then I can now go here if I want to find that again.
+
+BO
+Böhm, Oliver
+15:19
+I want from offset 1 and the partition should be 10. And I want to leave out the timestamp because my test topic has a retention period of seven days and that's what we've determined is the time that's picked up by Weltverpick.
+
+BO
+Böhm, Oliver
+15:19
+That means that could cause a conflict here. That's why I'm saying here that I don't want to include the timestamp from the productive topic, but rather that it should assign the timestamp when it inserts it.
+
+BO
+Böhm, Oliver
+15:19
+And then I can execute that. We can now do it again.
+
+BO
+Böhm, Oliver
+15:19
+on the Miroboard. I already had one of these evaluations done here, so it could look like this, that it would then appear in Checks Result as the point and there you can then nicely compare it, that you saw there how it was a bit bigger accordingly... How he anonymized it, he now has this 1 and 11 here, which is just this banana article.
+BO
+Böhm, Oliver
+15:20
+I'm now on the Miro board, Marcel.
+
+BO
+Böhm, Oliver
+15:20
+You're not on the Miro board? Oh, I thought you were sorry.
+
+BO
+Böhm, Oliver
+15:20
+You guys don't have a link to the Miro board.
+
+GS
+Gatzweiler, Stephan
+15:20
+Now.
+
+BO
+Böhm, Oliver
+15:20
+Did I not have it in this animal?
+
+BO
+Böhm, Oliver
+15:20
+Yes. But it doesn't matter.
+
+BO
+Böhm, Oliver
+15:20
+Then let's take a look here now. Then he would have had the clue a little earlier.
+
+GS
+Gatzweiler, Stephan
+15:20
+No.
+
+BO
+Böhm, Oliver
+15:20
+I thought everyone was on the Miro board.
+
+BO
+Böhm, Oliver
+15:21
+Yes. Thank you for the tip, Marcel.
+
+BO
+Böhm, Oliver
+15:21
+Here, you can definitely see that there is now a previous run, which will now be different, Hans Müller has become Monika Schröder, both in ID 1 and 11, and Anna Schmidt has become Oliver Bauer, here, of course, there is no separation between man and woman or gender, whatever. And here we can also see how the email addresses have been adjusted accordingly.
+
+BO
+Böhm, Oliver
+15:21
+The price is exactly what I wanted. There is no huge price range.
+
+BO
+Böhm, Oliver
+15:21
+So 81 cents has not turned into eight euros, but rather 67 cents, and the order of the purchase price and resale price has also been maintained at this point. But anyway, that's beside the point if it's really based on technical logic, then every product should be adjusted accordingly.
+
+BO
+Böhm, Oliver
+15:21
+But that's just to illustrate how such anonymization looks in the end for this little showcase.
+
+BO
+Böhm, Oliver
+15:22
+Exactly. If you look at it again now, you can see that it has already run through.
+
+Vollständig geschützt
+
+BO
+Böhm, Oliver
+15:28
+I think that was the main intention, which I now or the main point that I wanted to get across here, I think.
+
+Gatzweiler, Stephan ist der Übersetzungsmanager und hat die Kontrolle über die allgemeinen Übersetzungseinstellungen.
+BO
+Böhm, Oliver
+15:28
+Exactly, Francisco.
+
+BM
+Bosch Martinez, Francisco
+15:28
+I have a question, but I don't know if it's directly technical or perhaps more like Stefan and Safar. So, with that in mind, I'd like to connect the dots.
+
+BM
+Bosch Martinez, Francisco
+15:28
+Which we then have to do for the test environment, order a Kafka topic. Where we then have this copy triggered in XAM.
+
+BM
+Bosch Martinez, Francisco
+15:29
+And then in XAM, we have to maintain these rules.
+
+BM
+Bosch Martinez, Francisco
+15:29
+that another topic that
+
+BM
+Bosch Martinez, Francisco
+15:29
+we have to test. That's right.
+
+BM
+Bosch Martinez, Francisco
+15:29
+Stefan.
+
+GS
+Gatzweiler, Stephan
+15:29
+The question was now directed at us. Yes, but I don't quite understand what you mean.
+
+BM
+Bosch Martinez, Francisco
+15:29
+Yes. Yes, well.
+
+BM
+Bosch Martinez, Francisco
+15:29
+So we have to, if we need data. From, let's say, Team Slim.
+
+BM
+Bosch Martinez, Francisco
+15:29
+We have to go to my team, we have to go to my team and we have to create a topic, as a copy, so to speak, of the usage data, which is filled via XM. And then we have to do that via XM.
+
+BM
+Bosch Martinez, Francisco
+15:30
+We have to follow these rules in XM. No.
+
+DM
+Drabben, Marcel
+15:30
+You can do that. So if you have an independent test environment and you have a motor vehicle topic on it, from a productive Kafka topic you can then copy data into it to run tests.
+
+DM
+Drabben, Marcel
+15:30
+And our idea is that it will then already be in XDM that there are actually specifications, because the one who produces it. Yes.
+
+DM
+Drabben, Marcel
+15:30
+The one who produces it there. He knows about it and he provides you with it, so to speak, tasks that he shows you, like Oliver showed you, via the Datashop, and then you tag your new topic and then the data is transferred.
+
+BM
+Bosch Martinez, Francisco
+15:30
+Ah, okay.
+
+DM
+Drabben, Marcel
+15:31
+So you as the customer, so to speak, our idea is that you don't have to do that much, because you don't know what kind of data it is. You don't know if it needs to be masked or not.
+
+BM
+Bosch Martinez, Francisco
+15:31
+Exactly, that was my point.
+
+DM
+Drabben, Marcel
+15:31
+The person who owns the data knows that. And they provide you with something, if you then pass on the data to someone else, then you are back to being the data suppliers and then you have to tell your colleagues who take your data, maybe you have to provide them with something like that too.
+
+DM
+Drabben, Marcel
+15:31
+But if we're ready, I think we need a deeper entry point. And as I said, we can always help you with that, and we can also say, "Come on, we'll do all the necessary preparations and you can then make the clicks in XDM, because I don't use it often enough."
+
+BM
+Bosch Martinez, Francisco
+15:31
+Yes.
+
+DM
+Drabben, Marcel
+15:31
+So that's already in the works, because something like that requires little support. We also know some colleagues who I'll look through now, and we also have them for databases, for the article archive, for the document archive, there's the same thing for data shops, where you just have to click on it and then it runs through.
+
+BM
+Bosch Martinez, Francisco
+15:32
+Yes, bye.
+
+BM
+Bosch Martinez, Francisco
+15:32
+Okay. It's basically like a service, I just have to say what data I want and what the target Kafka topic is.
+
+BM
+Bosch Martinez, Francisco
+15:32
+What data I want. That was okay.
+
+BM
+Bosch Martinez, Francisco
+15:32
+But if we have data, on the other hand, then we have to create the whole thing.
+
+DM
+Drabben, Marcel
+15:32
+It's give and take, if you're not providing anything, then the others will probably say the same thing to you, that they don't need to do it either. There is, of course, only an obligation in the neo area, where you say end-to-end.
+
+DM
+Drabben, Marcel
+15:32
+But for the post-neo world, it would of course be nice if all data were made available without that. Now we can go back to the good example, so that Marion for MIBW, they have provided something like that now for DB2, where everyone can click on it and say, I need the market information, and then they get it without knowing that behind it, I don't know, I'm just going to say a number, 30 tables are somehow copied over.
+
+DM
+Drabben, Marcel
+15:33
+So our idea is more about moving away from the burden of proof and toward the burden of delivery. Yes.
+
+DM
+Drabben, Marcel
+15:33
+Because
+
+BM
+Bosch Martinez, Francisco
+15:33
+if you ask the next question, if you have to offer such anonymization. So in a Datashop.
+
+BM
+Bosch Martinez, Francisco
+15:33
+They regulate that somewhere. Which you have to take into account.
+
+BM
+Bosch Martinez, Francisco
+15:33
+So what is anonymization? Or is that according to the best of one's knowledge and belief?
+
+DM
+Drabben, Marcel
+15:33
+Yes. That's why we say yes, the data owner is ready, the technical data owner, yes.
+
+DM
+Drabben, Marcel
+15:33
+I would say that you all need to have this kind of security exchange form filled out, and it will state whether data is confidential or not and why it is confidential. And that's what you have to do for the test environment as well.
+
+DM
+Drabben, Marcel
+15:34
+Do we have that in our data protection policy? And from this security assessment based on data protection, information security, and so on, the data owner actually has the knowledge, which we don't have, about whether it is worth protecting or not.
+
+DM
+Drabben, Marcel
+15:34
+And that's where you have to deduce what needs to be done and what doesn't. And there have already been quite a few discussions about this.
+
+BM
+Bosch Martinez, Francisco
+15:34
+Okay.
+
+DM
+Drabben, Marcel
+15:34
+That also depends on who the data is then seen by in the test. If you have to stay in your product, which you have access to in production anyway.
+
+DM
+Drabben, Marcel
+15:34
+Then you may not need to mask it if you are now working on a duck-duck test where all products can see it, then it may need to be masked. But then you have to decide that as the data owner.
+
+DM
+Drabben, Marcel
+15:34
+We can help you find the right contact person, but yes.
+
+BM
+Bosch Martinez, Francisco
+15:34
+Okay. Yes, thank you.
+
+GS
+Gatzweiler, Stephan
+15:35
+Are there any further questions?
+
+GS
+Gatzweiler, Stephan
+15:35
+No. Okay.
+
+GS
+Gatzweiler, Stephan
+15:35
+So, as I said, you are always welcome to contact Marcel or Oliver. Will they be there, too? You also said, Oliver, that training courses will be offered on XDM.
+
+BO
+Böhm, Oliver
+15:35
+Yes, exactly, we have various documents. On the one hand, there are guidelines where you can take a look at little snippets to see how it works or just to get advice as a team, whatever, when it comes to test data management with XCM.
+
+BO
+Böhm, Oliver
+15:35
+So you can also, yes, or you are welcome to ask your colleagues for the relevant links or just contact us directly.
+
+GS
+Gatzweiler, Stephan
+15:35
+Yes, exactly. And as far as compliance and the anonymization of data are concerned, there is, I believe, what you meant, Marcel, which is the determination of the need for protection.
+
+GS
+Gatzweiler, Stephan
+15:36
+Yes. Every product should have.
+
+GS
+Gatzweiler, Stephan
+15:36
+And it also states which attributes now have a high risk class and need to be anonymized and which do not. But that was the data owner.
+
+GS
+Gatzweiler, Stephan
+15:36
+if there are no other questions or comments, then we have gained nine minutes. Thank you all for your participation.
+
+BM
+Bosch Martinez, Francisco
+15:36
+Yes, it was very interesting. Thank you very much.
+
+GS
+Gatzweiler, Stephan
+15:36
+See you again next Thursday as usual. And I think Deep Dive will be back in two weeks at the latest.
+
+GS
+Gatzweiler, Stephan
+15:36
+Then it will probably be the environment. Exactly, the test environment.
+
+GS
+Gatzweiler, Stephan
+15:37
+But even there, there will be another update. By Monday at the latest.
+
+GS
+Gatzweiler, Stephan
+15:37
+End of business. So that you know what the topic of the next Deep Dive will be.
+
+GS
+Gatzweiler, Stephan
+15:37
+Maria, you also have a question or comment?
+
+BC
+Benjumea Canon, Maria Paula
+15:37
+I don't know if we can directly identify risks or make comments, or if we should do that in the next session so that our colleague can think about it beforehand?
+
+GS
+Gatzweiler, Stephan
+15:37
+Another risk comment, what do you think?
+
+BC
+Benjumea Canon, Maria Paula
+15:37
+We talked about this last week, that the risks, i.e. the risks for the process, are falling.
+
+GS
+Gatzweiler, Stephan
+15:37
+Yes. Ah.
+
+BC
+Benjumea Canon, Maria Paula
+15:37
+And yesterday, exactly, yesterday we realized that, in fact, you can process risks that only apply to the project. Can you also upload it?
+
+BC
+Benjumea Canon, Maria Paula
+15:37
+And that's why it was, so the question would be, because I know that you already had it on the board, in Miro you already had a few risks collected, but I don't think that's all of them. Would it then be simple to just go over these risks again a little more cleanly with the colleagues and write them down, especially who the risks come from, because in some places, I had to open that up briefly, but I stood, for example, master data must be ready, but we have a lot of master data, so we have article standards, we have warehouse standards, we have market standards.
+
+BC
+Benjumea Canon, Maria Paula
+15:38
+That's why it would be good if you could be a little more specific in your description. And if you do that in Miro, I'll put the tickets on Jira, and then I'll assign the people who are responsible for them.
+
+GS
+Gatzweiler, Stephan
+15:38
+Which hasn't happened yet, I think, is that we had about 150 risks that were transferred to Jira. And those, correct me if I'm wrong, Maria, but those should also be tagged, whether they are a product risk.
+
+GS
+Gatzweiler, Stephan
+15:39
+Process risk. Or program.
+
+GS
+Gatzweiler, Stephan
+15:39
+program risk. Product, process, and project risk.
+
+GS
+Gatzweiler, Stephan
+15:39
+Project risk. So, for the end-to-end test, we would then only have to consider the process risks and then use the test cases to cover them.
+
+GS
+Gatzweiler, Stephan
+15:39
+But for that, we would need to know from these 150 risks, from these 150 risks, from this very, very long list, which of them are process risks. We would then hardly consider them.
+
+BC
+Benjumea Canon, Maria Paula
+15:39
+No. And yesterday we hit it off with Paul and the PwC colleagues, and we realized that at the moment there is no process risk on Jira.
+
+BC
+Benjumea Canon, Maria Paula
+15:39
+So we still have to add them.
+
+GS
+Gatzweiler, Stephan
+15:39
+That is, the litigation risks we have are those that are now on the Miro board. Okay.
+
+GS
+Gatzweiler, Stephan
+15:39
+Yes.
+
+BC
+Benjumea Canon, Maria Paula
+15:39
+Exactly. And that's why I need them to be a little more specific, at least about who's responsible for it or if there's master data, what master data, so that I can then create the tickets.
+
+GS
+Gatzweiler, Stephan
+15:40
+Yes. Yes.
+
+BC
+Benjumea Canon, Maria Paula
+15:39
+And in any case, the person who is responsible, so that I can assign them, because I'm not allowed to take any more risks without an assigned person.
+
+GS
+Gatzweiler, Stephan
+15:40
+Okay. Yes.
+
+BC
+Benjumea Canon, Maria Paula
+15:40
+That's why it would be my request.
+
+GS
+Gatzweiler, Stephan
+15:40
+We can do that. Can I see you tomorrow, Maria?
+
+GS
+Gatzweiler, Stephan
+15:40
+Yes. Perfect.
+
+BC
+Benjumea Canon, Maria Paula
+15:40
+Yes. That wouldn't be a problem.
+
+GS
+Gatzweiler, Stephan
+15:40
+Or on Monday. So that's what we'll do on Monday.
+
+GS
+Gatzweiler, Stephan
+15:40
+Sure, no problem. Okay, we'll get it done.
+
+GS
+Gatzweiler, Stephan
+15:40
+We'll do that. Great.
+
+BC
+Benjumea Canon, Maria Paula
+15:40
+So tomorrow, I think I have a few, it's a bit blocked, but otherwise sometime, so at the beginning of next week or tomorrow, if we actually find the time to do that.
+
+GS
+Gatzweiler, Stephan
+15:40
+Perfect. Then thank you very much, and yes, have a nice Thursday and a good rest of the week.
+
+BC
+Benjumea Canon, Maria Paula
+15:40
+Thank you too!
+
+BM
+Bosch Martinez, Francisco
+15:40
+Whatever. Bye.
+

@@ -1,5 +1,6 @@
 # Ignore audio files
 *.mp3
+*.m4a
 
 # Ignore PyCharm / IntelliJ files
 .idea/

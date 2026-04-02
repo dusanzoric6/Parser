@@ -1,3 +1,5 @@
+import time
+
 from gtts import gTTS
 from pydub import AudioSegment
 import io
@@ -17,7 +19,7 @@ def tts_to_audiosegment(text, lang):
 
 def make_bilingual_mp3(
     pairs,
-    output_file="output.mp3",
+    output_file=f"audio_files/output/{time.time()}e2e_PO.mp3",
     pause_seconds=3
 ):
     final_audio = AudioSegment.silent(duration=0)
@@ -40,7 +42,9 @@ def make_bilingual_mp3(
         final_audio += end_pause
 
         print((counter / len(pairs)) * 100)
+        print(f"bilingual audio loading: {counter}/{len(pairs)}")
         counter += 1
+
 
     # Export MP3
     final_audio.export(output_file, format="mp3")

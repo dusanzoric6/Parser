@@ -1,0 +1,1608 @@
+Vollständig geschützt
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:02
+Yeah, sorry, that’s what I wanted to bring up with you guys, because I got the impression that—well, it’s also about the fact that we have someone from the tech platform who might be able to answer questions, even if not.
+
+Gatzweiler, Stephan ist der Übersetzungsmanager und hat die Kontrolle über die allgemeinen Übersetzungseinstellungen.
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:02
+So we’ll hear all the questions and collect them later. We had thought about creating an FAQ or a Q&A section so that we can address all the questions in one place and provide the answers to them in Confluence as well, so that our colleagues who can’t be here today can still access the information and get up to speed afterward.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:02
+But before we dive into the topic, I have a few organizational points to address, specifically for our colleague from Test Spock. The one who’s usually always there—if you could just open the Excel file.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:03
+We have our Excel file with the Kafka topics and the product. Both the topics and the products.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:03
+We now expanded this list to include a few columns. First, the Broker Name column.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:03
+That’s just about—if I’m understanding this correctly—how you can tell from the Kafka topic name that it’s no longer about which guitar. class this topic belongs to, but only by the broker name.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:03
+That means we would need to enter the broker name there. Then it would also be helpful to know whether this is a topic that is on HI or HD, meaning in the legacy environment, or whether it is on the Rewe Tech platform.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:04
+Then further down we have the HI and J columns; now it gets—it’s not complicated—mirroring, yes, where the topic is mirrored, yes or no. Then the question: if it’s mirrored, then that.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:04
+The name of the mirrored topic here, and also the mirrored broker name. And then in column K, there’s Mirrored 2.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:04
+That’s where it comes from the HI legacy platform to the Rewe Tech platform, or
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:04
+belongs, so that's what you'd fill in here as well. Do you have any questions about the new columns?
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:04
+So, perhaps some background on that, so we can proceed with the Dataflow test, which we also use at Büroburg, in line with these updates. that you’ve made.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:05
+And that should then be done according to the best of our knowledge and belief to reflect this. What kind of data flow and for the platforms and instances is crucial so that we can all then run on this, on this virtualized environment, and address the questions that may arise.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:05
+so that we can then manage the environments properly and be ready for the execution that we’ll then carry out at the given time. That is the background.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:05
+Exactly, that would be a task to be completed by next Thursday. Mustafa, that’s next Thursday—she’ll be on vacation.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:05
+But Radika will take over our weekly meeting. And then we’ll go over that Excel file with you again; so that would be one of the topics for next Thursday regarding the test boxes, first and foremost.
+
+BD
+Behnke, David
+15:06
+The question is maybe a little silly, but who fills out these columns?
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:06
+That's what they do. Those who are either topic owners or in the Consumer Product column—one of the two.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:06
+So
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:06
+Let's take AMD, for example—it's not going to be an OS. No store ordering topic.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:06
+Has nothing to do with it. So everyone fills out the topics where they primarily, where they are the owner; I sometimes go in and out, and secondarily, but if I’m a consumer, then I can, in that respect, also provide my input.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:06
+But primarily, it will be the topic owners who fill these out.
+
+BD
+Behnke, David
+15:06
+Thank you.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:06
+Is there any further clarification needed on this, or do you have any other questions or comments? There was one more hand from Francisco.
+
+BM
+Bosch Martinez, Francisco
+15:07
+Where can we find the file?
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:07
+Can we go back to Teams? We do have our Teams channel, after all.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:07
+And on Teams
+
+BM
+Bosch Martinez, Francisco
+15:07
+Yes, I'm here
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:07
+Go to the channel, then under "Shared," under "Tafkatropics." And there, right at the bottom, Kafkatropics, Excel URL.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:07
+Don't let the URL throw you off. Tafkatropics, Excel—that’s where you’ll find the file.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:07
+And in the folders, I had already shown you last week, you’ll find the examples for the content. Regarding the attributes.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:07
+For the JSON files. Just so you can see what’s actually being forwarded via Kafka-Tropics in terms of content and processed.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:07
+Exactly. Okay, good.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:07
+One more point from me in this Excel file.
+
+BM
+Bosch Martinez, Francisco
+15:07
+Thank you.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:08
+The one highlighted in yellow, where the domain names are still listed, for example, LSB. That’s a request from us regarding the site; we want the product team to create documentation here, and instead of LSP, please enter the product name here.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:08
+Exactly. If you have any questions, please contact us at Radikamuster in Iceland next week, and the week after that we’ll be back.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:08
+Exactly. And in the meantime, please just let me know if you have any questions.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:08
+You don’t have to wait until Thursday. Right, then let’s move on to the next topics.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:08
+Right, then I’d like to turn it over to Stefan Wiese. Is he ready?
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:08
+Yes, he’s already here—Stefan is here, and Thomas is here too. Welcome, Thomas. You had us here today for a deep dive on the tech platform and the terminology.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:09
+I’d like to hand it over to Stefan now. He has two or three slides—maybe even four—prepared.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:09
+And then what comes next in terms of the tech platform, we actually have a few questions to ask. So here we have the representative and the Soldan today.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:09
+But as I said, questions and answers will be noted down, and we’ll come back to them later in the meeting. For those who aren’t here today.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:09
+I’ll stay on so you can continue to participate. At this point, even if there are still questions today that haven’t been asked yet, they’ll be addressed later in the Teams, so feel free to ask them here in this channel, and we’ll of course try to find the answers together.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:09
+Okay, then. Stefan, I’ll hand it over to you.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:09
+The stage is yours.
+
+WS
+Wiese, Stephan
+15:10
+Hi, everyone. Anyone who doesn't know me yet, I'm Stefan.
+
+WS
+Wiese, Stephan
+15:10
+I'm also in the QEM department, working alongside Mustafa and Stefan, among others. And maybe you’ve already come across it or had it introduced to you—we have a “Testing at Neo” concept together with our colleague from PwC and other colleagues, and it covers a very wide range of aspects.
+
+WS
+Wiese, Stephan
+15:10
+And today I’m going to focus on a specific part of it, which also relates to the topic we’ll be covering later in the Deep Dive. Namely, I’d like to discuss the terminology “stage” and “environment.”
+
+WS
+Wiese, Stephan
+15:10
+Let’s take a closer look at that. In principle, the situation I’m about to describe in a bit more detail is exactly the same as what’s shown in the slides.
+
+WS
+Wiese, Stephan
+15:10
+From the Testing-Gate-Neo concept. However, since there is a lot of information condensed into a single diagram.
+
+WS
+Wiese, Stephan
+15:10
+Here is a slightly expanded version with a bit more context provided. Basically, this entire Testing-Gate-Neo approach works with quality gates that are established early in the process and also incorporate lessons learned from production.
+
+WS
+Wiese, Stephan
+15:11
+But if you look at a specific software artifact, then there are two quality gates in particular that play a role. Quality gates that apply must be passed by an artifact in order for it to reach production.
+
+WS
+Wiese, Stephan
+15:11
+This image on the right illustrates that schematically, showing where the quality gates are located. Below are the product-specific components.
+
+WS
+Wiese, Stephan
+15:11
+Then there is quality assurance across the entire process, and then it moves into production, where everyone works together to create value. And it is precisely this line of thinking that led us to consider how we could apply the concept of “stage,” since it is interpreted very differently here.
+
+WS
+Wiese, Stephan
+15:11
+Defined and also contextualized in relation to the other term, “Environment.” We then said, okay, let’s, as I said, smooth that out a bit and said that if you take a moment to imagine what a quality gate is for us, then they are criteria that must be met in order to move on to the next stage.
+
+WS
+Wiese, Stephan
+15:11
+So, in principle, every software artifact goes through this process. Three stages.
+
+WS
+Wiese, Stephan
+15:12
+Then there’s this three-stage structure coming into play again, which is found in various guidelines and such, which some people just refer to as stages or environments, which then also leads to a bit of confusion. And we now have defined it this way for the context in Neo, so that we refer to these three stages.
+
+WS
+Wiese, Stephan
+15:12
+There are simply certain test bundles. Where test goals must be achieved so that with them, with the results, a quality gate can be passed.
+
+WS
+Wiese, Stephan
+15:12
+that's what it says in this case, for example, that there is an application stage where there's quite a bit of product-specific work, but where there's also interaction with various neighboring systems, interfaces, and the like, and where certain results are collected and quality is assessed so that the quality gate can actually be passed to move on to a process stage where there is no longer a single... transmission is no longer the focus with its neighbors, where in fact, for the first time, the overall process is examined, which may also span clusters, not just products, where then, if it has actually been determined that yes, we have met our test goals, and everything is green so far, the next quality gate can be passed, and then actually goes into production, which we commonly refer to as production, but which we then call the Value Stage.
+
+WS
+Wiese, Stephan
+15:13
+That means we would use the term “stage” in this way as a bundle of test goals and then also address redundancies in the wording to avoid them, and then also something that’s more on the developer side, which is then viewed as a space where things happen, we’d call the “application stage,” and then the “process stage,” and ultimately, value is generated. At the Value Stage.
+
+WS
+Wiese, Stephan
+15:13
+Why does such a definition through the term help us, with the term, or for the term “stage”? Because we then have a bit more flexibility in determining what actually constitutes an environment.
+
+WS
+Wiese, Stephan
+15:13
+If you look at it that way, the metal or the virtual metal. Because when you say a stage is a bundle and you have to achieve goals, it’s clear to every team.
+
+WS
+Wiese, Stephan
+15:14
+The necessary metal to use or provide for that. And that’s why we’re separating it this way and saying that an environment is simply what is used to provide this evidence, to achieve these test goals, and to demonstrate quality.
+
+WS
+Wiese, Stephan
+15:14
+And that can certainly be the case where it’s a microservice in a team that’s running in a pipeline—then the issue is already resolved. In principle, this is also in line with the GRC guidelines, as it is an environment where evidence is provided.
+
+WS
+Wiese, Stephan
+15:14
+Then you could have a Quality G2 run through it as well. Elsewhere, where one might, for example, in the BAM environment, still have a monolith, a rather heavy battleship, one needs for various topics that one wishes to cover, different environments as well.
+
+WS
+Wiese, Stephan
+15:14
+In that case, you might have two, three, or four, but it fits into the big picture, and what we often heard in feedback was that people kept saying, “Oh, three-track system.” But I need more for myself, or I need less.”
+
+WS
+Wiese, Stephan
+15:14
+Some were happy that they had to do less, while others were horrified that they
+
+WS
+Wiese, Stephan
+15:15
+had to build. In the end, we’ll get by with these two definitions to move closer to a risk-based approach, because that’s exactly what we’re building and using at the environment level—which is exactly what’s needed.
+
+WS
+Wiese, Stephan
+15:15
+And when you consider that such an environment also guides you through various characteristics. Such as software versions that are maintained there, whereas you might have them from a different test project, or permissions, or test data in particular.
+
+WS
+Wiese, Stephan
+15:15
+Then it makes sense to separate these environments and use them for different purposes in order to provide evidence. However, it may be the case that this even involves sharing an environment across stages, because you can access it through clients or whatever other means to establish boundaries precisely in these areas, so that on the same—let’s call it an environment—you can still work on different stages.
+
+WS
+Wiese, Stephan
+15:15
+Yes. So, to cut a long story short.
+
+WS
+Wiese, Stephan
+15:16
+A stage is more like a bundle, what do you want to achieve as a goal? And an environment is, for us, where it actually takes place.
+
+WS
+Wiese, Stephan
+15:16
+Now there’s another term that comes up particularly in the tech platform context. Or has emerged at all—and that is “quality classes.”
+
+WS
+Wiese, Stephan
+15:16
+And there, too, there was some confusion regarding the terms “stages” and “environments.” If you take a look at it, what does one actually mean by “Quality Classes”? Is it more of a feature set for running cloud-native applications?
+
+WS
+Wiese, Stephan
+15:16
+And these different classes tend to focus on that. What these services do to actually enable operations.
+
+WS
+Wiese, Stephan
+15:16
+What their scope is. In which segment they operate.
+
+WS
+Wiese, Stephan
+15:16
+How permeable they should be across segments. And then it actually starts to branch out into various environments or stages.
+
+WS
+Wiese, Stephan
+15:16
+But it’s not a one-to-one mapping at that point. It’s more of a guide, precisely because the tech platform isn’t designed for the product teams to operate environments.
+
+WS
+Wiese, Stephan
+15:17
+It will, as I understand it, provide support to make it easier on such a platform. We have a question here.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:17
+Please.
+
+ZD
+Zoric Dusan
+15:17
+Sorry. 15 seconds late because it's being translated there.
+
+ZD
+Zoric Dusan
+15:17
+Can you please give us some examples so we can understand the difference between environment and stage? I'm a little confused.
+
+WS
+Wiese, Stephan
+15:17
+So the application stage, ich kann
+
+WS
+Wiese, Stephan
+15:17
+Back in German. The Application Stage is essentially the representation of the content of Quality Gate 2.
+
+WS
+Wiese, Stephan
+15:17
+It defines everything that needs to be delivered. This also includes quality criteria that must be demonstrated in the form of metrics or similar measures.
+
+WS
+Wiese, Stephan
+15:17
+And the Environment helps us stay precisely focused on that. With a specific scope, namely meeting precisely these criteria.
+
+WS
+Wiese, Stephan
+15:18
+To be able to take action, to run tests on it, to organize tests, and so on. And is therefore more of the physical aspect.
+
+WS
+Wiese, Stephan
+15:18
+The part you can actually touch. A stage is more of a logical concept from our perspective.
+
+WS
+Wiese, Stephan
+15:18
+So the term “Application Stage” is, for us, a fixed name, and the one that is now an Environment on the Application Stage could be the Dev Environment or something similar.
+
+WS
+Wiese, Stephan
+15:18
+Is that a good enough example?
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:18
+Did that answer your question?
+
+ZD
+Zoric Dusan
+15:18
+Yes. Hey, I'm reading.
+
+ZD
+Zoric Dusan
+15:18
+Sorry. Yes.
+
+ZD
+Zoric Dusan
+15:18
+Yes, it does. Thank you.
+
+WS
+Wiese, Stephan
+15:18
+Okay, then let's get back to the quality classes. That’s just something that’s important for us to understand right off the bat—that it doesn’t apply to everything that’s currently coming from our end-to-end perspective, especially because the legacy part isn’t in the scope of the Rewe Tech platform for cloud-native applications that can run on it.
+
+WS
+Wiese, Stephan
+15:19
+These are now more like categories of support with a certain scope, and then it may well be that on an application stage. Where development is very much at the forefront, Development Class features are used, but perhaps in a different environment that is operated there, they are actually already using Test Class features, because there might be a need to test a neighboring application that is in a different segment, i.e., with a different neighboring application that is in a different segment.
+
+WS
+Wiese, Stephan
+15:19
+In that respect, our goal is to understand that these are not synonyms—these three things—but that they are truly different artifacts; that’s the right word, but they represent different scenarios. And in this context, it’s important to note once again that the Rewe Tech platform does not operate any environments.
+
+WS
+Wiese, Stephan
+15:20
+Each product must do this on its own. Quality classes do not represent stages or environments.
+
+WS
+Wiese, Stephan
+15:20
+And they simply have to be implemented in a cloud-native way so that they can utilize the full feature set. With the exception that perhaps one or the other might also be used by other applications, that’s simply not the focus.
+
+WS
+Wiese, Stephan
+15:20
+And so it’s more about stages and environments being something that will apply to everything along the chain or in our Neo program in Neoscope, even across the Transition Architecture Steps. What the tech platform provides is more for a specific tech stack.
+
+WS
+Wiese, Stephan
+15:20
+And contributes to the fact that we have such a staging and environment concept that we can then implement. That’s what I just wanted to mention again before we dive into the details of how this actually looks in practice. Thomas.
+
+QT
+Quadflieg, Thomas
+15:20
+Yes, because, well, I don't know, when it comes to the presentation, you might think that we're right in the middle of this right-hand section, that is, Product B. The tech platform, as it stands today, is actually built in such a way that you have a dev cluster.
+
+QT
+Quadflieg, Thomas
+15:21
+An Int cluster. And a production cluster.
+
+QT
+Quadflieg, Thomas
+15:21
+And ours, I mean the deployment paths and the flow that you have out of the box with this platform. It also doesn’t provide for you to have any number of sub-environments in there; that’s actually the current state of affairs.
+
+QT
+Quadflieg, Thomas
+15:21
+I’m talking about what’s there. Do we have a mapping?
+
+QT
+Quadflieg, Thomas
+15:21
+A pretty clear connection between exactly these three levels. That means you take your application to Dev, develop there, and can run your local tests there, then move on to an integration stage for what’s known here as the process stage—that is, cross-system tests—and then it’s production.
+
+QT
+Quadflieg, Thomas
+15:22
+That’s relative, so conceptually speaking, that’s how it’s currently planned. That doesn’t mean it’s set in stone and we’re stuck with this forever.
+
+QT
+Quadflieg, Thomas
+15:22
+But we have to be a little careful not to imply, just because we’re talking about it here in the context of end-to-end testing. Cross-Classical Store Ordering, which is planned for today, allows for any number of virtual environments.
+
+QT
+Quadflieg, Thomas
+15:22
+There are ways and means, but that’s not the default right now. Sebastian.
+
+QT
+Quadflieg, Thomas
+15:22
+I’m sure you’d like to hear a bit more from an expert perspective.
+
+GS
+Glahn, Sebastian
+15:22
+Yeah, I have too... No, I have a question first. Namely, it was just mentioned that the tech platform doesn't provide any environments.
+
+GS
+Glahn, Sebastian
+15:23
+That has to be done by the teams. Can you explain that a little more clearly?
+
+GS
+Glahn, Sebastian
+15:23
+Because I think I have environments set up differently than what you described in your presentation earlier.
+
+WS
+Wiese, Stephan
+15:23
+So it won't be anyone providing central environments. Instead, there might be services that help you access certain artifacts for setting up an environment more easily.
+
+WS
+Wiese, Stephan
+15:23
+But the responsibility for operating the environment... As far as I know, that always lies with the product team whose applications run in it.
+
+GS
+Glahn, Sebastian
+15:23
+Okay, so Environment is specific to the product application.
+
+WS
+Wiese, Stephan
+15:23
+And now, not an architect, but that’s how I’d see it, yes.
+
+GS
+Glahn, Sebastian
+15:23
+Okay, I guess we'll take care of that. Thanks.
+
+WS
+Wiese, Stephan
+15:23
+Just what we want to avoid is that there have been instances in recent months where certain statements were made along the lines of, "Oh, then the tech platform will provide us with the environment," and then the only thing missing is the test data, and then we can start testing. It’s important to understand that this isn’t centrally managed by a platform or a central team, but rather by each product team, which is responsible for providing the appropriate—let’s say—necessary testing environments for their game and their validation themselves, and for operating and using them for testing purposes.
+
+WS
+Wiese, Stephan
+15:24
+And tech platforms offer assistance. That might be easy to do.
+
+WS
+Wiese, Stephan
+15:24
+as I understand it.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:24
+I I would like to start by asking my question.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:24
+I’d like to get it off my chest, specifically about... Which channel can the products be listed on the tech platforms?
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:24
+If you need help or have questions about your application on the tech platform, and what the lead time is?
+
+QT
+Quadflieg, Thomas
+15:25
+So, do you know the standard onboarding processes? And support channels?
+
+QT
+Quadflieg, Thomas
+15:25
+So who uses the tech platform here? Raise your hand.
+
+QT
+Quadflieg, Thomas
+15:25
+No one?
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:25
+Alexander.
+
+QT
+Quadflieg, Thomas
+15:25
+Okay. So.
+
+HA
+Honsek Alexander
+15:25
+We have our applications in the development environment. So I would say we use the tech platform already.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:25
+So apparently just ALP.
+
+QT
+Quadflieg, Thomas
+15:25
+Okay, so I'm not exactly sure what I'm installing.
+
+TT
+Tressel, Tim
+15:25
+Can I just ask a quick question to make sure I understand? Just a quick question to make sure I understand.
+
+TT
+Tressel, Tim
+15:25
+So is this Argo the new shared Neo platform? After all, there are also temporary platforms, such as the PSL platform.
+
+TT
+Tressel, Tim
+15:26
+Which one do you have now?
+
+TT
+Tressel, Tim
+15:26
+Okay, so I'm just texting someone right now, asking them to send me something. Um, yeah.
+
+TT
+Tressel, Tim
+15:26
+But the question still remains. Can you answer that question?
+
+QT
+Quadflieg, Thomas
+15:26
+So. We’re here now as rappers—that is, me, David, Sebastian Glan, and Soltan—as representatives of the Rewe Tech platform.
+
+QT
+Quadflieg, Thomas
+15:26
+This is the new global platform that, in the long term, will be the developer platform for Rewe Digital and RIAG. So there are interim platforms, some of which are based on the existing platforms, on the legacy platforms in HI or HD, respectively.
+
+TT
+Tressel, Tim
+15:26
+Exactly, yes.
+
+QT
+Quadflieg, Thomas
+15:26
+So. We are currently representing the Rewe Tech platform.
+
+QT
+Quadflieg, Thomas
+15:27
+The one in the Rewe Tech Platform is, of course, not developed by us—it’s not an application we’ve installed, but rather a platform; it’s a service.
+
+TT
+Tressel, Tim
+15:27
+No, no, exactly. I just wanted to know, to be able to answer the question—you don’t mean that one interim platform, no, we’re on this interim platform, we’re not on the Rewe Tech platform.
+
+QT
+Quadflieg, Thomas
+15:27
+Yeah, so if you say PSL, then you're probably in an environment that's run by CDP or CP.
+
+TT
+Tressel, Tim
+15:27
+Ultimately, I wanted to answer now, I didn’t raise my hand
+
+QT
+Quadflieg, Thomas
+15:27
+So, as for PSL time, or yeah.
+
+TT
+Tressel, Tim
+15:27
+Exactly, yes.
+
+QT
+Quadflieg, Thomas
+15:27
+Yes.
+
+TT
+Tressel, Tim
+15:27
+Okay, then I haven't figured that out yet. Good, then that’s settled.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:27
+One more time, just to make sure I understand: if I'm talking about an AD instance or an ARD platform—legacy—is this the platform that Tim mentioned, or is it something separate? Or are we talking about this HD platform in that case, or the HI platform? So is there now an additional platform, or is it this PSL—what you mentioned, Thomas—these interim ones?
+
+QT
+Quadflieg, Thomas
+15:28
+Well, that's not, well, as far as I know, but then again, I'm sure Tim knows better—it's that PSL season. An environment within the German CDPC platform.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:28
+Okay. Okay, okay.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:28
+Danke.
+
+QT
+Quadflieg, Thomas
+15:28
+So, basically, yes.
+
+QT
+Quadflieg, Thomas
+15:28
+Yes. So we’re talking about platform accessories.
+
+QT
+Quadflieg, Thomas
+15:28
+That means it won’t be just some kind of request to a platform team that gets sent and then installed by that platform team.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:28
+Hmm?
+
+QT
+Quadflieg, Thomas
+15:28
+Instead, it’s actually already there and can be used directly as a service. If you haven’t joined the platform yet and are planning to sign up, then we also have an offer that you can find on our website.
+
+QT
+Quadflieg, Thomas
+15:29
+Assisted Onboarding. We’ll guide you through the process.
+
+QT
+Quadflieg, Thomas
+15:29
+So, kind of the first steps with you on the platform, companies. And for all your support questions, we have channels where you can reach out to us.
+
+QT
+Quadflieg, Thomas
+15:29
+There, you’ll usually get a response within a few minutes or hours, and most of the time, the issues are resolved right then and there. So those are the services we offer.
+
+QT
+Quadflieg, Thomas
+15:29
+What if... Then, as I understand it, it’s more about the topic here—the question.
+
+QT
+Quadflieg, Thomas
+15:29
+So, if we look at this concept... Do we already have everything we need to implement this?
+
+QT
+Quadflieg, Thomas
+15:29
+Is anything missing? I’m not entirely sure yet.
+
+QT
+Quadflieg, Thomas
+15:29
+So, at the end of the day, we’re setting up a platform not because we say we want World Ustream teams or our engineering organizations to tell them how to develop software or how to test it. That’s not our decision to make.
+
+QT
+Quadflieg, Thomas
+15:30
+But we’re helping out in one area with establishing the corporate standard. And for us, it’s sometimes very hard to understand what the common standard actually is.
+
+QT
+Quadflieg, Thomas
+15:30
+So if you look at the teams, you get very different answers. Some say, “Actually, we only need two or three stages.”
+
+QT
+Quadflieg, Thomas
+15:30
+Others say, “We only need one pre-production stage here, and everything else has to be built around that.” Others say, “We need complete freedom.”
+
+QT
+Quadflieg, Thomas
+15:30
+So there are a lot of options. In the platform, however, we will.
+
+QT
+Quadflieg, Thomas
+15:30
+But if we have to map out a single standard, after we’ve done this here in the company. Yes, so at Rewe Digital and RIAG, we’ll be developing software in the future.
+
+QT
+Quadflieg, Thomas
+15:30
+And that’s something that, in my view, needs to be resolved—we need clarity on this.
+
+QT
+Quadflieg, Thomas
+15:31
+where we will then also need company-wide commitment.
+
+KT
+Kröner, Tim
+15:31
+in addition to what you just said about the various Teams channels, where people can reach out to you, etc. Do you have a list somewhere showing when to contact which cluster?
+
+KT
+Kröner, Tim
+15:31
+Because we’re having trouble figuring out if we’re on it—that’s the question we’re asking ourselves right now, since the infrastructure for it isn’t available yet. So we’d like to get on the Rewe Tech platform.
+
+KT
+Kröner, Tim
+15:31
+But can they do it as an LSP yet, because it’s not available? And that’s what’s actually holding us back right now.
+
+KT
+Kröner, Tim
+15:31
+And we’re now in a situation where we need special workarounds for everything, which is just kind of a clunky way to go about it, but it’s also something we’d like to discuss with you in this context. But is there a timeline for when which cluster will go live where, so we can get started?
+
+QT
+Quadflieg, Thomas
+15:31
+So we're not moving up a grade, probably. What we... Yeah, yeah.
+
+KT
+Kröner, Tim
+15:32
+Yeah, well, in layman's terms.
+
+QT
+Quadflieg, Thomas
+15:32
+So what we're currently doing in the latest review. I don't know if you were there.
+
+QT
+Quadflieg, Thomas
+15:32
+But the fact that we’re adding Cross-Cluster Gold Store Ordering to our focus right now, specifically on one segment. And that is the stationary retail segment, because most applications come from exactly this domain, knowing full well that there are also teams from the CRS domain.
+
+QT
+Quadflieg, Thomas
+15:32
+Teams from, I believe, LSP and PSL, which also contribute to this goal.
+
+KT
+Kröner, Tim
+15:32
+Exactly. And the store retail, exactly that.
+
+KT
+Kröner, Tim
+15:32
+That’s just what I want to touch on very briefly, because that’s exactly the problem.
+
+QT
+Quadflieg, Thomas
+15:32
+Very clear guidance.
+
+KT
+Kröner, Tim
+15:32
+Store retail is now being prioritized. They get it all from the LSP, which they use for the order proposal.
+
+KT
+Kröner, Tim
+15:32
+We are allowed to use the legacy environment for Store Retail to write to the RTP, but officially we are not allowed to get the data back from them, which is just what happens afterward, though, after they’ve done their magic there. Now, for the CCG, an exception is being made, because otherwise the whole project would actually have fallen through.
+
+KT
+Kröner, Tim
+15:33
+But the fact is that this only applies to one product or to a domain like Retail, as is currently the case, is just a bit too limited in its thinking at the moment, because a lot of things are tied up with it. After all, many products communicate with each other.
+
+QT
+Quadflieg, Thomas
+15:33
+Okay. You didn't let me finish; if you had, you would have heard in the second part.
+
+QT
+Quadflieg, Thomas
+15:33
+It was just a technical issue with this segment. All teams, even if they’re from other fields.
+
+QT
+Quadflieg, Thomas
+15:33
+Those in the context of this cross-cluster gold store ordering have an application to go live, should and can use this segment. That’s the only downside.
+
+QT
+Quadflieg, Thomas
+15:33
+For these teams, it consists of the fact that when we then in the future include all other domains through segments—and we’ll probably do that all at once— Our problem right now is that we don’t have the foundation to build something solid and robust on top of that.
+
+QT
+Quadflieg, Thomas
+15:34
+So, just like that in Kafka-Mittering, there’s a lot, there are many workarounds, and we can’t or don’t want to scale those either. That’s why the decision right now is to use a single segment to achieve this cross-cluster goal.
+
+QT
+Quadflieg, Thomas
+15:34
+Put everything in there. But if we have this capability, which we’re also working on in parallel right now, then we’ll handle all the other segments.
+
+QT
+Quadflieg, Thomas
+15:34
+That means, for all other domains, there will be something there as well. Then you would have to and should put this into the LSP segment in your case, with the downside that, of course, well, that would mean additional effort for you, yes, but it can’t be avoided.
+
+QT
+Quadflieg, Thomas
+15:34
+With that, however, we have enabled the fact that those who now need it quickly have an option. To serve the others on the platform.
+
+KT
+Kröner, Tim
+15:35
+May I ask, how long has that decision been in place—that you can use "dann" in the retail segment?
+
+QT
+Quadflieg, Thomas
+15:35
+That's what we decided last week or the week before, and we covered it in the review again on Wednesday.
+
+QT
+Quadflieg, Thomas
+15:35
+I'd be happy to do that, but the text that goes with the slides is usually interesting too. The context is
+
+KT
+Kröner, Tim
+15:35
+Yes, it's possible that it might also be caused by our connection or something like that, because, well, a little over a week ago, the Thursday before last, I spoke with you. Back then it was still a completely, completely different direction.
+
+KT
+Kröner, Tim
+15:35
+But that’s okay.
+
+QT
+Quadflieg, Thomas
+15:35
+Exactly. Well, I know the segments were the subject of some heated debate and went in all directions, and at some point we asked ourselves, what’s realistic, what’s the thing that provides clarity, and then we came to this decision and announced it accordingly.
+
+KT
+Kröner, Tim
+15:35
+Okay. I'll take that, then. Thanks.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:36
+Alexander.
+
+HA
+Honsek Alexander
+15:36
+To be honest, I'm missing something between the DEF environment and the Pre-Brot environment. Because in the DEF environment, pretty much anything can be deployed.
+
+HA
+Honsek Alexander
+15:36
+There were feature branches deployed, etc. You don’t really know what’s actually running on it.
+
+HA
+Honsek Alexander
+15:36
+And that’s why I’d actually really like to have another environment in between—let’s call it “Test,” for example. Where I can practically test my application in that state by then deploying it to pre-prod.
+
+HA
+Honsek Alexander
+15:36
+That is to say, if, so to speak, the main branch in the dev environment has been successfully tested, then it is moved to the next stage. To the test environment.
+
+HA
+Honsek Alexander
+15:36
+Only the main branch may be deployed there. And then I could also run automated tests against it there before it moves on to pre-production.
+
+HA
+Honsek Alexander
+15:37
+Is that realistic?
+
+GS
+Glahn, Sebastian
+15:37
+In a nutshell, the question is: what does that mean to you—the difference between test and pre-production?
+
+HA
+Honsek Alexander
+15:37
+Well, the tests aren't available yet. So that would be, so to speak, the intermediate step for me that I’m missing.
+
+GS
+Glahn, Sebastian
+15:37
+Then it's right away
+
+HA
+Honsek Alexander
+15:37
+We can do it another way, too—call it staging, for example.
+
+GS
+Glahn, Sebastian
+15:37
+I mean, what would be best for you, since you said you're allowed to use only Brainwatches in tests.
+
+HA
+Honsek Alexander
+15:37
+But
+
+HA
+Honsek Alexander
+15:37
+Yes.
+
+GS
+Glahn, Sebastian
+15:37
+Then tests are run there, and then it goes to Preport. But what’s the difference for you between tests and Preport?
+
+GS
+Glahn, Sebastian
+15:37
+Where is the difference? Does that mean I just have the same thing twice, or is there a difference between the environments?
+
+HA
+Honsek Alexander
+15:37
+Yes.
+
+HA
+Honsek Alexander
+15:37
+They differ in that, in the pre-brood, the other modules are also included. And in the test environment, that would be, so to speak, for my product in an ideal scenario, that I can test my product thoroughly before it then goes into the pre-release with the other products.
+
+GS
+Glahn, Sebastian
+15:38
+remains, then you'll just feel it in your... You'll be silenced, if you want to put it that way.
+
+BD
+Behnke, David
+15:38
+I haven't said anything yet. I was just thinking, maybe someone else would like to chime in.
+
+BD
+Behnke, David
+15:38
+I don't know if that's the right time to talk about it.
+
+HA
+Honsek Alexander
+15:38
+Okay.
+
+BD
+Behnke, David
+15:38
+I’d like to talk about this fourth stage. Especially where it has been a problem in the past, how much of it, and how often it’s used, what kind of issues might have existed before.
+
+BD
+Behnke, David
+15:38
+But I don’t know if this is the right meeting for that. Shouldn’t it be?
+
+BD
+Behnke, David
+15:38
+Give me a quick heads-up, and I’d be happy to talk to you about it.
+
+HA
+Honsek Alexander
+15:38
+Yes. Sure, let’s schedule a consultation.
+
+HA
+Honsek Alexander
+15:38
+So that will work out great for me, too. Thank you.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:38
+But Here we go again with the terms that are being thrown around.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:38
+David, you’re talking about Stage, the one Alexander already has mentioned. I had learned that there are three stages.
+
+BD
+Behnke, David
+15:38
+Let's say one
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:39
+But more than three environments are possible.
+
+BD
+Behnke, David
+15:39
+Exactly, that's what this quality assurance environment is all about, or whatever you want to call it... Well, I get the idea in principle.
+
+BD
+Behnke, David
+15:39
+I know what you mean, but I'd like to focus more on the problem itself.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:39
+Okay. Lucian, please raise a question.
+
+ZD
+Zoric Dusan
+15:39
+I just wanted Alex and view—it's the same one I brought up maybe two months ago—to have this other environment where we have all our products connected. So to have a dev environment where everything can be deployed and a test environment where we can test our product and have an integration environment—some kind of integration environment where all modules are connected—and then production.
+
+ZD
+Zoric Dusan
+15:39
+So right now we have three, and we’re kind of—I also think we’re missing this fourth one.
+
+BD
+Behnke, David
+15:40
+So You would be another candidate that would be interested in such a meeting and such an exchange about this environment stage however you want to call it.
+
+ZD
+Zoric Dusan
+15:40
+That's correct. Yes, we can define the terminology once and for all, and then we’ll all know what we’re talking about.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:40
+Okay. So do you know that Alex, you worked solid out with David, right?
+
+HA
+Honsek Alexander
+15:40
+Yes, we'll meet again separately to discuss this.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:40
+Effect, super. But let's go back to the context of the correct terminology.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:40
+So environments—there can be multiple ones. There are three instances or three stages.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:40
+That we don’t have to go through this whole discussion all over again. Just as it appears on the slides.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:40
+That would be important to me, because otherwise we’d have to start all over again and kind of get back into the terminology until we’re back on the same page regarding our different understandings. So I’d be happy if we could move forward with this after the meeting here, with all the terminology sorted out.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:41
+That’s what I’m aiming for, so that we can then say, “Are the terms clear enough that we can always use the right one when we’re talking about it?” Because otherwise, exactly what just happened will happen again. And now one person means something different and the other understands it differently, and already we’re talking about apples and oranges.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:41
+Here you go, you wanted to add something else. Right, I just wanted to say that again.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:41
+To Thomas, when we ask the question, we’ve just seen this with stages, quality classes, and environments. Basically, that means I’ve just understood the theory behind the Rewe Tech platform, which actually has a three-tier structure even at the environment level.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:42
+As things stand now, but if there are reasons, it could also, so to speak, still be changed, or if we justify it properly.
+
+QT
+Quadflieg, Thomas
+15:42
+Yes. So that’s exactly it.
+
+QT
+Quadflieg, Thomas
+15:42
+We don’t want to dictate, as in this company, how software is developed. But we need to understand.
+
+QT
+Quadflieg, Thomas
+15:42
+What is the common denominator? That’s the big question that needs to be answered.
+
+QT
+Quadflieg, Thomas
+15:42
+And after that, we would base our approach on that. We need to understand what the actual need is.
+
+QT
+Quadflieg, Thomas
+15:42
+And we’re listening here. Here are the needs.
+
+QT
+Quadflieg, Thomas
+15:42
+I believe. If we invite the teams, then every team will also have different needs today.
+
+QT
+Quadflieg, Thomas
+15:42
+And that’s just
+
+QT
+Quadflieg, Thomas
+15:43
+Generally speaking, our people certainly have their own opinions as well. But from a platform perspective, I don’t think we’re the ones making those decisions; rather, we want to cover what the standard should be here.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:43
+Hmm, I see.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:43
+Yes, thank you.
+
+QT
+Quadflieg, Thomas
+15:43
+So. How many opportunities do we give individual teams to say, “Well, we could also go and say there’s Tech Platform 1.”
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:43
+Yes. Yeah.
+
+QT
+Quadflieg, Thomas
+15:43
+And from that, you can choose as many instances as you want and set everything up yourself.” If you have one stage, two, three, or a hundred, go ahead and do whatever you want.”
+
+QT
+Quadflieg, Thomas
+15:44
+That’s what I mean by flexibility and variability. On the other hand, we can also be a bit more hands-on with streamlining the whole thing, perhaps focusing more on aligning processes, when we say we want it this way and we always work exactly like this, so that we can say we have exactly three or exactly four, or only allow... only these specific variations.
+
+QT
+Quadflieg, Thomas
+15:44
+Right.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:44
+Mm-hmm.
+
+QT
+Quadflieg, Thomas
+15:44
+That in all its forms, with more or less effort. Whether that’s in a cross-cluster gold store or Ring context, I dare to doubt it.
+
+QT
+Quadflieg, Thomas
+15:44
+So this flexibility means a great deal at the foundational level as well. What needs to happen for something like this to be possible.
+
+QT
+Quadflieg, Thomas
+15:44
+But we can certainly discuss that. But we need answers, and I don’t want us to end up saying in a meeting, “Okay, there are three people, and the majority wanted it this way, so that’s why we did it this way,” and then next week we’ll come back to it somehow in a different cross-cluster goal or from a different cluster or outside of Neo-Teams and say, “But we want it completely different now,” and that’s not how we work.
+
+QT
+Quadflieg, Thomas
+15:45
+So that’s a question that needs to be addressed company-wide; we’re going digital, and React actually has the answer.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:45
+Ja. Okay, yeah, that's how standardized you want to be while still maintaining flexibility.
+
+QT
+Quadflieg, Thomas
+15:45
+So, with this platform, it's global.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:45
+Which is necessary. So within this framework, we still need to find out how we, how the Revitec platform, will position itself globally.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:45
+Okay. Got it.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:45
+Okay. We’re now also through the regular season.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:45
+Is there anything else you’d like to ask or comment on?
+
+QT
+Quadflieg, Thomas
+15:45
+For me, the question would be: Who decides that? Is it this group?
+
+QT
+Quadflieg, Thomas
+15:45
+Is it some kind of Neostream? Does this come from G-Boss?
+
+QT
+Quadflieg, Thomas
+15:46
+Is it the architecture? Is it Engineering?
+
+QT
+Quadflieg, Thomas
+15:46
+Who decides that?
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:46
+what do you mean by that, Thomas?
+
+QT
+Quadflieg, Thomas
+15:46
+How do we want to work? How do you deselect environments?
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:46
+So, the surroundings, which are very, very, very messy.
+
+QT
+Quadflieg, Thomas
+15:46
+How much flexibility should there be? And how should that work be reflected in a platform?
+
+QT
+Quadflieg, Thomas
+15:46
+What does software development look like in such a software quality assurance workflow?
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:46
+So, we have the quality gates, but those are the gates that have to be passed when we're talking about moving from one class to another or from one stage to another. But the question was, who decides whether there’s now a fifth environment, right?
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:46
+Exactly, that was your fifth or sixth—how flexible is that, in terms of maybe doing it on a team-by-team basis depending on needs? That would be absolute flexibility. Because in a standardized format, and where exactly is the request, and who decides, above all, which strategy is preferred.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:47
+That’s how I understand it, Thomas. And that’s a tough question—I mean, I wouldn’t know who decides that.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:47
+I’ll give you the easy answer.
+
+QT
+Quadflieg, Thomas
+15:47
+So that's basically the question of implementation. So there’s a concept—what does the actual implementation look like?
+
+BD
+Behnke, David
+15:47
+Thomas, just a quick note—maybe we shouldn't apply this on a global or galactic scale. I would like to schedule the meeting tomorrow with my colleagues and see what the current situation is and what the urgent needs are, and whether there might be alternatives to some kind of fixed, to a fixed environment.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:47
+Yeah, that sounds like a plan. Will you keep us posted after you’ve talked?
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:47
+Yes, I certainly will.
+
+BD
+Behnke, David
+15:47
+Who are we?
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:47
+Come on, at least here we’re called Radikal Fiete Mustafa and me. Or just feel free to invite us to the meeting.
+
+BD
+Behnke, David
+15:48
+best
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:48
+Then we can join in too. Then you’ll have to pick us up.
+
+BD
+Behnke, David
+15:48
+The hard part is probably going to be coming up with a date that works for both of us, one that doesn't somehow end up being five weeks from now. I have a slot available for tomorrow, a slot available for tomorrow.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:48
+Radikal is flexible. We are consultants; we are flexible; everything is fine.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:48
+So just invite them.
+
+BD
+Behnke, David
+15:48
+Okay. Tomorrow at 1:30 p.m. to 2:20 p.m.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:48
+Yeah, great.
+
+BD
+Behnke, David
+15:48
+Then, please, just a quick message in the chat—just say "Hi" or something.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:48
+Then bring the radish. Perfect.
+
+BD
+Behnke, David
+15:48
+Then
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:48
+In the chat, yeah. I'll type it out for you in the chat.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:48
+Okay. No other questions.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:48
+We’ll now hear the questions that were asked today, compiled again with the answers in Conference. Yes, exactly, Conference.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:48
+And then in our Teams channel, we’ll also link to it so everyone can check it out again later. If it’s now in the follow-up, there should still be questions, feel free to ask them in our Teams channel.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:48
+We’ll try to forward them to Stefan or our colleagues on the tech platform.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:49
+Great, thank you so much. It’s a fascinating topic, as I can see.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:49
+We still have about half an hour left to talk about this, but I think that’s really, really, really important and meaningful, especially in the context of today’s larger discussion. I hope you all have a great week next week, yes, please.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:49
+Yes. I was just about to break up with him.
+
+BC
+Benjumea Canon, Maria Paula
+15:49
+Stefan, yes. No, I just wanted to say that we're now on to the next item, so please, we should move on to the next item... Ah, okay. Sorry.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:49
+Is that clear? Okay, then.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:49
+In a nutshell. Take care.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:49
+Bye, everyone. That's it for today.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:49
+Bye.
+
+RA
+Raum-Viko-Koeln-Porz-C3062
+15:49
+Ciao.
+

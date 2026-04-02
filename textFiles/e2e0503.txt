@@ -1,0 +1,1915 @@
+GS
+Gatzweiler, Stephan
+15:02
+Okay, so Deep Blue Voices is up and running so that we, Dujan for you, it's okay, then we switch to German. Radhika.
+
+Gatzweiler, Stephan is the translation manager with control over general translation settings.
+GS
+Gatzweiler, Stephan
+15:02
+I wanted to go through the agenda first, or rather through the minutes of the last work session, because that's more or less our agenda. And that brings us to the point where we move on from Mi Robot, I would then also turn to you and Muster.
+
+RA
+Radhika Ashok (DE)
+15:03
+Yeah.
+
+GS
+Gatzweiler, Stephan
+15:03
+Right now, I'm not sharing anything, but I'll share something briefly, just a moment.
+
+RA
+Radhika Ashok (DE)
+15:03
+Absolutely beautiful.
+
+GS
+Gatzweiler, Stephan
+15:03
+No.
+
+GS
+Gatzweiler, Stephan
+15:03
+No. I'm not sharing yet, but that's about to change.
+
+BC
+Benjumea Canon, Maria Paula
+15:03
+totally steeple voice, so
+
+GS
+Gatzweiler, Stephan
+15:03
+Yes, the movie Voice, of course. So, now.
+
+GS
+Gatzweiler, Stephan
+15:03
+Okay.
+
+BC
+Benjumea Canon, Maria Paula
+15:03
+So the screen is okay.
+
+GS
+Gatzweiler, Stephan
+15:03
+Now. Yes.
+
+GS
+Gatzweiler, Stephan
+15:03
+Now. Now I'm sharing my screen.
+
+GS
+Gatzweiler, Stephan
+15:03
+Okay. Minutes are filed in the usual place in our channel.
+
+GS
+Gatzweiler, Stephan
+15:03
+I was at a loss for words. In our channel, the minutes are filed.
+
+GS
+Gatzweiler, Stephan
+15:03
+Also in English. There.
+
+GS
+Gatzweiler, Stephan
+15:03
+Point one, which we discussed 14 days ago, was risk management in Jira. The risks are, of course, from Exo to Jira.
+
+GS
+Gatzweiler, Stephan
+15:04
+And I don't know, Maria, we were, he had to, I think, at the last weekly meeting, he wasn't there. Did you have it again, did you go back to the POs to ask them to please put all end-to-end relevant risks in Jira, because there were only nine last time.
+
+GS
+Gatzweiler, Stephan
+15:04
+That also struck us as a bit low. So I checked, and there are
+
+BC
+Benjumea Canon, Maria Paula
+15:04
+So yes, we did talk about it, but then we said, at the moment, so at the moment, both deliverables and dependencies, as well as risks, need to be updated, which is a bit difficult when we don't have any information about the roadmap yet. So, because of Renfast.
+
+BC
+Benjumea Canon, Maria Paula
+15:04
+But we had discussed that last week.
+
+GS
+Gatzweiler, Stephan
+15:05
+But just for clarification. I would have done it this way, that now the existing risks.
+
+GS
+Gatzweiler, Stephan
+15:05
+are listed there. be revalidated to see if there are any additional risks, for example, process risks or whatever.
+
+GS
+Gatzweiler, Stephan
+15:05
+Yes, that was our understanding. And you were in favor of that last week.
+
+GS
+Gatzweiler, Stephan
+15:05
+And you said that you can't do that now because of the talks. Can't do that in the roadmap now, and thus the risks, including the process risks, can't be identified?
+
+GS
+Gatzweiler, Stephan
+15:05
+Is that the case in this context, or am I just trying to understand it?
+
+BC
+Benjumea Canon, Maria Paula
+15:05
+I have to remember that.
+
+GS
+Gatzweiler, Stephan
+15:05
+I have nothing to do with Renfass, the litigation risks. They are independent of that.
+
+GS
+Gatzweiler, Stephan
+15:05
+That's why I'm trying to understand it.
+
+BC
+Benjumea Canon, Maria Paula
+15:05
+Yes. Let me think about it for a bit and see if I can remember how it went last week, because there was definitely another question, yes, but what comes next, we're almost done filming, because the process is independent.
+
+GS
+Gatzweiler, Stephan
+15:06
+Yes.
+
+BC
+Benjumea Canon, Maria Paula
+15:06
+But the changes you're making. have to be made are not known.
+
+BC
+Benjumea Canon, Maria Paula
+15:06
+So, as far as I understand from SM, we don't know how much we'll have to change in our system or application, right? So how will RINFAST affect us? That's unknown.
+
+BC
+Benjumea Canon, Maria Paula
+15:06
+So maybe nothing, or maybe something. That was
+
+GS
+Gatzweiler, Stephan
+15:06
+I'll just open it up.
+
+GS
+Gatzweiler, Stephan
+15:06
+The risks? Yes.
+
+GS
+Gatzweiler, Stephan
+15:06
+Or have you got them covered? I'm not in it.
+
+GS
+Gatzweiler, Stephan
+15:07
+That can then, if you don't find anything, I have to lean in quickly. I have them too.
+
+GS
+Gatzweiler, Stephan
+15:07
+Yes. Okay.
+
+GS
+Gatzweiler, Stephan
+15:07
+Should I dial in?
+
+GS
+Gatzweiler, Stephan
+15:07
+Or did you turn that on? Do you have it on?
+
+GS
+Gatzweiler, Stephan
+15:07
+Yes, wonderful. Then share some with me.
+
+GS
+Gatzweiler, Stephan
+15:07
+I hadn't closed it. Here you go.
+
+GS
+Gatzweiler, Stephan
+15:07
+Let's do a quick Jira so the other colleagues know what we're talking about. There, you can see it.
+
+GS
+Gatzweiler, Stephan
+15:07
+Yes, exactly, you can see. A little.
+
+GS
+Gatzweiler, Stephan
+15:07
+Is it bigger? Yes, do make it a little bigger.
+
+GS
+Gatzweiler, Stephan
+15:08
+Exactly, but that's already been filtered out now. Solution version in CCG Store Ordering.
+
+GS
+Gatzweiler, Stephan
+15:08
+And Stefan Wiese also came up with the right comment, that this is not actually a process risk. Instead, these are project risks.
+
+GS
+Gatzweiler, Stephan
+15:08
+But there, Maria, I understood you. Is there nothing more happening since then?
+
+GS
+Gatzweiler, Stephan
+15:08
+Because our goal was actually to identify the risks that we encounter in our end-to-end test and can cover and test.
+
+BC
+Benjumea Canon, Maria Paula
+15:08
+Then we, that is, we will have to take another look at that, because this platform is for project risks in Jira. General project risks.
+
+BC
+Benjumea Canon, Maria Paula
+15:09
+So internal process risks. From end-to-end testing, I don't know what you were thinking, that we could do that in Jira, so we can do it in Jira, but then we'll have to see how we can do that.
+
+BC
+Benjumea Canon, Maria Paula
+15:09
+I don't know, through a tag or through keywords. And now our general Neoprogram, Jira risk page, so to speak.
+
+GO
+Gliewe, Olaf
+15:09
+It's a matter of definition what risks I'm taking right now. I just have to tag it, whether it's product or project risks.
+
+GS
+Gatzweiler, Stephan
+15:09
+Yes.
+
+GO
+Gliewe, Olaf
+15:09
+As I understand it, we actually want to include the product risks in order to derive appropriate test cases from them, and project risks have little to do with test cases at first. Accordingly, yes.
+
+GO
+Gliewe, Olaf
+15:10
+If only we could go through it again and cluster or tag it. As I understand it, however, it's really on the project side that not much has happened.
+
+GO
+Gliewe, Olaf
+15:10
+I had already done this a long time ago. That was still on the board.
+
+GO
+Gliewe, Olaf
+15:10
+I had recorded the risks there, including the distinction between product and project risks. I don't know, maybe we need to go back to the products and address them accordingly.
+
+GO
+Gliewe, Olaf
+15:10
+That you did that again on the screen, because it just falls into the hot phase, exactly these test cases to derive from it. But what I'm really concerned about right now, I don't know if I'm ahead of Kurt Ruzer in speaking up, is actually a project risk.
+
+GO
+Gliewe, Olaf
+15:10
+Because the CM cluster is currently undergoing a complete reorganization. That's because the topics there are...
+
+GO
+Gliewe, Olaf
+15:10
+Now from a central team of a kind of task force. This means that the actual product teams are more or less out of the picture.
+
+GO
+Gliewe, Olaf
+15:11
+And the team, this task force team, is now somehow going to take care of ensuring that these topics are also further topics, if necessary, which go beyond this CCG, are somehow provided centrally. That is why, at least in our case at Price Management, we have somehow ensured that the whole thing has been stopped for now, i.e., we were mainly in the process of doing this, but now it has actually been stopped for the time being, and we don't know exactly what the technical basis for the whole thing will be, anyway.
+
+GO
+Gliewe, Olaf
+15:11
+So there's where I see a risk at the moment. I wanted to ask whether this is the case for you as well.
+
+GO
+Gliewe, Olaf
+15:11
+Maybe it will turn out well, you can add something.
+
+CC
+Cevirel, Codruta
+15:11
+add one more thing precisely. That not everything is completely finalized yet.
+
+CC
+Cevirel, Codruta
+15:11
+So, as I understand it, it's currently being clarified and so, what I've heard so far, at least, is that with regard to the performance topics, it will be the case that for us, they will remain in the product. So it's partly this and partly that.
+
+CC
+Cevirel, Codruta
+15:12
+But that it is still being finalized and that will then be communicated. So I think we'll have to be patient for a little while longer.
+
+GO
+Gliewe, Olaf
+15:12
+So maybe I've already asked around in your direction, Stefan Mustafa, but you probably haven't heard anything.
+
+GS
+Gatzweiler, Stephan
+15:12
+No. This is the first we've heard of it.
+
+GO
+Gliewe, Olaf
+15:12
+Then maybe we can revisit the topic later.
+
+GS
+Gatzweiler, Stephan
+15:12
+Yes, yes. We should, Olaf.
+
+GS
+Gatzweiler, Stephan
+15:12
+Peter, I saw you had your hand up, but Kondoza, that doesn't mean that the topics already provided by CM will now be thrown in the trash and then redeveloped.
+
+GO
+Gliewe, Olaf
+15:12
+That depends.
+
+CC
+Cevirel, Codruta
+15:12
+That's what I mean, that's being clarified. That is currently being clarified.
+
+GS
+Gatzweiler, Stephan
+15:12
+Okay. Okay.
+
+GS
+Gatzweiler, Stephan
+15:13
+Yes. So, how are we going to deal with these risks now?
+
+GS
+Gatzweiler, Stephan
+15:13
+That is, the process risks are not represented here at all and cannot be tagged as such.
+
+BC
+Benjumea Canon, Maria Paula
+15:13
+There is the question, because I had you visit the page with risks last week. So we're talking about risks in Jira that affect the entire Neo program, i.e., a negative impact on the entire program or company.
+
+BC
+Benjumea Canon, Maria Paula
+15:13
+We are still dealing with process risks from end-to-end testing here, so we have to address that here in Jira.
+
+GS
+Gatzweiler, Stephan
+15:13
+Yes.
+
+GS
+Gatzweiler, Stephan
+15:13
+Maria. I wouldn't limit that to end-to-end testing; what we want to do is ultimately test the process as such.
+
+GS
+Gatzweiler, Stephan
+15:14
+So Stordering has a process, and we want to secure that process. And the risks involved in securing this process should be necessary, i.e., what risks are seen there, that would have to be determined somehow.
+
+GS
+Gatzweiler, Stephan
+15:14
+So not for end-to-end testing purposes, but rather we are assuming a process here. And end-to-end testing is just a means to perhaps minimize these risks.
+
+BC
+Benjumea Canon, Maria Paula
+15:14
+Okay.
+
+GS
+Gatzweiler, Stephan
+15:14
+But now back to the question. That means we now have a list of 150 risks, and I would have said that everyone needs to go through it and decide for themselves whether it's a risk that also affects the process, yes or no.
+
+GS
+Gatzweiler, Stephan
+15:15
+And if it affects the process, then it must be tagged so that we can say, yes, this is something that we also need to include in our end-to-end test. That was my understanding, at least.
+
+GS
+Gatzweiler, Stephan
+15:15
+Exactly. That was my understanding as well.
+
+GS
+Gatzweiler, Stephan
+15:15
+Fiete, please.
+
+FP
+Fiete Pape (DE)
+15:15
+I would say that everything you say is correct, that these process risks are necessary. The only question, I think, is the one Maria just asked: how do we want to show that we have one, I mean, I know it's like this, you have a risk register where all kinds of risks are listed.
+
+FP
+Fiete Pape (DE)
+15:15
+How can they be filtered?
+
+GS
+Gatzweiler, Stephan
+15:15
+Exactly.
+
+FP
+Fiete Pape (DE)
+15:15
+Depending on the product process and project risk. And in my view, it also makes sense to have a central register in order to have interdependencies, because a project risk can also become a product risk.
+
+GS
+Gatzweiler, Stephan
+15:15
+Exactly.
+
+GS
+Gatzweiler, Stephan
+15:15
+Absolutely.
+
+FP
+Fiete Pape (DE)
+15:15
+However, I think we need to address this in a separate meeting and probably not in this round, to determine how we can map this in Jira. That doesn't mean that we might have to keep the risks elsewhere for the time being before we then have a concept.
+
+GS
+Gatzweiler, Stephan
+15:16
+Yes. Well, we have this repository.
+
+FP
+Fiete Pape (DE)
+15:16
+And
+
+GS
+Gatzweiler, Stephan
+15:16
+That's what Mustafa is sharing right now.
+
+FP
+Fiete Pape (DE)
+15:16
+Exactly, but of course we have to, we can't blindly take on process risks and product risks without having a concept for which reporting and views we want to take on these risks. Otherwise, it's just a list that will eventually become too long.
+
+FP
+Fiete Pape (DE)
+15:16
+Perhaps it makes sense for us now to, so to speak, we probably don't need all of them, to first address this Jira issue, Maria. I would be happy to do that if we then have another meeting to discuss how we can map this out.
+
+BC
+Benjumea Canon, Maria Paula
+15:16
+Yes, that fits.
+
+GS
+Gatzweiler, Stephan
+15:16
+Okay. Then that's the end of the matter.
+
+GS
+Gatzweiler, Stephan
+15:16
+That means Fiete and Maria will discuss the topic again. If you have any further feedback, Fiete.
+
+GS
+Gatzweiler, Stephan
+15:17
+then please come to us.
+
+FP
+Fiete Pape (DE)
+15:17
+Exactly, so if any of you want to join in, you're welcome to do so.
+
+GS
+Gatzweiler, Stephan
+15:17
+Yes. Yes, maybe I see it too naively.
+
+GS
+Gatzweiler, Stephan
+15:17
+Well, I had thought that everyone here whose name is listed and who has entered a risk can also judge whether there is a litigation risk. Or not.
+
+GS
+Gatzweiler, Stephan
+15:17
+then it will be tagged accordingly. Or am I oversimplifying things?
+
+GS
+Gatzweiler, Stephan
+15:17
+Yes. Consideration.
+
+GS
+Gatzweiler, Stephan
+15:17
+That's why we discussed it last week, but okay, let's do it as discussed. Maybe that will make sense, to put a little more thought into it and then take action based on that.
+
+GS
+Gatzweiler, Stephan
+15:17
+Exactly. Right, I'm going to move on now in the minutes, looking back at two weeks ago, that has to be discussed again, meeting rhythm, that we now have it weekly.
+
+GS
+Gatzweiler, Stephan
+15:18
+I think word has gotten around about that. Next week we have two possible topics.
+
+GS
+Gatzweiler, Stephan
+15:18
+Topic number one. It could be another deep dive into XDM, including how to use XDM attributes to anonymize or mask data in Kafka topics.
+
+GS
+Gatzweiler, Stephan
+15:18
+That would be one topic. The second topic we could address.
+
+GS
+Gatzweiler, Stephan
+15:18
+would be the test environment. And there we would then work with our colleagues from the tech platform.
+
+GS
+Gatzweiler, Stephan
+15:18
+That's where the test driver still has something to say. That's what I saw yesterday in the weekly Maria, what we're currently doing.
+
+GS
+Gatzweiler, Stephan
+15:18
+There is the Radiker Center involved. A kind of, well, we're realizing, on the subject of relocation, on the subject of environments.
+
+GS
+Gatzweiler, Stephan
+15:19
+There are so many terms, and perhaps, I have the feeling that everyone has their own interpretation of the terms, everyone says one thing and the other person understands something else, so that we first need to agree on the wording in a nomenclature, so to speak. That's why we're compiling something.
+
+GS
+Gatzweiler, Stephan
+15:19
+And that will also be done with the Tech ID, still to be validated. And once we have that in one or two slides or in another form, we would discuss it again here together, then we would have the basics of the nomenclature in this regard, because then we can also address the questions that actually need to be clarified in a transparent manner and then talk about them in a targeted way.
+
+GS
+Gatzweiler, Stephan
+15:19
+Yes, that's the goal, if that
+
+GS
+Gatzweiler, Stephan
+15:20
+Next week. If that's the case by next week, then it's ready and has also been validated with HIT, we would like to present it here.
+
+GS
+Gatzweiler, Stephan
+15:20
+If it has not yet been validated, we would then present it the following week, in the next one, at the next Deep Dive. In Deep Dive or also in the one in the agenda, because it's an important topic, we probably shouldn't wait too long to do it.
+
+GS
+Gatzweiler, Stephan
+15:20
+But the topic of the next Deep Dive will be announced at the beginning of next week, whether it will be an XDM or the test environment. It will be one of the two, but we would probably announce that on Monday or, at the very latest, on Tuesday.
+
+GS
+Gatzweiler, Stephan
+15:20
+Okay. Because, is there anything more up-to-date than what I've said?
+
+GS
+Gatzweiler, Stephan
+15:20
+If so, please share it. Otherwise, we can close this.
+
+RA
+Radhika Ashok (DE)
+15:20
+Nothing new. So this is in progress.
+
+RA
+Radhika Ashok (DE)
+15:20
+We will be traveling with Ticket next week and then we will let you know.
+
+GS
+Gatzweiler, Stephan
+15:20
+Okay.
+
+GS
+Gatzweiler, Stephan
+15:20
+Great. Well then.
+
+GS
+Gatzweiler, Stephan
+15:20
+Okay, next topic: critical user journey. We last discussed this with you last week. Feedback.
+
+GS
+Gatzweiler, Stephan
+15:21
+I had it there until now, but there hasn't been any, at least no comments that it's completely unrealistic or that the Critical User Journey is not the target image after all. Is there any feedback from you guys?
+
+CC
+Cevirel, Codruta
+15:21
+I had two Post-it notes added there.
+
+GS
+Gatzweiler, Stephan
+15:21
+Ah, okay. Can you please tell me who is on the B-Robot?
+
+GS
+Gatzweiler, Stephan
+15:21
+Who can do that right now? Radhika, you share it.
+
+GS
+Gatzweiler, Stephan
+15:21
+Can you open the B-Robot, Radhika? Let's take a look at Cordruzza's Post-its.
+
+RA
+Radhika Ashok (DE)
+15:21
+Yep.
+
+RA
+Radhika Ashok (DE)
+15:21
+So. I am currently sharing my screen.
+
+RA
+Radhika Ashok (DE)
+15:21
+And I'm following you.
+
+CC
+Cevirel, Codruta
+15:22
+the yellow Post-its a little bit.
+
+GS
+Gatzweiler, Stephan
+15:22
+Ah. Okay.
+
+CC
+Cevirel, Codruta
+15:22
+So, on the one hand, there is the issue of quantity creation. Or sales history.
+
+CC
+Cevirel, Codruta
+15:22
+Inventories.
+
+CC
+Cevirel, Codruta
+15:22
+We have been wondering a little bit where that comes from. Perhaps it's part of the HI process today, but it's not part of the HD process.
+
+GS
+Gatzweiler, Stephan
+15:22
+Maybe we'll go inside sometime, where
+
+CC
+Cevirel, Codruta
+15:22
+And there are no plans to include it at this time.
+
+CC
+Cevirel, Codruta
+15:22
+That is why we have not planned, at least so far, to provide any data from the CM for this purpose, i.e., within the scope of the listing topics.
+
+GS
+Gatzweiler, Stephan
+15:22
+Okay.
+
+GS
+Gatzweiler, Stephan
+15:22
+Okay. But basically, order and sales histories are taken into account.
+
+GS
+Gatzweiler, Stephan
+15:23
+That they're not coming from you is another story.
+
+PR
+Pum Raphaela
+15:23
+We're more likely to get them through a facade from the WWS branch. It has nothing to do with CM, that's right. Exactly.
+
+CC
+Cevirel, Codruta
+15:23
+It doesn't come from the CM.
+
+GS
+Gatzweiler, Stephan
+15:23
+Okay. Okay, then
+
+CC
+Cevirel, Codruta
+15:23
+That means there would have to be another cluster in front of it as a supplier.
+
+GS
+Gatzweiler, Stephan
+15:23
+Isn't that... Boris, are you still there... Yes, Boris, you're... Isn't that where the topic is based?
+
+SB
+Schneider, Boris
+15:23
+because they are data, exactly what kind of data, such attributes.
+
+GS
+Gatzweiler, Stephan
+15:23
+So, we have inventory and sales history here.
+
+PR
+Pum Raphaela
+15:23
+Inventories and sales forecasts come directly from the current Legacy HI branch, as we have it via a facade that we address directly as Ordering.
+
+SB
+Schneider, Boris
+15:23
+And this facade is not standard for the market.
+
+PR
+Pum Raphaela
+15:23
+Now that's a team that's not represented here. I'm probably still the best person to contact in this regard.
+
+GS
+Gatzweiler, Stephan
+15:24
+Okay, then that's
+
+CC
+Cevirel, Codruta
+15:24
+sometimes he would have to replace cm with
+
+PR
+Pum Raphaela
+15:24
+for the RBBs.
+
+CC
+Cevirel, Codruta
+15:24
+filial and loyal.
+
+PR
+Pum Raphaela
+15:24
+In other words, cluster store management. I assume Legacy Branch WBS.
+
+GS
+Gatzweiler, Stephan
+15:24
+Yes. Can you do that right away?
+
+GS
+Gatzweiler, Stephan
+15:24
+Then we have the comments from Kurt Rütze incorporated as well.
+
+CC
+Cevirel, Codruta
+15:24
+then I would also remove my Post-its. Perfect.
+
+GS
+Gatzweiler, Stephan
+15:24
+Yes, yes, if we've incorporated that now, then it's fine. So CM, you'll have to take that out right away.
+
+GS
+Gatzweiler, Stephan
+15:24
+And do we want the contact person to be listed again on the Post-it note with Raffi, or do you have someone else in mind?
+
+PR
+Pum Raphaela
+15:24
+No. Feel free to invite me.
+
+GS
+Gatzweiler, Stephan
+15:24
+All right.
+
+PR
+Pum Raphaela
+15:25
+so to speak, now wearing a different hat from the branch BWS.
+
+GS
+Gatzweiler, Stephan
+15:25
+Yes, yes, yes, yes, then. We don't know you any other way with different hats.
+
+PR
+Pum Raphaela
+15:25
+Very good.
+
+GS
+Gatzweiler, Stephan
+15:25
+They all look good on you. Hut, hut, hut.
+
+GS
+Gatzweiler, Stephan
+15:25
+Okay, Kurt Rutzer, that's fine with you so far? Yes, okay, great.
+
+CC
+Cevirel, Codruta
+15:25
+Exactly. From my point of view, that's fine now.
+
+GS
+Gatzweiler, Stephan
+15:25
+Then I'll go and take over the sharing again.
+
+GS
+Gatzweiler, Stephan
+15:25
+My mouse. Yes, I see.
+
+GS
+Gatzweiler, Stephan
+15:26
+All right. So, then we're on the Happy Path, we've gone through the individual steps, and we've also tagged them.
+
+GS
+Gatzweiler, Stephan
+15:26
+Who is now the contact person for us to carry out these steps? Mustafa had something to say about this in the meeting.
+
+GS
+Gatzweiler, Stephan
+15:26
+Some of them have already been carried out. So, for example, we had Tim Kröner and Rafaela, and we already had one or two appointments for a deep dive.
+
+GS
+Gatzweiler, Stephan
+15:26
+We can go back to that, so you can give me a radical overview of the screen again, and we can jump right back into the table. So we can show you what we've done and where we want to go with the other clusters, in order to then test the case.
+
+GS
+Gatzweiler, Stephan
+15:26
+So that we can also recognize, okay, which Kafka topics are being used, who is the actor, what is the expected result.
+
+GS
+Gatzweiler, Stephan
+15:27
+Exactly, once you go in. So, for example, we are a good example.
+
+GS
+Gatzweiler, Stephan
+15:27
+It would actually be Francisco's, too. Let's go here in the crotch.
+
+GS
+Gatzweiler, Stephan
+15:27
+What was that? 6, 7, 8 somewhere.
+
+GS
+Gatzweiler, Stephan
+15:27
+Exactly, step 6, for example.
+
+RA
+Radhika Ashok (DE)
+15:27
+The
+
+GS
+Gatzweiler, Stephan
+15:27
+So now we've seen that the order has been finalized. Then we have this Topic Decided Order Proposal, which is then sent to the market dispatcher and the market dispatcher then transfers it to AVT.
+
+GS
+Gatzweiler, Stephan
+15:27
+But there we now need, for example, because that's why your name is there, Francisco. From you again, exactly, your information at the bottom of this topic in the translation from the RIN to the item number by Jane M.
+
+GS
+Gatzweiler, Stephan
+15:28
+Dean, how it's done exactly, we would also like to discuss with you in about half an hour so that you can explain it to us. Is that okay?
+
+BM
+Bosch Martinez, Francisco
+15:28
+clearly remembered.
+
+GS
+Gatzweiler, Stephan
+15:28
+Yes? Great.
+
+BM
+Bosch Martinez, Francisco
+15:28
+Yes, of course, that won't change a few things, even with Renfast, which we're not sure about either, but yes.
+
+GS
+Gatzweiler, Stephan
+15:28
+Yes, that's what I thought. Yes, yes.
+
+GS
+Gatzweiler, Stephan
+15:28
+We have to get that from our acquaintances first, because if we wait until Rinfast has been cleared up, then we'll have to do it right away, that's clear.
+
+BM
+Bosch Martinez, Francisco
+15:28
+Yes, that's clear.
+
+GS
+Gatzweiler, Stephan
+15:28
+Exactly, but now you see where we want to go, that now the steps are getting more and more unraveled and worked through. And yes, that's why with Raffaela, with SMM Gro, we're almost done now, because then we would also have to deal with the other Spocks in the next few days and weeks.
+
+GS
+Gatzweiler, Stephan
+15:29
+Okay. Right.
+
+GS
+Gatzweiler, Stephan
+15:29
+Then I'll take over the sharing again.
+
+GS
+Gatzweiler, Stephan
+15:29
+Hello Michael.
+
+KM
+Koitz Michael
+15:29
+Hello, you're learning to be late now.
+
+GS
+Gatzweiler, Stephan
+15:29
+Hello
+
+KM
+Koitz Michael
+15:29
+I also have a topic that I brought with me, which I would like to ask about.
+
+GS
+Gatzweiler, Stephan
+15:29
+Yes, very good. We were just talking about the tech platform.
+
+GS
+Gatzweiler, Stephan
+15:29
+Maybe you can add something to that. Is there anything new?
+
+KM
+Koitz Michael
+15:29
+New is relative. So, in the end, it seems that it was from the store today.
+
+KM
+Koitz Michael
+15:29
+So from the store cluster, a presentation was given and on one slide it says that you can't rely on the tech platform to test that there are delays. And I would like to know where that comes from and what's going on.
+
+KM
+Koitz Michael
+15:29
+Because from a tech platform perspective, everything is there.
+
+PR
+Pum Raphaela
+15:30
+I'll take a wild guess that this is coming from our team, because we don't have any test messages on Pre-Prot, only on Dev. But I would agree with you on that point, based on our developers' experience.
+
+KM
+Koitz Michael
+15:30
+Yes. But that doesn't mean it's not ready.
+
+KM
+Koitz Michael
+15:30
+So we'll post the info. And I would have been in contact with the developers relatively.
+
+KM
+Koitz Michael
+15:30
+So if anything, I would like the developers to talk to the developers. So we have a support channel and of course you are welcome to report anything there.
+
+PR
+Pum Raphaela
+15:30
+That's fine too.
+
+PR
+Pum Raphaela
+15:30
+I don't know where that one came from, where the report came from, that's just what I, as a business analyst, have picked up on. I can only tell you to contact them.
+
+KM
+Koitz Michael
+15:30
+Thank you, thank you.
+
+KM
+Koitz Michael
+15:30
+I just find it strange that they didn't coordinate with us. So from that point of view, I would have expected us to at least know that it exists and that there would be some kind of communication so that a slide wouldn't be made.
+
+PR
+Pum Raphaela
+15:30
+We need to clarify this.
+
+PR
+Pum Raphaela
+15:30
+Do you know in what context, in what setting, who presented this? What is our position on this? What should we discuss later?
+
+PR
+Pum Raphaela
+15:31
+Because I also have to, in the next meetings, you won't be there either.
+
+KM
+Koitz Michael
+15:31
+Really? Well, I wasn't there. So I wasn't there, but Maria, you weren't there at all, were you?
+
+BC
+Benjumea Canon, Maria Paula
+15:31
+Yes, yes, that was the Joe Fix program this morning. They usually play an update against the clusters, a three-minute update, how are things going with the projects in general, and so yes, we'll see the CCJ Stordering on red, but not because of tech platforms.
+
+BC
+Benjumea Canon, Maria Paula
+15:31
+Rather, it's compliance. Other things.
+
+BC
+Benjumea Canon, Maria Paula
+15:31
+And it said that tech platforms, that the test environment wasn't ready and wouldn't be ready until May. For whatever reason.
+
+BC
+Benjumea Canon, Maria Paula
+15:31
+So
+
+PR
+Pum Raphaela
+15:31
+do you know who entered that? So PO or CPO?
+
+BC
+Benjumea Canon, Maria Paula
+15:31
+Proximity, I suppose. That was a PCO from the cluster.
+
+BC
+Benjumea Canon, Maria Paula
+15:31
+I have already sent an email to the person who is probably involved in the slide. But to be honest, I have no idea who wrote it.
+
+BC
+Benjumea Canon, Maria Paula
+15:32
+I also have the slide for the first time this morning.
+
+GS
+Gatzweiler, Stephan
+15:32
+Yes. Maybe we can do that again, exactly.
+
+GS
+Gatzweiler, Stephan
+15:32
+Exactly. But Micha, was the topic, I mean, it's great that you just came in on the topic, because we actually have, we're discussing the minutes of the last meeting and we had a Now I switched to English because it was in a query from Dujan.
+
+GS
+Gatzweiler, Stephan
+15:32
+You asked for a fourth environment for executing end-to-end tests. Second, we were discussing this and Michael, correct me if I'm wrong, but as I understood, we only have three classes, you call them classes, right?
+
+GS
+Gatzweiler, Stephan
+15:32
+It's a
+
+KM
+Koitz Michael
+15:32
+Quality sounds. So
+
+KM
+Koitz Michael
+15:32
+we have development, staging and production as quality solutions. And in this class.
+
+KM
+Koitz Michael
+15:33
+you can have more environments. So
+
+GS
+Gatzweiler, Stephan
+15:33
+Yes. This is my understanding.
+
+GS
+Gatzweiler, Stephan
+15:33
+Yeah. Exactly.
+
+KM
+Koitz Michael
+15:33
+Because for us environment is just something that you deploy, right? So you deploy some things to this quality zone.
+
+KM
+Koitz Michael
+15:33
+And then this would be the next thing. What we optimized and that's because we never got anything from our, say.
+
+KM
+Koitz Michael
+15:33
+Engineering like how the release process should look like and what are the stages of the future? So like how many stages do we need?
+
+KM
+Koitz Michael
+15:33
+And as a company, how many do we have to have and so on? But we are in clarification with this also now.
+
+KM
+Koitz Michael
+15:33
+We said, OK, we have those three quality zones. And in these quality zones, we obviously can also build more stages then.
+
+GS
+Gatzweiler, Stephan
+15:33
+Okay. So you can.
+
+GS
+Gatzweiler, Stephan
+15:34
+So there's nothing, nothing wrong on the summary of the of the of the minutes of our meeting minutes from last from the last session.
+
+KM
+Koitz Michael
+15:34
+There is something. So let's check.
+
+GS
+Gatzweiler, Stephan
+15:34
+Yes.
+
+KM
+Koitz Michael
+15:34
+Yes, Exactly, so it's exactly
+
+KM
+Koitz Michael
+15:34
+that pre-prod can be a sub-environment of staging.
+
+GS
+Gatzweiler, Stephan
+15:34
+Yes.
+
+KM
+Koitz Michael
+15:34
+But this is not done yet. Right.
+
+KM
+Koitz Michael
+15:34
+So it's something that. Yeah.
+
+KM
+Koitz Michael
+15:34
+We have to do. Or there's something that maybe also with your help to understand what you need for preprint, we need to enable for you.
+
+GS
+Gatzweiler, Stephan
+15:34
+What is basically possible to do is product testing of the single product and interface testing of two products on the same environment.
+
+KM
+Koitz Michael
+15:34
+We just have to deploy it two times with different configuration.
+
+GS
+Gatzweiler, Stephan
+15:35
+Yes.
+
+KM
+Koitz Michael
+15:35
+Like one is pointing to, I don't know, integration of your integration and the other configuration is pointing to pre-prod configuration.
+
+GS
+Gatzweiler, Stephan
+15:35
+Yes.
+
+KM
+Koitz Michael
+15:35
+And that's basically it.
+
+KM
+Koitz Michael
+15:35
+And we have to enable that you can do it or together we have to figure out how to do it.
+
+GS
+Gatzweiler, Stephan
+15:35
+So Duchenne, would that solve your problem or answer your question?
+
+ZD
+Zoric Dusan
+15:35
+Yes. Yes.
+
+ZD
+Zoric Dusan
+15:35
+Basically yes. So we're going to just do two deployments.
+
+ZD
+Zoric Dusan
+15:35
+One will be for product testing. So where we can test our product in more detail with negative test scenarios and whatnot.
+
+ZD
+Zoric Dusan
+15:35
+And the higher one, which would be configuration where we will connect all the products and do the end-to-end testing. Technically it's the same environment, but we shouldn't care, right?
+
+ZD
+Zoric Dusan
+15:36
+We just have to do end-to-end testing for DCCG, so we would need this second one where we deploy it with a different configuration where all the products are connected so that we can do end-to-end testing, right?
+
+KM
+Koitz Michael
+15:36
+How crucial is this for the CCGs to ordering coal for the life that you can go to production with that.
+
+ZD
+Zoric Dusan
+15:36
+I think it's important to do it this way, digital services talk to each other and we know that the real issues are because they are correctly described, that they are consumed.
+
+KM
+Koitz Michael
+15:36
+Yes.
+
+ZD
+Zoric Dusan
+15:36
+I think it
+
+KM
+Koitz Michael
+15:36
+But if you say integration testing, so to be clear, so if you say you want to do integration testing and pre-prod testing. Then integration testing could also be on the development stage.
+
+KM
+Koitz Michael
+15:36
+I mean the development stage is therefore like a single application which is kind of bounced you can now also in context,
+
+KM
+Koitz Michael
+15:37
+that would be for me integration testing and the other thing would be more staging environment where you interact with other applications so you can do end-to-end testing on those applications in this way. So I don't understand the complete need for those two environments, but I guess you have a reason.
+
+ZD
+Zoric Dusan
+15:37
+Yes, I mean for us, developers were people who deployed their stuff, maybe unfinished stuff, where the products weren't stable or maybe weren't merged or they didn't deploy release candidates, maybe they deployed something from the industry or something like that. About the development of the environment, we as QAs, we touch it.
+
+ZD
+Zoric Dusan
+15:37
+It's just a playground for developers.
+
+KM
+Koitz Michael
+15:37
+Okay.
+
+ZD
+Zoric Dusan
+15:37
+Okay, that's it.
+
+KM
+Koitz Michael
+15:37
+Okay. That's okay.
+
+KM
+Koitz Michael
+15:37
+Then I understand it. And you want to do the like two-faced testing with first integration as a testing team and then do like the pre-protesting as a thing. Okay.
+
+ZD
+Zoric Dusan
+15:38
+Yes.
+
+ZD
+Zoric Dusan
+15:38
+Is that the end of it, right?
+
+GS
+Gatzweiler, Stephan
+15:38
+Yes. Okay.
+
+ZD
+Zoric Dusan
+15:38
+Okay. Just to understand, is there any difference between having another fourth environment or just having double instances in the same environment in terms of cost?
+
+KM
+Koitz Michael
+15:38
+So the real difference is exactly the real difference is cost obviously. And more to cost is not only the neuroscience, but also like the labor you need to do for maintaining it, for setting it up, for making the connections, for network environments.
+
+KM
+Koitz Michael
+15:38
+Right. Because like these environments would be also in the same network.
+
+KM
+Koitz Michael
+15:38
+And if you do a real stage, so a quality zone, then the quality zone would be also network separated. So you cannot connect from this stage to from this quality zone to
+
+KM
+Koitz Michael
+15:39
+in the alcohol in song. So
+
+KM
+Koitz Michael
+15:39
+in modeling, but
+
+ZD
+Zoric Dusan
+15:39
+Okay.
+
+KM
+Koitz Michael
+15:39
+say modern releases, you don't have that many stages because you anyway if you have something that's already very production like then you have kind of something in production and only gifted to a certain amount of users like testers or something. And then like feature flags, right, where you say, OK, our testers are in the feature flag group for this feature and then they see it, they can test it and then the next rollout phase would be, I don't know, 10% of our customers get it, then 50%, then 80% and then everyone or something like that, right?
+
+KM
+Koitz Michael
+15:39
+So that would be like something where I would see the future of this thing to happen. So then the developer can they have their space, then integrate, then obviously staging is important because in staging it's something where you kind of do it with the test data and our production data.
+
+KM
+Koitz Michael
+15:40
+So any real error that manipulates data can be caught there and manipulated wrong. And then you have the preport where you say, okay, from data perspective, it's okay, it's just like usability, let's make sure that the testers see what end-to-end happens.
+
+KM
+Koitz Michael
+15:40
+Is there, and then you have the feature flags for different features that are there. But that's how I see it and how you see in modern environments.
+
+ZD
+Zoric Dusan
+15:40
+Okay, I'm not sure about the feature flags. Or do we have that right now or at least for our first plan to end testing for the first release.
+
+KM
+Koitz Michael
+15:40
+And we don't we don't have it yet.
+
+ZD
+Zoric Dusan
+15:40
+Right.
+
+KM
+Koitz Michael
+15:40
+So if some customers would Needed, then obviously it
+
+KM
+Koitz Michael
+15:40
+would be higher on our feature list, but yeah.
+
+ZD
+Zoric Dusan
+15:40
+Okay. Oh yeah, that will probably come later.
+
+ZD
+Zoric Dusan
+15:40
+Another question is about the test data. So we will need to have a double, we'll need to duplicate the Kafka topics, right?
+
+ZD
+Zoric Dusan
+15:41
+We'll need to have a double database, double the database users.
+
+KM
+Koitz Michael
+15:41
+So we provide the Kafka topics and you have to make sure that the right data is in there.
+
+ZD
+Zoric Dusan
+15:41
+And everything, right?
+
+KM
+Koitz Michael
+15:41
+It's easy like that. So I'm not sure how you get the data and how you put in the data there, so we are there to provide you the infrastructure for Kafka, but how this
+
+KM
+Koitz Michael
+15:41
+will be done. It's
+
+KM
+Koitz Michael
+15:41
+is not something that we can provide.
+
+ZD
+Zoric Dusan
+15:41
+Okay. But the infrastructure in terms of infrastructure, which will also be doubled, not only like instance is of services, but also like database.
+
+KM
+Koitz Michael
+15:41
+So if you need to
+
+ZD
+Zoric Dusan
+15:41
+We will have, if you have two instances of two services, we're going to be connected to the same database.
+
+KM
+Koitz Michael
+15:41
+Of course, you can have two Kafka topics and two separate Kafka topics for integration and also for this pre-prod, which you're saying, and also to databases also for those. So that's not an issue, obviously.
+
+ZD
+Zoric Dusan
+15:42
+Okay. Okay.
+
+KM
+Koitz Michael
+15:42
+But how the data gets there, how the data gets manual polluted that you have not production data in test and have like anonymized data. That's just not something that we provide.
+
+ZD
+Zoric Dusan
+15:42
+Yes. That's at the product level.
+
+KM
+Koitz Michael
+15:42
+Exactly.
+
+GS
+Gatzweiler, Stephan
+15:42
+Okay. Yeah.
+
+GS
+Gatzweiler, Stephan
+15:42
+Thank you very much, Michel.
+
+ZD
+Zoric Dusan
+15:42
+Pepe.
+
+FP
+Fiete Pape (DE)
+15:42
+Yes. I have something to add.
+
+FP
+Fiete Pape (DE)
+15:42
+So in the end, yes, you are responsible like for the or I have the right test data anonymized Press Data on any environment
+
+FP
+Fiete Pape (DE)
+15:42
+because on product level no one centrally can support their or can support. But it's not responsible.
+
+FP
+Fiete Pape (DE)
+15:42
+But there's a tool XDM, which also Stefan mentioned, where we also have a POC to copy Kafka topic with some workflows to anonymize data within the workflows.
+
+KM
+Koitz Michael
+15:42
+That's outside of the real estate platform. Just be careful.
+
+FP
+Fiete Pape (DE)
+15:43
+So
+
+KM
+Koitz Michael
+15:43
+That's not something that
+
+FP
+Fiete Pape (DE)
+15:43
+It is not tech platform. It is external.
+
+GS
+Gatzweiler, Stephan
+15:43
+No, no. Yes, no.
+
+FP
+Fiete Pape (DE)
+15:43
+It's not nothing to do with external.
+
+KM
+Koitz Michael
+15:43
+And I think it's in Thomas Watflix.
+
+FP
+Fiete Pape (DE)
+15:43
+I
+
+KM
+Koitz Michael
+15:43
+CPO round.
+
+GS
+Gatzweiler, Stephan
+15:43
+Yes.
+
+KM
+Koitz Michael
+15:43
+But it's not something that we as tech platform provide.
+
+FP
+Fiete Pape (DE)
+15:43
+Yes. No, no.
+
+FP
+Fiete Pape (DE)
+15:43
+We have to differentiate. I just wanted to offer like those and we from RE&E, we are like we are in contact with the team which is responsible for XDM.
+
+FP
+Fiete Pape (DE)
+15:43
+This a tool and we can support you in providing test data or provision test data from prod into your different system with some rules applied on the data. But in the end we are not responsible, we will not do it for you but we can help you to have like reusable workflows and so on.
+
+GS
+Gatzweiler, Stephan
+15:43
+That's still an infrastructure issue. Therefore.
+
+GS
+Gatzweiler, Stephan
+15:43
+Michael is not responsible for that. That's right.
+
+FP
+Fiete Pape (DE)
+15:43
+Yes.
+
+GS
+Gatzweiler, Stephan
+15:43
+Okay. Okay.
+
+GS
+Gatzweiler, Stephan
+15:43
+Right. And I switch.
+
+GS
+Gatzweiler, Stephan
+15:44
+Back to German. We are now also at the end of the time and also at the end of our minutes from last time, there is still questions, suggestions, comments on your part.
+
+GS
+Gatzweiler, Stephan
+15:44
+I don't see any hands. That's either a good thing or a bad thing.
+
+GS
+Gatzweiler, Stephan
+15:44
+I'll interpret it as a good sign.
+
+HT
+Holst, Tobias
+15:44
+I have one more quick question.
+
+GS
+Gatzweiler, Stephan
+15:44
+Let's take a look. Yes.
+
+HT
+Holst, Tobias
+15:44
+You give at the beginning of the week what will then be the Deep Dive on Thursday, so that I can then, if necessary, forward the right people.
+
+GS
+Gatzweiler, Stephan
+15:44
+Exactly.
+
+GS
+Gatzweiler, Stephan
+15:44
+Correct. Correct.
+
+HT
+Holst, Tobias
+15:44
+Because that's a topic that might be relevant for some of our developers.
+
+GS
+Gatzweiler, Stephan
+15:44
+Exactly. As I said, we have two topics that we are currently looking at.
+
+GS
+Gatzweiler, Stephan
+15:44
+Either the topic of environments or XDM, which has just been mentioned. Both are very interesting.
+
+HT
+Holst, Tobias
+15:44
+Yes, of course.
+
+GS
+Gatzweiler, Stephan
+15:44
+But we would then, I think, present that to you in any case.
+
+HT
+Holst, Tobias
+15:44
+But we have different groups of participants, so I'll forward it to them.
+
+GS
+Gatzweiler, Stephan
+15:44
+I don't understand you. Well, I think Monday at the end of business, at the latest, we'll let you know which topic it will be.
+
+HT
+Holst, Tobias
+15:45
+Great. Thank you.
+
+GS
+Gatzweiler, Stephan
+15:45
+Michael. Yes.
+
+KM
+Koitz Michael
+15:45
+So Please send me a note regarding the surroundings.
+
+KM
+Koitz Michael
+15:45
+Of course, you have to plan for that in our sprints.
+
+GS
+Gatzweiler, Stephan
+15:45
+Yes.
+
+KM
+Koitz Michael
+15:45
+That means it would be great if we knew about it beforehand or could get together. So, my APOs David Benkel, where you can then decide whether at the PO level or at the PO level, you communicate together.
+
+KM
+Koitz Michael
+15:45
+What exactly is desired or required there, and then we'll see if we can incorporate that into the sprints, because we don't just have it until we're ready for production, I think.
+
+GS
+Gatzweiler, Stephan
+15:45
+Yes, definitely.
+
+GS
+Gatzweiler, Stephan
+15:45
+Yes.
+
+KM
+Koitz Michael
+15:45
+And that's fine with me.
+
+GS
+Gatzweiler, Stephan
+15:45
+Exactly. That's why it's a high priority, yes.
+
+KM
+Koitz Michael
+15:45
+So we, maybe just a quick update. From our side, it's very high priority right now, to get ready for production, meaning all security governance releases.
+
+GS
+Gatzweiler, Stephan
+15:45
+Yes.
+
+KM
+Koitz Michael
+15:45
+Whatever requirements need to be met, including penetration tests and so on and so forth.
+
+KM
+Koitz Michael
+15:46
+That means there are a few issues. That means that anything additional that comes up, new stations, i.e., new stages in this case, is of course something that prevents us from somehow reaching our goal, which was to set up the production environment of these three environments in such a way that the production discs are ready.
+
+KM
+Koitz Michael
+15:46
+That's why I want to emphasize that. We really have a very tough job ahead of us, and it's not easy; there are many teams, security and governance, and you know it, I think, it's not the easiest thing to figure out with them what exactly they want from you.
+
+KM
+Koitz Michael
+15:46
+Yes.
+
+GS
+Gatzweiler, Stephan
+15:46
+Absolutely. I'm with you all the way, Michael.
+
+KM
+Koitz Michael
+15:46
+But only so that you understand us. We support you in this, of course.
+
+KM
+Koitz Michael
+15:46
+Creating integration and pre-production can only be done if there are no security issues getting in the way. We simply repressed it.
+
+GS
+Gatzweiler, Stephan
+15:46
+Good. Good.
+
+GS
+Gatzweiler, Stephan
+15:47
+Then I would say, as you hear, Monday EOB. What we will cover in the Deep Dive. Exactly.
+
+GS
+Gatzweiler, Stephan
+15:47
+I'll send the minutes on Monday, I'll file them in our channel. And then we would meet on Monday at the latest.
+
+GS
+Gatzweiler, Stephan
+15:47
+But as I said, you are also welcome to contact us at any time if you have any questions or comments. With that in mind.
+
+GS
+Gatzweiler, Stephan
+15:47
+Thank you very much and have a nice rest of your Thursday. Bye, everyone. Ciao.
+
+RA
+Radhika Ashok (DE)
+15:47
+Thank you. Bye.

@@ -1,0 +1,2267 @@
+Okay, before I present today's agenda again, perhaps we can take this opportunity to briefly introduce our colleagues. Tobias, Olaf, and Raffaele are already known to our colleagues, but for the others, I'll give the floor to Radhika and then you can continue.
+
+RA
+Radhika Ashok (DE)
+15:04
+Thanks, Mustafa. Radhika is my name.
+
+RA
+Radhika Ashok (DE)
+15:04
+I work for PwC. I've been here since September last year.
+
+RA
+Radhika Ashok (DE)
+15:04
+Together with RE&E, to prepare this concept. To design it.
+
+RA
+Radhika Ashok (DE)
+15:04
+And now we are in the process of implementing it. And as Mustafa said, that's why we're here now, both Mustafa and Stefan, as well as you guys, to prepare for the test and help with the implementation.
+
+RA
+Radhika Ashok (DE)
+15:05
+That's exactly what I'm passing on to Fiete.
+
+FP
+Fiete Pape (DE)
+15:05
+Yes, exactly. My name is Fiete, also from PwC.
+
+FP
+Fiete Pape (DE)
+15:05
+I'm also, just like Radika, have been with the company since September.
+
+Thomas, Jasmin is the translation manager with control over general translation settings.
+FP
+Fiete Pape (DE)
+15:05
+And last year, a few excerpts from the concept we wrote, also together with Mustafa and Co. You've already seen them, and also with a smaller group we were in exchange.
+
+FP
+Fiete Pape (DE)
+15:05
+And of course, it's always a matter of coming up with a concept and drawing slides and adding arrows here and there. And that's basically the case in the real world.
+
+FP
+Fiete Pape (DE)
+15:05
+That basically means we have a concept that we use as a guide, but we also hope that, so to speak, in this group, we can draw on what happens in real life, what the problems are, and then, of course, the concept can be further adapted and discussions can take place that then lead to us getting better and better. And then we also have Bernd with us.
+
+BR
+Bernd Rupp (DE)
+15:06
+Perfect. Thank you, please. Yes, who is threatening my name?
+
+BR
+Bernd Rupp (DE)
+15:06
+PGC consultants such as Radekant Fiete are also Next in September will be there, but only since the end of January.
+
+BR
+Bernd Rupp (DE)
+15:06
+There we are briefly on board the team, he, she, and I, deployment management teams. And I'll start by supporting store ordering.
+
+BR
+Bernd Rupp (DE)
+15:06
+Where it's needed right now. Mainly, most likely in the direction of the quality gates.
+
+BR
+Bernd Rupp (DE)
+15:06
+And then back to you, Mustafa.
+
+CM
+Cavus, Mustafa
+15:06
+Yes, thank you. Yes, then I'll just share my
+
+CM
+Cavus, Mustafa
+15:06
+Namely
+
+CM
+Cavus, Mustafa
+15:06
+Do we want to talk about what we talked about today again? As an agenda item, I've briefly noted down for you the PwC issues that have been presented.
+
+CM
+Cavus, Mustafa
+15:07
+In further rounds, we may also be able to do the reverse. But we wanted to use the time wisely.
+
+CM
+Cavus, Mustafa
+15:07
+That's why I think that's enough for now as a one-way discussion. Next, Stefan actually wanted to go through the minutes with you from last time.
+
+CM
+Cavus, Mustafa
+15:07
+He's not here yet. Let's see if he's coming in the next few seconds or not.
+
+CM
+Cavus, Mustafa
+15:07
+Otherwise, I can gladly take over. Then, last time, we presented the clinical user journey and the test wave, which we already have as a first draft, and we gave it to you.
+
+CM
+Cavus, Mustafa
+15:07
+With your teams, that always goes through and, um, is discussed and additions are made. Uh, record it there.
+
+CM
+Cavus, Mustafa
+15:07
+Uh. In, in the, in the, um, in the corresponding working package.
+
+CM
+Cavus, Mustafa
+15:08
+Uh, that we'll go over it again together. Um.
+
+CM
+Cavus, Mustafa
+15:08
+Uh, maybe it will turn into something for the individual steps, um. elaboration will be necessary.
+
+CM
+Cavus, Mustafa
+15:08
+We'll do that together later. Um.
+
+CM
+Cavus, Mustafa
+15:08
+Yes, then the topic of changeover to our weekly meeting. Um.
+
+CM
+Cavus, Mustafa
+15:08
+I believe that was brought up by, um, I had an appointment after another today, but I believe my colleague already took care of sending out the information that it will now be updated weekly. Great.
+
+CM
+Cavus, Mustafa
+15:08
+And the procedure, as we did last week and announced two weeks ago.
+
+BC
+Benjumea Canon, Maria Paula
+15:08
+Yes, that's nicely updated.
+
+CM
+Cavus, Mustafa
+15:08
+We want to do it every two weeks in the same format as before, with a general status update. Where all participants are welcome to attend and then everyone in the following week we would like to move on to the individual agenda items.
+
+CM
+Cavus, Mustafa
+15:09
+The ones we now have in Deep Dive. Also with colleagues, perhaps in a smaller format, to continue working on this.
+
+CM
+Cavus, Mustafa
+15:09
+Depending on what
+
+CM
+Cavus, Mustafa
+15:09
+for topic. That's not to say that the other colleagues are excluded.
+
+CM
+Cavus, Mustafa
+15:09
+That's why this is also for everyone, with all Spocks, when it's sent out. But if there is a topic that, for example, has to do with logistics and stores, then they will be put in charge and the other colleagues can of course be involved.
+
+CM
+Cavus, Mustafa
+15:09
+That's roughly how we imagine the format should continue. Maria.
+
+CM
+Cavus, Mustafa
+15:09
+You are muted.
+
+BC
+Benjumea Canon, Maria Paula
+15:10
+At the end of your presentation, i.e. after the agenda, I can give a brief update. So finish up. Yes, exactly.
+
+CM
+Cavus, Mustafa
+15:10
+Some current information. What definitely also applies to next week, as we had planned, is that Tünde, whom you know, I believe, most of my colleagues, will still be at G-Boost 2.0.
+
+CM
+Cavus, Mustafa
+15:10
+This updated version of G-Boost relates to QA. Again, I think it will take 15 to 20 minutes to briefly introduce it, and then we will have the opportunity to discuss the new features that are now available from 1 to 2.
+
+CM
+Cavus, Mustafa
+15:10
+I'll go ahead and start with the G-Boost 2.0 update. Or to go into more detail.
+
+CM
+Cavus, Mustafa
+15:11
+Today, Radica will briefly present our thoughts on the work package in environments, how we are approaching this, and the draft that we will be creating, as well as how we are visualizing it and how we can then, in this context, talk about how we will proceed with the environment and work together. Yes, as always, current status data flow.
+
+CM
+Cavus, Mustafa
+15:11
+That's basically every word on the agenda. And perhaps also again on the current status of X-Ray.
+
+CM
+Cavus, Mustafa
+15:11
+Paul is sick this week, so Paul won't be doing that. But Retika and Fiete were there with him at work, so they'll briefly go over the status again.
+
+CM
+Cavus, Mustafa
+15:12
+Yes. And on the subject of Maria, there was also a lot of that in there, but on the subject of test type and compliance, Stefan also wanted to give a quick update.
+
+CM
+Cavus, Mustafa
+15:12
+Do you have any questions or additions to the agenda?
+
+CM
+Cavus, Mustafa
+15:12
+No. Okay.
+
+CM
+Cavus, Mustafa
+15:12
+Then I'll take a look.
+
+BC
+Benjumea Canon, Maria Paula
+15:12
+If not, then I would say very briefly that we have, we are already live in you with the risks.
+
+CM
+Cavus, Mustafa
+15:12
+Great.
+
+BC
+Benjumea Canon, Maria Paula
+15:12
+I will then, exactly, I will then send you the links and information by email so that you can then, oh my camera is off, so that you can then, yes, so that you can then see that.
+
+CM
+Cavus, Mustafa
+15:12
+His camera is out, exactly.
+
+BC
+Benjumea Canon, Maria Paula
+15:12
+But we can then already assess the risks for everyone. The only thing is, they don't have a tax, so the risks that come from the Excel file, unfortunately, so we have to go back to the CCG and assign them.
+
+BC
+Benjumea Canon, Maria Paula
+15:13
+But that shouldn't be too bad. But can we, Mustafa and Stefan, the three of us, then have a little session to update everything?
+
+CM
+Cavus, Mustafa
+15:13
+Yes.
+
+BC
+Benjumea Canon, Maria Paula
+15:13
+I'll send you the email.
+
+CM
+Cavus, Mustafa
+15:13
+That means the risks are transferred to Jira. Send the link.
+
+CM
+Cavus, Mustafa
+15:13
+But what about the risks? They still have to be, so to speak, assigned to which team or which cluster.
+
+BC
+Benjumea Canon, Maria Paula
+15:13
+No. So Cluster provides people who are willing to take responsibility for it.
+
+BC
+Benjumea Canon, Maria Paula
+15:13
+The only thing is, we don't have any yet. CCG Store Ordering, for example. That's the only thing that needs to be done.
+
+CM
+Cavus, Mustafa
+15:13
+Okay. Now I understand.
+
+CM
+Cavus, Mustafa
+15:13
+Now I understand. Yes, yes, yes.
+
+CM
+Cavus, Mustafa
+15:13
+Exactly. And maybe Maria.
+
+CM
+Cavus, Mustafa
+15:13
+Should we also check again whether the end-to-end test is relevant or not and try to track it again?
+
+SB
+Schneider, Boris
+15:14
+Question about this, Maria, regarding the risks. Should we do a CCG on this if it's relevant for the integration test or for the CCG goal life?
+
+BC
+Benjumea Canon, Maria Paula
+15:14
+for everything related to CCG, i.e. everything that CCG has an impact on.
+
+SB
+Schneider, Boris
+15:14
+Okay. All right. Thank you.
+
+CM
+Cavus, Mustafa
+15:14
+Where is the short question about this? I now have the distinction, but I didn't quite understand your question.
+
+SB
+Schneider, Boris
+15:14
+Yes. I can tell you, for example, that in our company, compliance checks and AVV.
+
+SB
+Schneider, Boris
+15:14
+On test systems, we don't have any requirements at the moment that we have to do that. That means we put them on test and make our data available now.
+
+SB
+Schneider, Boris
+15:14
+Props sees things differently. That means for integration tests, on pure integration test environments.
+
+SB
+Schneider, Boris
+15:14
+We release our data. We already do that.
+
+SB
+Schneider, Boris
+15:14
+But as soon as we talk about Golag, the situation is different.
+
+BC
+Benjumea Canon, Maria Paula
+15:15
+Ah yes, that was the problem with the data in production, yes. Then yes, so both for testing and for production, so everything that then has to do with the CCG.
+
+BC
+Benjumea Canon, Maria Paula
+15:15
+We can consider whether we then need new tags for ourselves so that we can also distinguish between them. We can do that, but that would not be so much from the TO internally, but for us we can discuss it.
+
+CM
+Cavus, Mustafa
+15:15
+If you schedule an appointment for us to start working on it a little bit, then we can certainly, once it's more mature, once we've gotten through it, also present it here. So send it to us beforehand and maybe give you another opportunity to exchange ideas with us.
+
+BC
+Benjumea Canon, Maria Paula
+15:15
+Yes. Let's discuss it internally first, and then we can bring it up.
+
+CM
+Cavus, Mustafa
+15:16
+Yes, yes. Okay.
+
+CM
+Cavus, Mustafa
+15:16
+The children seem to be a bit of a problem, but he's back, I hear.
+
+GS
+Gatzweiler, Stephan
+15:16
+Yes, that's how it looks.
+
+GS
+Gatzweiler, Stephan
+15:16
+I'm back, where are you in the agenda?
+
+CM
+Cavus, Mustafa
+15:16
+We have, so to speak, that now, as far as we are concerned, we are now at the protocol, at the second point.
+
+GS
+Gatzweiler, Stephan
+15:16
+Yes.
+
+CM
+Cavus, Mustafa
+15:16
+In addition, because Maria has provided the information again that in Jira, the risks have now been transferred and she will provide us with the information again, Maria. Stefan and I will go over that again with regard to the tagging, whether that's relevant for ordering or not, and then we'll come back to it later for a vote.
+
+CM
+Cavus, Mustafa
+15:16
+So far, we have discussed the point again and then I wanted to quickly go through the minutes, but I can also hand that over to you.
+
+GS
+Gatzweiler, Stephan
+15:16
+Yes.
+
+GS
+Gatzweiler, Stephan
+15:17
+Yes. We'll do it very quickly.
+
+GS
+Gatzweiler, Stephan
+15:17
+So, the minutes are filed in the minutes folder in German and English. Paul had given them to us two weeks ago, the first draft of the X-Way structure.
+
+GS
+Gatzweiler, Stephan
+15:17
+Still in the sandbox. But that will then also be transferred to the X-Way format, which we will then work with.
+
+GS
+Gatzweiler, Stephan
+15:17
+Do I need to know about the critical user journeys and the test cases? And in addition to that, there was also homework, so to speak, for the product teams.
+
+GS
+Gatzweiler, Stephan
+15:17
+To take a look at this critical user journey and also the resulting test cases, to see if there are any comments. Then he was very precise about going over the data flow again to see if there had been any updates.
+
+GS
+Gatzweiler, Stephan
+15:18
+I believe in logistics, something had changed. Had to drive, and Stefan had to go over IAM and access authorization again, and yes.
+
+GS
+Gatzweiler, Stephan
+15:18
+We then said that we would start our workstation from twice a week to once a week starting next week, whereby we would now be working at that pace, i.e., every two weeks, for our regular meeting with the status report. All participants and on a rotating basis every other week, a deep dive for content-related topics.
+
+GS
+Gatzweiler, Stephan
+15:18
+That will then be next week, for example, the topic of G-Boss 2.0. That will be presented to us by Tünde in a short presentation.
+
+GS
+Gatzweiler, Stephan
+15:18
+That was how it was summarized, what we did discuss two weeks ago. I would like to go straight to the topic.
+
+GS
+Gatzweiler, Stephan
+15:19
+No, you're welcome to share it.
+
+CM
+Cavus, Mustafa
+15:19
+Do you want to share or should I continue sharing?
+
+GS
+Gatzweiler, Stephan
+15:19
+You have it on the Miro word, the topic with the critical user journey and the resulting test cases.
+
+CM
+Cavus, Mustafa
+15:19
+Wonderful. Yes, yes.
+
+GS
+Gatzweiler, Stephan
+15:19
+Yes. We've now looked into it, and there were no Post-its or comments from you.
+
+GS
+Gatzweiler, Stephan
+15:19
+So either you haven't gotten around to it yet.
+
+GS
+Gatzweiler, Stephan
+15:19
+Or you really don't have any comments. And that's perfectly fine.
+
+GS
+Gatzweiler, Stephan
+15:19
+What is your feedback on this?
+
+GS
+Gatzweiler, Stephan
+15:19
+Mr. Drutzer, please.
+
+CC
+Cevirel, Codruta
+15:19
+Yes, well, last time I wasn't there, and I, to be honest, I missed it here. To look at it.
+
+GS
+Gatzweiler, Stephan
+15:19
+Everything's fine.
+
+CC
+Cevirel, Codruta
+15:19
+But I have a question about it. So, did you guys put that together?
+
+CC
+Cevirel, Codruta
+15:20
+This user journey, or how did it come about?
+
+GS
+Gatzweiler, Stephan
+15:20
+The critical user journey has emerged from the process. Diagram.
+
+GS
+Gatzweiler, Stephan
+15:20
+Patterns from I have distorted the first draft. Not distorted, created.
+
+CM
+Cavus, Mustafa
+15:20
+He is providing it.
+
+GS
+Gatzweiler, Stephan
+15:20
+And then we took that and in the last meeting two weeks ago, we presented it. And so you have to start with something.
+
+GS
+Gatzweiler, Stephan
+15:20
+And that was our first preliminary draft. And then we said, now take a look at this in the products to see if it's right for you or if you still need to make changes or adjustments.
+
+CC
+Cevirel, Codruta
+15:20
+Yes, well, that's what I'll take with me again.
+
+GS
+Gatzweiler, Stephan
+15:20
+Exactly. Yes.
+
+CC
+Cevirel, Codruta
+15:20
+But now, at first glance, I would say that there are at least some questions to be asked. Very end-oriented.
+
+GS
+Gatzweiler, Stephan
+15:20
+Check out
+
+CM
+Cavus, Mustafa
+15:20
+That's exactly what we wanted to achieve with the first draft, so that we could use the feedback to explore the topic in greater depth and then come up with a common position.
+
+CC
+Cevirel, Codruta
+15:21
+And we'll discuss that next week.
+
+CM
+Cavus, Mustafa
+15:21
+do we then definitely have to do that next week. Good.
+
+GS
+Gatzweiler, Stephan
+15:21
+Exactly. Maybe we'll find a time slot there.
+
+GS
+Gatzweiler, Stephan
+15:21
+But what I want to say now is that it's relatively quick, I think it will take about five minutes with you, and I would like to do it once, that this happy happy path to go through to make a post now in which exactly thank you Mustafa which steps which cluster affect so that then Mustafa and I with the corresponding clusters or with the corresponding test box then in individual appointments then into the deep dive can go to then the steps further formulate and also find out who the actors are that is it is now the technical user it is the employee in the market, or is it an event that is triggered? We need to figure that out now in the large group discussion if it is now a to-do for logistics, then SM and M don't necessarily have to be there, and vice versa.
+
+GS
+Gatzweiler, Stephan
+15:22
+But now, briefly, let's look at this happy path for each yellow post with a name attached to it or a cluster that is affected by it. I think we can do that now in this round, right?
+
+GS
+Gatzweiler, Stephan
+15:22
+Maybe you could briefly moderate or say what's on the first notes when we do this happy part. Yes, now it's big enough.
+
+CM
+Cavus, Mustafa
+15:22
+That's big enough. Great.
+
+GS
+Gatzweiler, Stephan
+15:22
+So the first step would be order proposal is visible to the market. Order proposal is retrieved.
+
+PR
+Pum Raphaela
+15:22
+Combination of logistics and SM, i.e., ordering.
+
+GS
+Gatzweiler, Stephan
+15:22
+Yes.
+
+CM
+Cavus, Mustafa
+15:22
+Do we want that in combination, too, in Deep Dive? Very much so.
+
+GS
+Gatzweiler, Stephan
+15:23
+Yes. Yes.
+
+GS
+Gatzweiler, Stephan
+15:23
+Would I suggest that too? Fiete, please.
+
+FP
+Fiete Pape (DE)
+15:23
+I'm thinking about it right now, because of that combination, of course we can still break it down further, because our X-Ray concept also stipulates that, in principle, these test cases, where we basically cut, should always be more of a product that we break down even further.
+
+GS
+Gatzweiler, Stephan
+15:23
+Yes. Yes. Yes.
+
+FP
+Fiete Pape (DE)
+15:23
+But of course, we can start by writing clusters and then go into more detail in the deep dive meetings.
+
+GS
+Gatzweiler, Stephan
+15:23
+Yes. Exactly.
+
+GS
+Gatzweiler, Stephan
+15:23
+Exactly. So far... Exactly.
+
+GS
+Gatzweiler, Stephan
+15:23
+But if that actually turns out to be the case in specific test cases that are documented in X-Way, then it will only be a matter of time before a name is attached to it. But now, to work that out.
+
+GS
+Gatzweiler, Stephan
+15:23
+Does it make sense for both of us to be involved? Because the information comes from Category Management, but then goes on to be processed in SM and M.
+
+GS
+Gatzweiler, Stephan
+15:24
+Okay. The second would be then, yes.
+
+HT
+Holst, Tobias
+15:24
+I think you have to fine-tune the logistics a little bit, because we also have order distribution and market planning, so that you can then add the right products, so to speak, in order to be able to invite the right participants or discuss it with them.
+
+GS
+Gatzweiler, Stephan
+15:24
+Wait a minute. Peter Klamann.
+
+CM
+Cavus, Mustafa
+15:24
+Who would that be, Tobias?
+
+HT
+Holst, Tobias
+15:24
+So here we definitely aren't.
+
+KT
+Kröner, Tim
+15:24
+The first would be story planning.
+
+CM
+Cavus, Mustafa
+15:24
+That would be us, again please, that somehow came up.
+
+KT
+Kröner, Tim
+15:24
+In the first case, it would be store replenishment. So, basically me.
+
+CM
+Cavus, Mustafa
+15:24
+Let's write
+
+KT
+Kröner, Tim
+15:24
+You're welcome to do so.
+
+CM
+Cavus, Mustafa
+15:24
+So now I just can't see because that's on the second page. Who was that?
+
+CM
+Cavus, Mustafa
+15:24
+Tim, Tim, sorry. Then we'll write the name there, because that's how we'll leave it.
+
+CM
+Cavus, Mustafa
+15:24
+That's relatively clear. We can do this.
+
+CM
+Cavus, Mustafa
+15:24
+Okay, on the second one.
+
+CM
+Cavus, Mustafa
+15:25
+Should I do it a little bigger so it's legible? Exactly.
+
+PR
+Pum Raphaela
+15:25
+So, I've heard that station wagons aren't that great, but Team Iam, who created the login, and we as Ordering, who call up the login, have the chip and so on.
+
+GS
+Gatzweiler, Stephan
+15:25
+Yes, I agree.
+
+CM
+Cavus, Mustafa
+15:25
+Yes. For Tim Irm.
+
+CM
+Cavus, Mustafa
+15:25
+Yes, I'll write to her on In, but I'd probably use Andreas's
+
+CM
+Cavus, Mustafa
+15:25
+I think, for now, but then we'll have to see. There is, as I told you last time.
+
+CM
+Cavus, Mustafa
+15:25
+We are currently working with our colleagues to look into this in more detail.
+
+CM
+Cavus, Mustafa
+15:25
+Okay.
+
+GS
+Gatzweiler, Stephan
+15:25
+that since
+
+CM
+Cavus, Mustafa
+15:25
+This is no longer a station wagon.
+
+CM
+Cavus, Mustafa
+15:26
+Finalize determination. So the user confirms the order.
+
+GS
+Gatzweiler, Stephan
+15:26
+Yes.
+
+GS
+Gatzweiler, Stephan
+15:26
+Not yet in logistics. That's the next step, which would then have to be a station wagon again.
+
+CM
+Cavus, Mustafa
+15:26
+What would the logistics be in this case?
+
+KT
+Kröner, Tim
+15:26
+At
+
+PR
+Pum Raphaela
+15:26
+Well.
+
+GS
+Gatzweiler, Stephan
+15:26
+Tim, please.
+
+KT
+Kröner, Tim
+15:26
+However, it is still possible that it will be successfully connected directly to the warehouse. That should be clarified in that step.
+
+GS
+Gatzweiler, Stephan
+15:26
+Yes. Or we can actually fit the station wagon in there.
+
+KT
+Kröner, Tim
+15:27
+But there is an intermediate step, because the order is finalized, then it is re-planned as a story, so it comes back to us, so to speak.
+
+GS
+Gatzweiler, Stephan
+15:27
+Yes.
+
+KT
+Kröner, Tim
+15:27
+We refine the whole thing and then pass it on to AVT.
+
+CM
+Cavus, Mustafa
+15:27
+the proposal. Which, of course, is more detailed if you look at it in greater depth, there are certainly a few more distinctions or differentiations.
+
+CM
+Cavus, Mustafa
+15:27
+Let's dive deeper into this in Deep Dive and perhaps straighten things out a bit.
+
+GS
+Gatzweiler, Stephan
+15:27
+Yes, but then we need the logistics specialists to be involved in step 4.
+
+KT
+Kröner, Tim
+15:27
+But then
+
+HT
+Holst, Tobias
+15:27
+Just right.
+
+PR
+Pum Raphaela
+15:27
+Ordering in five no longer.
+
+GS
+Gatzweiler, Stephan
+15:27
+Yes. Correct.
+
+CM
+Cavus, Mustafa
+15:27
+So, at 5, we don't need logistics.
+
+GS
+Gatzweiler, Stephan
+15:27
+But no, at 5 we no longer need ordering, and at 4 we still need logistics to handle the intermediate steps. Yes, plus look.
+
+CM
+Cavus, Mustafa
+15:27
+Ah, Soren means it here. Okay.
+
+CM
+Cavus, Mustafa
+15:27
+Okay. And there you go again, Tim, right?
+
+HT
+Holst, Tobias
+15:27
+We have to deal with that too. AVT is then used for the broadcast.
+
+HT
+Holst, Tobias
+15:28
+This means that we will then be Tim, Tobi, and Rafa. Will you also be there? You're SO, right?
+
+HT
+Holst, Tobias
+15:28
+Yes.
+
+GS
+Gatzweiler, Stephan
+15:28
+Yes.
+
+CM
+Cavus, Mustafa
+15:28
+Yes, yes, yes.
+
+GS
+Gatzweiler, Stephan
+15:28
+Well, exactly.
+
+CM
+Cavus, Mustafa
+15:28
+Okay.
+
+GS
+Gatzweiler, Stephan
+15:28
+The three of you then. Perfect.
+
+CM
+Cavus, Mustafa
+15:28
+Then we've got that sorted. Log.
+
+CM
+Cavus, Mustafa
+15:28
+At the fifth logistics. Separately, so alone.
+
+CM
+Cavus, Mustafa
+15:28
+we are at the 6th.
+
+HT
+Holst, Tobias
+15:28
+At the 5 and at the 6, I think it's Tim both times. There we are as a broadcast then out.
+
+HT
+Holst, Tobias
+15:28
+Is that right, Tim?
+
+CM
+Cavus, Mustafa
+15:28
+then I'll write the
+
+KT
+Kröner, Tim
+15:28
+No, we'll hand over the items to the warehouse directly. We're just handing it over to AVT, and AVT is expanding HI's economic system again.
+
+KT
+Kröner, Tim
+15:28
+So from
+
+HT
+Holst, Tobias
+15:28
+Exactly, that was already in point 4, I think. So we're right there with you.
+
+HT
+Holst, Tobias
+15:29
+In point 5, it said that you are already being processed in the camp.
+
+KT
+Kröner, Tim
+15:29
+Exactly, that there's something going on in the warehouse. From my point of view, I don't care at all.
+
+KT
+Kröner, Tim
+15:29
+So purely from my team's perspective, if I want to put it in broader terms.
+
+HT
+Holst, Tobias
+15:29
+Good, me too. So, I also have nothing left to do in the warehouse.
+
+KT
+Kröner, Tim
+15:29
+That's why I have no idea who does it.
+
+HT
+Holst, Tobias
+15:29
+That means yes.
+
+CM
+Cavus, Mustafa
+15:29
+Who will do it in the warehouse then?
+
+PR
+Pum Raphaela
+15:29
+are, wait a minute.
+
+CM
+Cavus, Mustafa
+15:29
+Because that would be HI storage now.
+
+HT
+Holst, Tobias
+15:29
+Yes.
+
+GS
+Gatzweiler, Stephan
+15:29
+Yes.
+
+KT
+Kröner, Tim
+15:29
+Yes, exactly.
+
+CM
+Cavus, Mustafa
+15:29
+Who would be there now, how do we know who to contact?
+
+HT
+Holst, Tobias
+15:29
+That's Armin or Peter, could it be? One of them?
+
+PR
+Pum Raphaela
+15:29
+Yes, I think so too.
+
+HT
+Holst, Tobias
+15:29
+Not even here yet for the appointment, I think. That's Agnes.
+
+CM
+Cavus, Mustafa
+15:29
+So far, they're not in there at all. So we'll have to, if we now determine the need, we'll of course also have to make sure that we get them back in.
+
+HT
+Holst, Tobias
+15:29
+I think Peter is the business analyst, then I would probably approach Peter first, and he will forward it on if necessary.
+
+CM
+Cavus, Mustafa
+15:29
+Or rather
+
+CM
+Cavus, Mustafa
+15:29
+Now Peter again.
+
+HT
+Holst, Tobias
+15:29
+And closer to trash.
+
+CM
+Cavus, Mustafa
+15:29
+What's Peter's name? Müller?
+
+HT
+Holst, Tobias
+15:29
+With N in between.
+
+CM
+Cavus, Mustafa
+15:29
+Oh, I see.
+
+HT
+Holst, Tobias
+15:29
+Exactly, take Müll with Ö, Ü, right? Müll closer. Exactly.
+
+KT
+Kröner, Tim
+15:30
+do not include the name in the chat if you are unsure.
+
+CM
+Cavus, Mustafa
+15:30
+Yes. That might be a good idea.
+
+CM
+Cavus, Mustafa
+15:30
+Otherwise, I now understand, perhaps with a double L, I don't know, maybe if you know, just write it in the chat.
+
+KT
+Kröner, Tim
+15:30
+Just please from point 5 Tim again strike out, because as I said, we are not responsible for that.
+
+HT
+Holst, Tobias
+15:30
+So that's how he is, at least he can be reached via Teams with UE. I now have it written in the chat.
+
+HT
+Holst, Tobias
+15:30
+Then you'll definitely be able to find him that way.
+
+HT
+Holst, Tobias
+15:30
+add an L, then it's correct.
+
+CM
+Cavus, Mustafa
+15:30
+Okay.
+
+HT
+Holst, Tobias
+15:30
+For point 6, I would also say the same thing to him. I don't know if he would be the right person for that either, but
+
+CM
+Cavus, Mustafa
+15:30
+Is that, Tobi, something where we only need Peter Müllner or HI now, Peter Müllner as a synonym for it, or do you have to be involved, for example?
+
+HT
+Holst, Tobias
+15:31
+No. So I can come with you, you're welcome to give me a ride, but yes.
+
+CM
+Cavus, Mustafa
+15:31
+I would like to take you with me, as a box, so to speak.
+
+HT
+Holst, Tobias
+15:31
+Yes.
+
+CM
+Cavus, Mustafa
+15:31
+And then we have you, our HI colleague, as an expert.
+
+HT
+Holst, Tobias
+15:31
+Yes, it's perfectly fine. These are just processes that we are experiencing for the first time, but I'm happy to take them on board.
+
+CM
+Cavus, Mustafa
+15:31
+Fine. Great.
+
+CM
+Cavus, Mustafa
+15:31
+Yes, Yeah, yeah.
+
+CM
+Cavus, Mustafa
+15:31
+So wie was now at the 6th.
+
+CM
+Cavus, Mustafa
+15:31
+The logistics were HI again, right?
+
+HT
+Holst, Tobias
+15:31
+Yes. If I leave the same way, he'll do the same thing again.
+
+HT
+Holst, Tobias
+15:31
+Namely, he'll also do the same thing again, which is
+
+HT
+Holst, Tobias
+15:31
+That's fine.
+
+CM
+Cavus, Mustafa
+15:31
+So. Delivery arrives at the market.
+
+CM
+Cavus, Mustafa
+15:32
+And there it is.
+
+PR
+Pum Raphaela
+15:32
+Track entrance. Store WWS.
+
+PR
+Pum Raphaela
+15:32
+Where I have a dual role, so to speak, as a substitute for this. Because that's my old team. Outside of Neo.
+
+CM
+Cavus, Mustafa
+15:32
+So there we write WE. There was an entrance.
+
+CM
+Cavus, Mustafa
+15:32
+And there we also write your name in it.
+
+PR
+Pum Raphaela
+15:32
+We
+
+PR
+Pum Raphaela
+15:32
+Thank you.
+
+CM
+Cavus, Mustafa
+15:32
+Exactly, that was an initial delivery, and then the final delivery was an incoming delivery, which is actually the same thing.
+
+PR
+Pum Raphaela
+15:32
+Exactly.
+
+PR
+Pum Raphaela
+15:32
+I would also see that as a point.
+
+CM
+Cavus, Mustafa
+15:32
+Yes, can we still verify that in the deep dive, yes?
+
+CM
+Cavus, Mustafa
+15:33
+Okay.
+
+SB
+Schneider, Boris
+15:33
+has on the question of whether one should roll into the circle is not better known.
+
+CM
+Cavus, Mustafa
+15:33
+Boris has gotten in touch.
+
+SB
+Schneider, Boris
+15:33
+Market standards. Should we take a look at those?
+
+SB
+Schneider, Boris
+15:33
+Maybe you'll take a look in your direction. First point: store ordering.
+
+PR
+Pum Raphaela
+15:33
+Yes.
+
+SB
+Schneider, Boris
+15:33
+And also warehouse standards, if you follow Tobi's direction, I think you're the one who might be able to help a little bit here, or Tim, to also talk about, I think, ChainMD at your company, could that be it?
+
+HT
+Holst, Tobias
+15:33
+Exactly, that's about ChainMD, which is not our team now, but Francisco was, I think, here in the calls every now and then. Then I assume that Francisco will be there too.
+
+HT
+Holst, Tobias
+15:33
+But that's where I'm also involved in this matter. Point four would have to be because the mapping and the whole thing, that's only just happening, so to speak, when we have the data there.
+
+HT
+Holst, Tobias
+15:33
+That means where Tim and Tobi are, Francisco will be there too.
+
+PR
+Pum Raphaela
+15:34
+I also have the feeling that maybe it's just a point between 4 and 5 that's missing.
+
+HT
+Holst, Tobias
+15:34
+I also believe we can still do that later on.
+
+PR
+Pum Raphaela
+15:34
+Sorry. Not standing.
+
+CM
+Cavus, Mustafa
+15:34
+Exactly.
+
+HT
+Holst, Tobias
+15:34
+I think that might make it clearer if we add an intermediate step there.
+
+CM
+Cavus, Mustafa
+15:34
+We'd be happy to do that. As I said, in the Deep Dives, if it makes sense, then we'll take intermediate steps.
+
+CM
+Cavus, Mustafa
+15:34
+That was the first draft, just to get started with a relatively high altitude.
+
+HT
+Holst, Tobias
+15:34
+Yes.
+
+HT
+Holst, Tobias
+15:34
+I think that wasn't negative criticism either. It was good.
+
+CM
+Cavus, Mustafa
+15:34
+No, no, I don't think that's what I meant either.
+
+PR
+Pum Raphaela
+15:34
+No, no.
+
+CM
+Cavus, Mustafa
+15:34
+I only wanted it because
+
+PR
+Pum Raphaela
+15:34
+to the market master data. We need the market master data already in point 1 so that we can generate the order proposal in the correct market.
+
+PR
+Pum Raphaela
+15:34
+But then everything comes together here, i.e., AMD, CM. Market master data.
+
+CM
+Cavus, Mustafa
+15:34
+do we need that now in point 1, so Francesco needs to be there.
+
+PR
+Pum Raphaela
+15:35
+No, I think Francisco only joined the JNMD team later.
+
+CM
+Cavus, Mustafa
+15:35
+Or do I need my other one with me?
+
+SB
+Schneider, Boris
+15:35
+So market standards, you can count me in. If we're talking about names, yes.
+
+CM
+Cavus, Mustafa
+15:35
+Okay. Good.
+
+PR
+Pum Raphaela
+15:35
+AMD and CM, if so. Exactly.
+
+CC
+Cevirel, Codruta
+15:35
+Everything that falls under the preconditions. Or you can see this as a preliminary point, which could also be done. I don't know.
+
+CM
+Cavus, Mustafa
+15:35
+Perhaps that makes sense, since the previous point is made, because otherwise it becomes too big, I think. Then we'll make a preliminary point here.
+
+CM
+Cavus, Mustafa
+15:35
+I'll just do it here and then
+
+CC
+Cevirel, Codruta
+15:35
+under certain conditions.
+
+CM
+Cavus, Mustafa
+15:35
+Then let's start at 0.
+
+CM
+Cavus, Mustafa
+15:35
+or I'll just leave it, it's a bit out of place here.
+
+CM
+Cavus, Mustafa
+15:36
+Then you would also be here with the preconditions, if you now consider this as, yes, then we'll take you.
+
+SB
+Schneider, Boris
+15:36
+Yes. As far as I understand, yes.
+
+CM
+Cavus, Mustafa
+15:36
+Namely, you out of here, then there's Boris, then there's
+
+CC
+Cevirel, Codruta
+15:36
+But since I've also been thinking about the prizes, Olaf
+
+GO
+Gliewe, Olaf
+15:36
+Yes, exactly.
+
+CM
+Cavus, Mustafa
+15:36
+Olaf, in terms of AMD, who did we have there, Andreas, Stefan.
+
+GS
+Gatzweiler, Stephan
+15:36
+Yes.
+
+CM
+Cavus, Mustafa
+15:36
+Okay.
+
+CM
+Cavus, Mustafa
+15:36
+This will then allow us to go into the deep dive and intensify it together once again. Not intensify, sharpen.
+
+CM
+Cavus, Mustafa
+15:36
+Thank you. How does it look with alternative scenarios?
+
+CM
+Cavus, Mustafa
+15:37
+I think that's what a critical user journey is all about, where the pain points are, i.e., where we actually are in need of paying attention in terms of risk. There are the article changes.
+
+CM
+Cavus, Mustafa
+15:37
+There's an item that's been removed entirely, or new items are being added, so to speak. One issue there is with the, I don't know how far that is in scope, but if individual orders are an issue.
+
+CM
+Cavus, Mustafa
+15:37
+Yes. And that might be something, just for the report, the processing of the order proposal and then returning later.
+
+CM
+Cavus, Mustafa
+15:37
+Whether we do things like that and in what way, how critical it is, we might have to evaluate that together.
+
+PR
+Pum Raphaela
+15:37
+Yes. We considered this a normal scenario, and they are also intercepted in the app.
+
+CM
+Cavus, Mustafa
+15:38
+We have been intercepting with the app. That means we should perhaps revisit the alternative scenarios at the top when we go through the individual topics, shifting the focus away from logistics and store ordering in particular.
+
+GS
+Gatzweiler, Stephan
+15:38
+Exactly.
+
+CM
+Cavus, Mustafa
+15:38
+Let's take a look at it together. How far we can go there from the perspective of the process, the duel test, or how far that, let's say, in the preliminary tests, is sufficiently ensured.
+
+CM
+Cavus, Mustafa
+15:38
+Do we want to do it that way?
+
+GS
+Gatzweiler, Stephan
+15:38
+Yes, as far as I'm concerned, we can do it that way. Well, I would first of all take the time to formulate this happy path.
+
+GS
+Gatzweiler, Stephan
+15:38
+And then we can look at the alternative scenarios.
+
+CM
+Cavus, Mustafa
+15:38
+Exactly.
+
+GS
+Gatzweiler, Stephan
+15:38
+But then we'll already know who the contact persons are.
+
+CM
+Cavus, Mustafa
+15:38
+Would I be in that, would I be in that, in the deep dive, then I would definitely cover it accordingly.
+
+GS
+Gatzweiler, Stephan
+15:38
+They derive from the happy path.
+
+GS
+Gatzweiler, Stephan
+15:39
+Yes.
+
+CM
+Cavus, Mustafa
+15:39
+Okay, Stefan, then I'll pass you on again. How many scenarios, I think, are the same?
+
+GS
+Gatzweiler, Stephan
+15:39
+Yes.
+
+GS
+Gatzweiler, Stephan
+15:39
+So. Okay, then we've done that.
+
+GS
+Gatzweiler, Stephan
+15:39
+That's great. We would then, in the next few weeks, have Mustafa meet with our colleagues for about half an hour to go over the test cases in more detail.
+
+GS
+Gatzweiler, Stephan
+15:39
+What do we have next on the agenda?
+
+RA
+Radhika Ashok (DE)
+15:39
+There is a change to our schedule to weekly.
+
+GS
+Gatzweiler, Stephan
+15:39
+Well, yes, that's what I just did, so now we can, we can move on. So next week, you should all have received the dates.
+
+GS
+Gatzweiler, Stephan
+15:40
+I don't know if I can help you, Boris, with that. Otherwise, I'll forward the schedule to you as well.
+
+GS
+Gatzweiler, Stephan
+15:40
+So, starting next week, we would then go into the deep dive for G-Boss.
+
+GS
+Gatzweiler, Stephan
+15:40
+Mustafa. Can you still see me?
+
+GS
+Gatzweiler, Stephan
+15:40
+Can you hear me?
+
+RA
+Radhika Ashok (DE)
+15:40
+Yes, yes, we hear you.
+
+GS
+Gatzweiler, Stephan
+15:40
+Yes. But Mustafa, he's kind of frozen, is that possible?
+
+GS
+Gatzweiler, Stephan
+15:40
+Mustafa isn't moving anymore.
+
+RA
+Radhika Ashok (DE)
+15:40
+Yes, I think you just have to, yes.
+
+BC
+Benjumea Canon, Maria Paula
+15:40
+Yes, I think he no longer has internet access.
+
+GS
+Gatzweiler, Stephan
+15:40
+Mustafa has been kicked out. Okay, well.
+
+RA
+Radhika Ashok (DE)
+15:40
+If perhaps a topic is suitable, especially when we still have five minutes left.
+
+GS
+Gatzweiler, Stephan
+15:40
+Yes.
+
+RA
+Radhika Ashok (DE)
+15:40
+We've been talking about scenarios. I was able to briefly show in extra how these scenarios also could look in extra, so that you have that in mind when you do the test cases as well.
+
+RA
+Radhika Ashok (DE)
+15:41
+But please excuse me if I didn't pronounce that correctly, I'm sorry, you have your towel, shower, delicious.
+
+GS
+Gatzweiler, Stephan
+15:41
+Okay, please raise your question.
+
+ZD
+Zoric Dusan
+15:41
+I was about to suggest a different topic regarding the environments. And is it possible for us to have one dedicated pre-production environment?
+
+ZD
+Zoric Dusan
+15:41
+That is, that would be super good and super useful for us. And currently.
+
+ZD
+Zoric Dusan
+15:41
+There's setting up the staging environment. So maybe now would be the time, especially with all these lights on CCG, to maybe escalate this and ask for one pre-production environment.
+
+ZD
+Zoric Dusan
+15:41
+We imagine that this will be on the staging environment, executed, decentralized testing, right?
+
+GS
+Gatzweiler, Stephan
+15:42
+Yes. Mustafa and Maria correct me from wrong, but as far as I know staging environment in pre-prod is the same isn't it
+
+BC
+Benjumea Canon, Maria Paula
+15:42
+Yes.
+
+ZD
+Zoric Dusan
+15:42
+Well, right now you're on the new tech platform.
+
+BC
+Benjumea Canon, Maria Paula
+15:42
+the New Tech Platform.
+
+GS
+Gatzweiler, Stephan
+15:42
+Yep.
+
+BC
+Benjumea Canon, Maria Paula
+15:42
+We only have three different ones, how do you say it, environments.
+
+ZD
+Zoric Dusan
+15:42
+Which three?
+
+BC
+Benjumea Canon, Maria Paula
+15:42
+That's development. Staging.
+
+BC
+Benjumea Canon, Maria Paula
+15:42
+And production.
+
+ZD
+Zoric Dusan
+15:42
+Okay. Yes. Okay.
+
+ZD
+Zoric Dusan
+15:42
+Then we are on the same page. So I'm asking for the fourth one.
+
+ZD
+Zoric Dusan
+15:42
+So third one in hierarchy. Development, staging, which should be at the product level, this pre-production where we would have this is for this CCG.
+
+BC
+Benjumea Canon, Maria Paula
+15:42
+No, not pre-production. There is no pre-product.
+
+ZD
+Zoric Dusan
+15:42
+No, no, no, I understand. So now there's a three development staging production.
+
+ZD
+Zoric Dusan
+15:43
+Right. And I'm for the to answer the fourth one before production.
+
+ZD
+Zoric Dusan
+15:43
+Where we can have all these services connected. They're not directly like now, where they are all separated.
+
+ZD
+Zoric Dusan
+15:43
+It would be super tough to test inside of your own product and to end up in the same environment. So I believe if it's, I mean, I believe and my team, if it's time for us for another environment, it's probably now.
+
+ZD
+Zoric Dusan
+15:43
+Yes. Yeah.
+
+GS
+Gatzweiler, Stephan
+15:43
+So you mean you are currently testing on the stage, right?
+
+ZD
+Zoric Dusan
+15:43
+We're currently testing on the stage, but I don't know how it will look like when every team is testing their own product.
+
+BC
+Benjumea Canon, Maria Paula
+15:43
+We discussed it a couple of days ago.
+
+ZD
+Zoric Dusan
+15:44
+For sure won't be possible at the same time.
+
+BC
+Benjumea Canon, Maria Paula
+15:44
+We talked about it a couple of days ago. And as far as I understood from the technicality enabler.
+
+BC
+Benjumea Canon, Maria Paula
+15:44
+Yes. In the staging environment. Right.
+
+BC
+Benjumea Canon, Maria Paula
+15:44
+Like they said, it's not like it having one environment for staging doesn't mean that it's just one place, but you can have different types of environments under that environment. So in the staging environment we can create a soup environment.
+
+BC
+Benjumea Canon, Maria Paula
+15:44
+I don't know the technical term where you can then have your prepared environment. But the main environments.
+
+BC
+Benjumea Canon, Maria Paula
+15:44
+The three main environments. As far as I know, there's no, there's not going to be a fourth or fifth one.
+
+BC
+Benjumea Canon, Maria Paula
+15:44
+These are the three main environments and then everything else should be inside one of the three. But we can check with tech on a team.
+
+ZD
+Zoric Dusan
+15:44
+So are you saying, okay, so let's open that topic because it would be very good if we have one environment that is close to production that is to production is as close as possible where where we have everything connected. And not do the product test going on on that environment.
+
+ZD
+Zoric Dusan
+15:45
+Okay. Yeah.
+
+ZD
+Zoric Dusan
+15:45
+I just wanted to mention that now. And it seems like the timing is good because there's a setup going on now for environments.
+
+ZD
+Zoric Dusan
+15:45
+So sorry. But
+
+GS
+Gatzweiler, Stephan
+15:45
+No, no.
+
+BC
+Benjumea Canon, Maria Paula
+15:45
+No, we should definitely write that down. I don't know if we want to place it as a to-do or how do you, Stefan and Mustafa, how do you think we should
+
+GS
+Gatzweiler, Stephan
+15:45
+I would first say that FIT has also raised his hand. Please FIT.
+
+BC
+Benjumea Canon, Maria Paula
+15:45
+Follow this
+
+FP
+Fiete Pape (DE)
+15:45
+Yes. So, Dujan.
+
+FP
+Fiete Pape (DE)
+15:46
+Thank you. you for rating this topic.
+
+FP
+Fiete Pape (DE)
+15:46
+So because also in our concept from testing point of view, of course, we have like we've foreseen a pre-prod environment which is like only dedicated for end-to-end testing. Because you cannot do product level testing, interface testing and end-to-end in the same environment.
+
+FP
+Fiete Pape (DE)
+15:46
+But this is exactly the point where we need also your input what is already there and the goal from our concept. So we have to bring these words together.
+
+FP
+Fiete Pape (DE)
+15:46
+So I can take this with me as like we have as a to drive this topic. But in general, we foresee we have to talk with tech and IT to have like one what they see with it but also with the product teams because in the end also the product teams has to like provide the application within this pre-prod environment and also other limitations from is it legacy and everything.
+
+FP
+Fiete Pape (DE)
+15:47
+So we have to see the whole process and involved applications and on which stage or which environment that these the process is executed in the end. So of course with new application Rewe tech platform we have the maybe we can just spawn an environment but we are also dependent on legacy so we have to see the whole data flow and which exact environment from each product are involved.
+
+FP
+Fiete Pape (DE)
+15:47
+So this is the goal to have like a full picture of that. And maybe this could be like this is what Mustafa mentioned with start working package environments, because also with the data flow, we need to see which environment of which product is involved.
+
+FP
+Fiete Pape (DE)
+15:47
+And this is something we need to work on. Maybe this is something we can just have a slot within the next meeting.
+
+FP
+Fiete Pape (DE)
+15:48
+do we sit? We can prepare something.
+
+FP
+Fiete Pape (DE)
+15:48
+We can work on
+
+GS
+Gatzweiler, Stephan
+15:48
+Yeah.
+
+GS
+Gatzweiler, Stephan
+15:48
+Yeah, I think that is a good topic for one of our next deep dives.
+
+CM
+Cavus, Mustafa
+15:48
+Yes.
+
+GS
+Gatzweiler, Stephan
+15:48
+So let's see, let's say for example.
+
+GS
+Gatzweiler, Stephan
+15:48
+In in three weeks. So as we have the G boss
+
+GS
+Gatzweiler, Stephan
+15:48
+G-Boss Topic next next week and then the week after there's our regular meeting we can talk about that topic again in two weeks and Fiete will get in contact with the colleagues from the
+
+GS
+Gatzweiler, Stephan
+15:48
+Tech platform. But
+
+GS
+Gatzweiler, Stephan
+15:48
+as he said if we want to test end-to-end on a fourth stage then every product has to deploy on that stage otherwise it doesn't make sense yeah
+
+ZD
+Zoric Dusan
+15:49
+Yes. Yes, but it will not be, how to say, double effort.
+
+ZD
+Zoric Dusan
+15:49
+Every setup that we want to do it now on staging will be on that fourth environment. We would have to do this work anyway.
+
+GS
+Gatzweiler, Stephan
+15:49
+Yeah.
+
+ZD
+Zoric Dusan
+15:49
+It's just that we have a clean, separate environment. And I mean, of course we don't care if it's cold.
+
+ZD
+Zoric Dusan
+15:49
+Fort environment or subsection of the staging environment or whatever. Just to be clean cut off.
+
+GS
+Gatzweiler, Stephan
+15:49
+Yeah.
+
+ZD
+Zoric Dusan
+15:49
+And super stable, production-like.
+
+GS
+Gatzweiler, Stephan
+15:49
+Yeah. I totally agree with you.
+
+GS
+Gatzweiler, Stephan
+15:49
+But then all products need to be aligned. And yeah.
+
+GS
+Gatzweiler, Stephan
+15:49
+And have to do the same deployment on the same in environment. That we can do the end-to-end test.
+
+GS
+Gatzweiler, Stephan
+15:49
+So we need all products on board to do that.
+
+GS
+Gatzweiler, Stephan
+15:50
+So we are five Minutes of overtime.
+
+GS
+Gatzweiler, Stephan
+15:50
+We are five minutes over time. Fiete.
+
+FP
+Fiete Pape (DE)
+15:50
+I I only have one more question, Tech and IT, maybe briefly asked in this round, which of the architects, I have spoken to many, is closest to this store ordering architecture and can best assess it, the one from a Tech and IT perspective, but also in such a way that they have a little bit of store ordering knowledge, perhaps already, across the board.
+
+BC
+Benjumea Canon, Maria Paula
+15:50
+I would say Dominic Rath, right?
+
+CM
+Cavus, Mustafa
+15:50
+Do you see that?
+
+BC
+Benjumea Canon, Maria Paula
+15:50
+So Dominic is, well, he's an architect at SM and he's in contact with Tekken IT Enabler.
+
+CM
+Cavus, Mustafa
+15:50
+We're happy to work with Dominik, of course.
+
+BC
+Benjumea Canon, Maria Paula
+15:50
+That's why I would say he would be your best contact person.
+
+CM
+Cavus, Mustafa
+15:50
+Okay. Then we can talk to Dominik right now, Fiete.
+
+FP
+Fiete Pape (DE)
+15:50
+Can you spell that name for us, Dominik?
+
+CM
+Cavus, Mustafa
+15:50
+Maria, are you going to do that, or is that going to smell quickly? You did it, great.
+
+BC
+Benjumea Canon, Maria Paula
+15:51
+I just did it.
+
+FP
+Fiete Pape (DE)
+15:51
+Great, thank you.
+
+BC
+Benjumea Canon, Maria Paula
+15:51
+Sorry, my accent, then you can hear you rat, rat.
+
+FP
+Fiete Pape (DE)
+15:51
+Yes. Sometimes you just don't know what to do with the H or the D.
+
+FP
+Fiete Pape (DE)
+15:51
+That has nothing to do with accent.
+
+BC
+Benjumea Canon, Maria Paula
+15:51
+Yes.
+
+GS
+Gatzweiler, Stephan
+15:51
+No.
+
+CM
+Cavus, Mustafa
+15:51
+Everything's fine.
+
+GS
+Gatzweiler, Stephan
+15:51
+That's right.
+
+CM
+Cavus, Mustafa
+15:51
+Okay.
+
+GS
+Gatzweiler, Stephan
+15:51
+Mustafa, what else is on the agenda?
+
+CM
+Cavus, Mustafa
+15:51
+We now have the latest status on the data flow for the X-Ray, but we have that now, yes, we'll get to that in a moment, because we're already, yes, over five minutes over time. Maybe once again to the group, if at the data flow still from the individual products still something new.
+
+CM
+Cavus, Mustafa
+15:51
+Please enter it, because we want to then proceed with the entries there, always with the best possible current status, because then everyone will look and we'll all collapse together over this data flow. That would be another appeal, a request to you, if last time Tobias, you briefly introduced what changes you had, if such changes or updates are available, please also enter them there so that we always have the current status.
+
+CM
+Cavus, Mustafa
+15:52
+Great, thank you for that. Yes, and I would say, let's do X-Ray next time, otherwise we would now be running out of time.
+
+CM
+Cavus, Mustafa
+15:52
+Yes, exactly.
+
+GS
+Gatzweiler, Stephan
+15:52
+Yes. Then Paul will be with you too.
+
+GS
+Gatzweiler, Stephan
+15:52
+That's exactly what we'll do next time. Good.
+
+GS
+Gatzweiler, Stephan
+15:52
+Yes, sorry that today was a bit bumpy, that I also arrived late. The children just triggered me today.
+
+GS
+Gatzweiler, Stephan
+15:52
+That happens sometimes.
+
+CM
+Cavus, Mustafa
+15:52
+Yes, sometimes that's just the way it has to be, but exactly.
+
+GS
+Gatzweiler, Stephan
+15:52
+You're not in it. Okay, then we'll talk to you when you have time and feel like it, hopefully next Thursday.
+
+GS
+Gatzweiler, Stephan
+15:52
+And then there will be news about G-Boss 2.0.
+
+CM
+Cavus, Mustafa
+15:52
+With this in mind, thank you very much.
+
+CM
+Cavus, Mustafa
+15:52
+Bye.
+
+GS
+Gatzweiler, Stephan
+15:52
+Thank you very much and see you next week at the latest. Bye.
+
+BC
+Benjumea Canon, Maria Paula
+15:52
+Thank you. See you later. Bye.
+
+HT
+Holst, Tobias
+15:52
+See you later, bye.

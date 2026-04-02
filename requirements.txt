@@ -1,3 +1,4 @@
+openai-whisper
 gTTS>=2.5.0
 pydub>=0.25.1
 streamlit>=1.30.0
