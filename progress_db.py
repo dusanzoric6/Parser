@@ -1,5 +1,8 @@
 from libsql_experimental import connect
 
+# web page
+# https://app.turso.tech/dusanzoric6/databases/reading-progress/data
+
 # ✅ IMPORTANT: use https, NOT libsql://
 client = connect(
     "https://reading-progress-dusanzoric6.aws-eu-west-1.turso.io",
