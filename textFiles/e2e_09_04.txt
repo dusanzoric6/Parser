@@ -1,0 +1,1818 @@
+Vollständig geschützt
+
+GS
+Gatzweiler, Stephan
+15:04
+Ah, okay.
+
+GS
+Gatzweiler, Stephan
+15:04
+Okay, Dujan, does it work now with the translation?
+
+Benjumea Canon, Maria Paula ist der Übersetzungsmanager und hat die Kontrolle über die allgemeinen Übersetzungseinstellungen.
+ZD
+Zoric Dusan
+15:04
+Yes.
+
+HT
+Holst, Tobias
+15:04
+I think you need to speak German.
+
+ZD
+Zoric Dusan
+15:04
+Yes. Thank you very much.
+
+GS
+Gatzweiler, Stephan
+15:04
+Okay. Yeah, perfect.
+
+GS
+Gatzweiler, Stephan
+15:04
+So. As usual.
+
+GS
+Gatzweiler, Stephan
+15:04
+If you have any questions, do John away with a question in English and we will reply in English as well but we will help the meeting in German if it's okay for you. Perfect.
+
+GS
+Gatzweiler, Stephan
+15:05
+Okay, then Yes, thanks for the in-depth look.
+
+GS
+Gatzweiler, Stephan
+15:05
+Thank you all for joining us for the Deep Dive. We would like to discuss the topic of X-Way again today, and since the test cases were there, we had, yes, we already covered the happy path with test cases.
+
+GS
+Gatzweiler, Stephan
+15:05
+That means we have a test. set for the happy path and for the negative cases and alternative scenarios.
+
+GS
+Gatzweiler, Stephan
+15:05
+We have test cases, and the test cases for the happy path are already described and reviewed. Did Oliver, together with Olaf, provide support regarding AI?
+
+GS
+Gatzweiler, Stephan
+15:05
+Generate test cases so that we also have the negative and alternative scenarios covered. The test cases were created by Radika and added to a repository.
+
+GS
+Gatzweiler, Stephan
+15:06
+And then we’re already working on assigning them to the corresponding products. That means the test cases are product-specific.
+
+GS
+Gatzweiler, Stephan
+15:06
+So that means the test case belongs to either ALP, Logistics, or Category Management. But this isn’t a test case that’s performed by two products.
+
+GS
+Gatzweiler, Stephan
+15:06
+Exactly. Thank you, Radhika.
+
+GS
+Gatzweiler, Stephan
+15:06
+And perhaps to start with, I would like to hand it over to Radhika so she can go over the structure in XY again. That is, where can you find the test repository, where can you find the test sets to which the test cases can then be assigned.
+
+GS
+Gatzweiler, Stephan
+15:06
+And then maybe you could also add a few words about that, Radhika—I’ve been thinking about that this morning, and it’s a very important distinction. How do I create a test case and how do I create a precondition?
+
+GS
+Gatzweiler, Stephan
+15:06
+They’re here too. That’s interesting for the colleagues who aren’t currently actively executing test cases, but who are involved in the preconditions.
+
+GS
+Gatzweiler, Stephan
+15:07
+And that’s where I’d like to use this opportunity to hand the floor over to Radhika.
+
+RA
+Radhika Ashok (DE)
+15:07
+You're welcome. Thanks, Stefan.
+
+RA
+Radhika Ashok (DE)
+15:07
+I'll send you the link to this project for now. Feel free to open it and see if you have access here.
+
+RA
+Radhika Ashok (DE)
+15:07
+As far as I know, I’ve granted access to everyone. If not, Stefan has taken care of it.
+
+RA
+Radhika Ashok (DE)
+15:07
+But if something doesn’t work, feel free to let us know here in the chat, and I’ll take care of it during our conversation. What you see here is the testing board.
+
+RA
+Radhika Ashok (DE)
+15:07
+It has two views. One is Folders.
+
+RA
+Radhika Ashok (DE)
+15:07
+That is and repository where
+
+RA
+Radhika Ashok (DE)
+15:07
+stored. That’s what we’ve done by cluster and product.
+
+RA
+Radhika Ashok (DE)
+15:07
+these repository. And
+
+RA
+Radhika Ashok (DE)
+15:07
+The idea is that when the test cases are created, they can be added to the product in the product folder so that we can continue to use them in the future and don't have to create them from scratch for every CCG. If such a case arises where we need to reuse them.
+
+RA
+Radhika Ashok (DE)
+15:08
+As you can see here at the very top: Test Repository Folter already has a few tests listed right here. That’s because they aren’t assigned to a product team.
+
+RA
+Radhika Ashok (DE)
+15:08
+Feel free to go through these tests and see which product team they belong to, and simply drag and drop them—that is, for example, take them and drop them onto the product team, into the product team folder, and not just that, but feel free to go through the existing tests that are in the folder as well and check if they’re organized correctly. We started with a guess, but you know better which tests belong to which product teams.
+
+RA
+Radhika Ashok (DE)
+15:09
+And here, if you notice, there are two types of issue types. That’s the one with the circle icon—that’s a test—and okay, that’s also a circle, but in a different color.
+
+RA
+Radhika Ashok (DE)
+15:09
+That’s a precondition. These are the prerequisites you need to be able to run tests.
+
+RA
+Radhika Ashok (DE)
+15:09
+And here you also need to create the pre-conditions. And for the right product team.
+
+RA
+Radhika Ashok (DE)
+15:09
+So that you know which product team is responsible for setting up this pre-condition.
+
+RA
+Radhika Ashok (DE)
+15:09
+so if that's ready, I'll go ahead and open a test case as an example; maybe it's not the best example. Let's see.
+
+RA
+Radhika Ashok (DE)
+15:09
+In a test case, we can then define the precondition here later. To show which preconditions need to be met in order to even create a test case.
+
+RA
+Radhika Ashok (DE)
+15:10
+Exactly. Have you guys got any questions so far?
+
+RA
+Radhika Ashok (DE)
+15:10
+Okay. Then, that’s the structure—that’s the folder structure.
+
+RA
+Radhika Ashok (DE)
+15:10
+In the test set view, each test set is a test scenario. And we already have, I think, eight, six, eight—that’s right.
+
+RA
+Radhika Ashok (DE)
+15:10
+We have already prepared six scenarios. Olaf and Olli have used AI to create the test cases, as Stefan mentioned.
+
+RA
+Radhika Ashok (DE)
+15:10
+And we’ve already combined that into a structure. That means, for example, in the Happy Path we have the tests already arranged in a sequence, such as MDI Login, retrieve order proposal.
+
+RA
+Radhika Ashok (DE)
+15:10
+And for each scenario, we’ve done that. Please go through these test cases and see if, for now, every test opens.
+
+RA
+Radhika Ashok (DE)
+15:11
+So the responsible product team, please open these tests and check if the test steps listed here below—if you scroll down—show the test steps that are written correctly. If not, edit them right there and make sure they’re correct.
+
+RA
+Radhika Ashok (DE)
+15:11
+There is no "Save" button; just edit it so that it is correct and also check whether the correct information is listed under "Precautions." If something is missing, please feel free to add it to the Prerequisites section right here.
+
+RA
+Radhika Ashok (DE)
+15:11
+Add a precondition, or you can also edit existing preconditions here. You can simply go in here and look in the dropdown; nothing appears here, but normally you can add the preconditions—I
+
+RA
+Radhika Ashok (DE)
+15:11
+you take life preconditions.
+
+RA
+Radhika Ashok (DE)
+15:12
+And then you can check all the preconditions. And then you can see which pre-condition has been added here if you don't have the right one; if so, please feel free to add a new one.
+
+RA
+Radhika Ashok (DE)
+15:12
+Exactly. It’s possible that these act scenarios aren’t—I mean, which scenarios aren’t valid or aren’t testable, so please keep that in mind and let us know, then we’ll have to either adjust, edit, or delete them, depending on the situation.
+
+RA
+Radhika Ashok (DE)
+15:12
+And conversely, it may also be the case that some test cases are missing here that you think would be important, such as, for example, we also have from Martin Friedrich. I heard yesterday that there are scenarios for end-to-end testing that are becoming important, which we don’t have on our radar.
+
+RA
+Radhika Ashok (DE)
+15:12
+And it may be that you also notice that certain scenarios need to be added—please feel free to just add them. So here, as you can see, I’m going to have to do a reindex.
+
+RA
+Radhika Ashok (DE)
+15:13
+Let’s move on for now. Just click "Create Test Set" here and use "Create Test Set" to generate a summary. A summary is exactly what you see here.
+
+RA
+Radhika Ashok (DE)
+15:13
+Right now, the syntax is simply "Order Proposal" and a minus sign, and then write where this scenario goes. And then in the test set,
+
+RA
+Radhika Ashok (DE)
+15:13
+the test set erstellt wird, then in the test set, add the correct tests.
+
+RA
+Radhika Ashok (DE)
+15:13
+That means there are Add Tests here. So either the existing tests, such as these tests that are valid everywhere, like MDE logging and order proposal.
+
+RA
+Radhika Ashok (DE)
+15:13
+Retrieval—you can do this from the existing tests. And if there is a step or a test that isn’t here, then feel free to create a new test.
+
+RA
+Radhika Ashok (DE)
+15:13
+Click and add it. Do you have these here in the test sets or test scenarios?
+
+RA
+Radhika Ashok (DE)
+15:14
+Last week also told me that we have a colleague named Dushan. Frederik, you’re scheduled here.
+
+RA
+Radhika Ashok (DE)
+15:14
+You also wanted to review the tests. Dushan.
+
+RA
+Radhika Ashok (DE)
+15:14
+I already saw that you have a few test cases added. Please let us know when you’re done with that, and when you’re finished
+
+RA
+Radhika Ashok (DE)
+15:14
+with the review then we also know that from your part we are ready to go and
+
+RA
+Radhika Ashok (DE)
+15:14
+genauso I'd love to let you know and then we'll be all set on our end.
+
+RA
+Radhika Ashok (DE)
+15:14
+From your side
+
+ZD
+Zoric Dusan
+15:14
+Sorry. I'm done with you.
+
+ZD
+Zoric Dusan
+15:14
+I made some comments and added a few tests to the top one. Proposed other access and device states.
+
+ZD
+Zoric Dusan
+15:14
+Not like that. Yeah.
+
+ZD
+Zoric Dusan
+15:15
+Okay. Sorry. Go on.
+
+GS
+Gatzweiler, Stephan
+15:15
+Frederik. You're welcome.
+
+HF
+Hein, Frederic
+15:15
+Exactly, I had for our product, and now I’ve had it too, so to speak, just by looking at it from our product’s perspective, I also had some test cases added there. Although not entirely clear to me how detailed we’re supposed to get into this and how we’ll work with it later on.
+
+HF
+Hein, Frederic
+15:15
+I’ve now, so to speak, made sure that 95 percent of the tests are done. are probably covered.
+
+HF
+Hein, Frederic
+15:15
+And for me, it just wasn’t entirely clear how detailed we wanted to get here.
+
+RA
+Radhika Ashok (DE)
+15:15
+Here, when we talk about end-to-end testing, we're really just talking about process-level testing at first. That means we won’t be doing any system-level testing here.
+
+RA
+Radhika Ashok (DE)
+15:15
+The goal of end-to-end testing is simply to ensure that the processes are working correctly. If there is a case where you think that this process level needs to be tested, then feel free to add it here.
+
+RA
+Radhika Ashok (DE)
+15:16
+That means the test cases will also be written with a strong focus on the user. The user clicks here; that is what the user should be able to see, and so on.
+
+RA
+Radhika Ashok (DE)
+15:16
+And it’s not at all about the test data from Kafka A. , because the user doesn’t see that at all.
+
+RA
+Radhika Ashok (DE)
+15:16
+Exactly.
+
+HF
+Hein, Frederic
+15:16
+Yes, then I was probably a little too motivated.
+
+GS
+Gatzweiler, Stephan
+15:16
+It's no big deal.
+
+HF
+Hein, Frederic
+15:16
+Exactly. Exactly, until maybe then, if necessary, we take another look.
+
+HF
+Hein, Frederic
+15:16
+So, in the end, everything that came from our product was only going to run in the background.
+
+GS
+Gatzweiler, Stephan
+15:16
+Yes. So, the important things would be.
+
+HF
+Hein, Frederic
+15:16
+That’s exactly why—maybe we should have another radical discussion about how we’re going to handle this.
+
+GS
+Gatzweiler, Stephan
+15:16
+Exactly. So we should just know which topics are provided and consumed by whom.
+
+GS
+Gatzweiler, Stephan
+15:16
+But now, in detail, let’s look at the topics in terms of content. We really needn’t do that.
+
+HF
+Hein, Frederic
+15:16
+All right.
+
+RA
+Radhika Ashok (DE)
+15:16
+And that's exactly where it comes in handy—the precondition that, when we run a test, we can use it to specify that this Kafka instance must be set up, and this test data must be provided, and so on, so that we know that in order to proceed with this step, we need these technical preparations in place.
+
+GS
+Gatzweiler, Stephan
+15:17
+Exactly.
+
+HF
+Hein, Frederic
+15:17
+All right. I'll just check in with you again on Heldenradikal, I'd suggest.
+
+HF
+Hein, Frederic
+15:17
+Then we'll check it out together right away, because I'm just missing a little bit of the feel for it.
+
+RA
+Radhika Ashok (DE)
+15:17
+You're welcome.
+
+HF
+Hein, Frederic
+15:17
+Exactly. Thanks.
+
+RA
+Radhika Ashok (DE)
+15:17
+Marion, please.
+
+HM
+Höhn, Marion
+15:17
+I have a question, and it is this: we are the ones providing the market master data. That’s actually the basic prerequisite for a lot of things, so that you can do them at all.
+
+HM
+Höhn, Marion
+15:17
+Is that still automatically included in the preconditions, or would I need to enter it now?
+
+RA
+Radhika Ashok (DE)
+15:17
+Here's what you need to enter.
+
+GS
+Gatzweiler, Stephan
+15:17
+Yes.
+
+HM
+Höhn, Marion
+15:17
+Okay. So in every single test case?
+
+GS
+Gatzweiler, Stephan
+15:17
+So, in the good one, yeah, exactly, so in the test wave, I guess, where your master data is used.
+
+RA
+Radhika Ashok (DE)
+15:17
+Is that the case for everyone?
+
+HM
+Höhn, Marion
+15:17
+Well, for many
+
+GS
+Gatzweiler, Stephan
+15:18
+I don't know if that applies to every test case.
+
+HM
+Höhn, Marion
+15:18
+Whether I can really judge that.
+
+GS
+Gatzweiler, Stephan
+15:18
+But there, exactly, but also there, in case of doubt, I would say, if you, well, I would just start by defining the preconditions.
+
+HM
+Höhn, Marion
+15:18
+So for every test case.
+
+GS
+Gatzweiler, Stephan
+15:18
+And if you’re not sure, I’ll have to check that in the test case as well. Then we can just ask Radica and me.
+
+GS
+Gatzweiler, Stephan
+15:18
+Then we’d sort it out.
+
+HM
+Höhn, Marion
+15:18
+Okay. Thanks.
+
+RA
+Radhika Ashok (DE)
+15:18
+And then you can simply go to the "Sorry, I don't know" folder under Folders. I don't know which product team you're part of here, but it's here too.
+
+HM
+Höhn, Marion
+15:18
+none.
+
+RA
+Radhika Ashok (DE)
+15:18
+Then you can just click here to add the precondition, i.e., General by Test Repository, and create a precondition, and set up the prerequisites. And then we can see where we can assign it, to which test sphere we can assign it.
+
+HM
+Höhn, Marion
+15:19
+Okay.
+
+RA
+Radhika Ashok (DE)
+15:19
+Any questions?
+
+RA
+Radhika Ashok (DE)
+15:19
+that's not the case. Stefan, how do we proceed from here?
+
+RA
+Radhika Ashok (DE)
+15:19
+Shall we go through every scenario, or would you prefer some homework?
+
+GS
+Gatzweiler, Stephan
+15:19
+We could, for example, give it a try. The test sets.
+
+GS
+Gatzweiler, Stephan
+15:19
+To assemble. Maybe we could start with the Happy Path, since we’re going back into it anyway.
+
+GS
+Gatzweiler, Stephan
+15:19
+We still have a good 20 minutes left, so based on the Happy Path, let’s take a look at the test cases. Are they complete?
+
+GS
+Gatzweiler, Stephan
+15:19
+Maybe there are still some preconditions missing? Then we could do that as homework: add the preconditions accordingly.
+
+RA
+Radhika Ashok (DE)
+15:20
+then I'll start with the happy part. Does that make sense to log into E-Login without Andreas?
+
+GS
+Gatzweiler, Stephan
+15:20
+This is just the registration form.
+
+RA
+Radhika Ashok (DE)
+15:20
+Exactly. Yes.
+
+GS
+Gatzweiler, Stephan
+15:20
+Yes. Go on in, because there might be some prerequisites soon that affect other teams or other products.
+
+GS
+Gatzweiler, Stephan
+15:20
+That’s also still—it seems—something that needs to be addressed, so we need someone to take on this test case now.
+
+RA
+Radhika Ashok (DE)
+15:20
+Here are the steps. Turn it on, enter your login credentials, and check out the auditing apps.
+
+GS
+Gatzweiler, Stephan
+15:20
+I think Dujan, this is a test case for for store ordering. Right.
+
+GS
+Gatzweiler, Stephan
+15:21
+To log in. And on the mobile device.
+
+ZD
+Zoric Dusan
+15:21
+Uh, yes. Well... I would say that's the overarching theme.
+
+ZD
+Zoric Dusan
+15:21
+If it's logging to a mobile device, then it's not just a matter of store ordering; it can be for anything.
+
+GS
+Gatzweiler, Stephan
+15:21
+What Andy Hugh has the mobile device who has an account for the mobile device to log in, right?
+
+ZD
+Zoric Dusan
+15:21
+Right. Exactly.
+
+GS
+Gatzweiler, Stephan
+15:21
+But we need one person in charge that will execute that particular test case. Will it be you or Rafaela?
+
+GS
+Gatzweiler, Stephan
+15:22
+Or somebody else?
+
+ZD
+Zoric Dusan
+15:22
+Maybe. They know the "Should I assign to myself what I think is in our product" issue.
+
+GS
+Gatzweiler, Stephan
+15:22
+Okay.
+
+GS
+Gatzweiler, Stephan
+15:22
+Yeah, you can do that or rally cutting can do that on the fly.
+
+RA
+Radhika Ashok (DE)
+15:22
+Yes.
+
+GS
+Gatzweiler, Stephan
+15:22
+Perfect.
+
+RA
+Radhika Ashok (DE)
+15:22
+Okay. And the last week I had also informed Andreas to Andreas Thiele to go through the tests once as well.
+
+RA
+Radhika Ashok (DE)
+15:22
+So from his side he will also go through the steps and the preconditions to make sure that the information is correct. So hopefully during the execution there will be no surprises.
+
+RA
+Radhika Ashok (DE)
+15:23
+So if there If you have any questions, I'll move on to the next test.
+
+RA
+Radhika Ashok (DE)
+15:23
+This is about retrieving the suggested container; the item number cannot be converted. That's where I'm a little confused.
+
+RA
+Radhika Ashok (DE)
+15:23
+This isn't the happy path.
+
+GS
+Gatzweiler, Stephan
+15:23
+Yeah. That's not happy.
+
+GS
+Gatzweiler, Stephan
+15:23
+Not a test case that falls into the happy path. You'd have to remove that one, actually.
+
+GS
+Gatzweiler, Stephan
+15:23
+But in principle, we can discuss whether this is even a valid test case. Can there be an order proposal that still contains the old item number instead of the RIN?
+
+GS
+Gatzweiler, Stephan
+15:23
+Hey, John, could be the case that we have an order proposal with the old article number and not the new RIN number.
+
+GS
+Gatzweiler, Stephan
+15:23
+Would that be feasible?
+
+ZD
+Zoric Dusan
+15:23
+I don't know. That would depend on ILP, I would guess if they aren't in sync with what FNR is providing us.
+
+ZD
+Zoric Dusan
+15:24
+But now it occurs to me that all this is just a proposal. Right?
+
+ZD
+Zoric Dusan
+15:24
+So does that mean that all of this will be my responsibility?
+
+GS
+Gatzweiler, Stephan
+15:24
+You are Rafaela.
+
+ZD
+Zoric Dusan
+15:24
+Okay, so that's how it will be, Rafael and I will be there because that's all there is to the store order. We'll be using—you will be using—the store ordering app in the end.
+
+GS
+Gatzweiler, Stephan
+15:24
+Yep.
+
+ZD
+Zoric Dusan
+15:24
+So. Is all of this going to be our responsibility?
+
+GS
+Gatzweiler, Stephan
+15:24
+Yeah. I think, I think so that some body from SM&M will have to execute the test case.
+
+GS
+Gatzweiler, Stephan
+15:24
+If it's you in person or some someone else from your The team will
+
+GS
+Gatzweiler, Stephan
+15:25
+up to you, but the execution should be done by one of your team.
+
+ZD
+Zoric Dusan
+15:25
+Okay. So the question was, can we have a ring that isn't in a song by FNR?
+
+ZD
+Zoric Dusan
+15:25
+I think so. I guess we’d probably need to talk to someone from ILP to get the test data that isn’t in sync.
+
+ZD
+Zoric Dusan
+15:25
+And then maybe we can trigger what has been described in this test scenario by Olaf.
+
+ZD
+Zoric Dusan
+15:25
+Oh yeah, there are quite a few questions.
+
+HF
+Hein, Frederic
+15:25
+Yes. If I'm guessing right, SMM wants to
+
+HF
+Hein, Frederic
+15:25
+be provided with order proposals. By store replenishment.
+
+HF
+Hein, Frederic
+15:26
+And we are in charge to get those RIN numbers. To the order proposals.
+
+HF
+Hein, Frederic
+15:26
+So in fact, I guess it's not really a valid test case because there isn't much in our list logic. There will be a check.
+
+HF
+Hein, Frederic
+15:26
+Yeah, we get a WWS article number from AI. And we need to convert it to And therefore, I guess it will never happen that Legacy article number will be headed over to SMN
+
+ZD
+Zoric Dusan
+15:26
+So if it fails, it will fail sooner.
+
+HF
+Hein, Frederic
+15:26
+Yeah. That's right.
+
+ZD
+Zoric Dusan
+15:26
+Okay. Should we act right away and remove the test case if it’s not feasible?
+
+RA
+Radhika Ashok (DE)
+15:26
+Yes. After
+
+RA
+Radhika Ashok (DE)
+15:27
+the meeting remove it since we're not allowed to delete it I'll have to archive it later yep
+
+GS
+Gatzweiler, Stephan
+15:27
+Okay. Yeah, then not to remove but to set it to deprecate within with a with a with a comment why it's deprecated or obsolete.
+
+RA
+Radhika Ashok (DE)
+15:27
+Alright. Yes.
+
+GS
+Gatzweiler, Stephan
+15:27
+Obsolete or deprecated.
+
+RA
+Radhika Ashok (DE)
+15:27
+I can do it. Then I'll just do it directly.
+
+RA
+Radhika Ashok (DE)
+15:27
+Then I don't have to work after a meeting. So.
+
+RA
+Radhika Ashok (DE)
+15:27
+Uh-huh. I just read the scenario cannot be it's not valid.
+
+RA
+Radhika Ashok (DE)
+15:27
+All right.
+
+RA
+Radhika Ashok (DE)
+15:28
+then we have the case then how me the test file Check the basic data in the bachelor's proposal.
+
+GS
+Gatzweiler, Stephan
+15:28
+Yes, That's a valid test case, isn't it?
+
+GS
+Gatzweiler, Stephan
+15:28
+You know what I mean, this is also your turn with that test case, but I think this is a valid test case, right?
+
+ZD
+Zoric Dusan
+15:28
+Which one is that? 25. Let me just translate it.
+
+ZD
+Zoric Dusan
+15:28
+Yeah, okay. That’s on me, too.
+
+ZD
+Zoric Dusan
+15:28
+Yeah. That’s a positive situation.
+
+RA
+Radhika Ashok (DE)
+15:29
+And In this step.
+
+RA
+Radhika Ashok (DE)
+15:29
+And it is possible to compare the situation of the articles. So for a test case, we need to be able to compare the articles to see if it's correct.
+
+RA
+Radhika Ashok (DE)
+15:29
+And is it possible to compare that?
+
+ZD
+Zoric Dusan
+15:29
+Over here, we're just updating the quantity—the proposed quantity with the quantity the users actually selected—and then sending that to FNR. And what was your question again?
+
+ZD
+Zoric Dusan
+15:29
+What should we check?
+
+RA
+Radhika Ashok (DE)
+15:29
+My question was here in order to check if the test cases about checking if the status of the article quantity is displayed correctly or not. Is it possible to check that?
+
+ZD
+Zoric Dusan
+15:30
+Oh, I see. Yes, yes, that's the only thing happening on the front end, on the way up.
+
+ZD
+Zoric Dusan
+15:30
+That's easy to check. I mean, or do you have automated tests for that within our own product?
+
+RA
+Radhika Ashok (DE)
+15:30
+Perfect. Then it's possible.
+
+RA
+Radhika Ashok (DE)
+15:30
+And I go to the next That's Approved
+
+RA
+Radhika Ashok (DE)
+15:30
+The Order proposal.
+
+RA
+Radhika Ashok (DE)
+15:30
+I think that will also be you Dushan, since it's a part of its obvious next step.
+
+GS
+Gatzweiler, Stephan
+15:30
+By the way, Wadika, I think we need to translate the test cases to English,
+
+RA
+Radhika Ashok (DE)
+15:30
+Yes, I noticed that now I'll work on that.
+
+ZD
+Zoric Dusan
+15:31
+It's okay, I can translate that in a browser.
+
+GS
+Gatzweiler, Stephan
+15:31
+Yeah.
+
+RA
+Radhika Ashok (DE)
+15:31
+Okay, then I have I have assigned it to you as well. That's that is To approve I don't know what bestätigen is to approve the order proposal.
+
+RA
+Radhika Ashok (DE)
+15:31
+Yeah.
+
+BM
+Bosch Martinez, Francisco
+15:31
+Confirm.
+
+RA
+Radhika Ashok (DE)
+15:31
+To confirm.
+
+GS
+Gatzweiler, Stephan
+15:31
+Conform, yeah.
+
+RA
+Radhika Ashok (DE)
+15:31
+Thank you. To
+
+ZD
+Zoric Dusan
+15:31
+sent to the warehouse, it's sent to the FNR topic. It's the same thing, right?
+
+ZD
+Zoric Dusan
+15:31
+Over here it says that the order is marked OK and sent to the warehouse.
+
+GS
+Gatzweiler, Stephan
+15:31
+Yeah, it's not sent to the warehouse directly. You're right.
+
+GS
+Gatzweiler, Stephan
+15:31
+Radica, as far as I remember we already have a test case for that, at least in our Excel sheet.
+
+GS
+Gatzweiler, Stephan
+15:32
+In our table in the mirror board, we had that step, but I don't know if we have transferred that step into XX way.
+
+RA
+Radhika Ashok (DE)
+15:32
+Mm-hmm. Think that is a at the
+
+RA
+Radhika Ashok (DE)
+15:32
+Submit the best test case. I also have to
+
+RA
+Radhika Ashok (DE)
+15:32
+check because now since their AI generated tests They don't map one-to-one with the one in a middle boat
+
+RA
+Radhika Ashok (DE)
+15:32
+But I'm guessing that this is the step that we're talking about, right? Bestellung absenten and the orders as successfully transferred to market disposition and the status changes to
+
+GS
+Gatzweiler, Stephan
+15:32
+I have been reviewed when the Our clicks determine where we go
+
+GS
+Gatzweiler, Stephan
+15:33
+and the term wouldn't expose all others are going to transfer to the market disposition
+
+GS
+Gatzweiler, Stephan
+15:33
+I think Radhika we need to check against the test cases in the Miro board. As far as I remember it was more detailed in the Miro board than it Because all of these test cases are AI made and that is the reason why
+
+RA
+Radhika Ashok (DE)
+15:33
+Okay. Then I will compare this with the mirror bolt and update them.
+
+RA
+Radhika Ashok (DE)
+15:34
+Alright. And the last step for the happy part is
+
+RA
+Radhika Ashok (DE)
+15:34
+Post the warehouse receipt.
+
+RA
+Radhika Ashok (DE)
+15:34
+Which I think Dushan, that would be your step as well.
+
+GS
+Gatzweiler, Stephan
+15:34
+Yeah.
+
+RA
+Radhika Ashok (DE)
+15:34
+That's yeah, they all.
+
+ZD
+Zoric Dusan
+15:34
+I think everyone here is after me.
+
+GS
+Gatzweiler, Stephan
+15:34
+Yeah.
+
+GS
+Gatzweiler, Stephan
+15:34
+But as you said, there are some test cases missing, especially the test cases between sending the between a proving the order proposal and sending the order to the warehouse. So we have the Auftragsverteilung ordered with distribution in between.
+
+RA
+Radhika Ashok (DE)
+15:34
+Yeah.
+
+GS
+Gatzweiler, Stephan
+15:34
+And therefore we need an additional test case.
+
+RA
+Radhika Ashok (DE)
+15:34
+Yep.
+
+RA
+Radhika Ashok (DE)
+15:34
+So I see that there's one transfer by from FNA to DVT; one to be processed again at the camp during the study.
+
+GS
+Gatzweiler, Stephan
+15:35
+Ja. That's it.
+
+GS
+Gatzweiler, Stephan
+15:35
+Exactly. These are the test cases that are missing in X-Way.
+
+RA
+Radhika Ashok (DE)
+15:35
+So I will compare Xtreme with this and make sure that the content from here exists in Xtreme. Because this has already been reviewed by you Dushan and with Dimitri and Peter Milner.
+
+RA
+Radhika Ashok (DE)
+15:35
+So we know that it's correct. So I'll transfer it to Xtreme and then we have a whole happy path ready.
+
+ZD
+Zoric Dusan
+15:35
+Well, I added some comments. On some of the tickets.
+
+ZD
+Zoric Dusan
+15:35
+So maybe that can be cleared up as well. And also regarding ticket number 34.
+
+ZD
+Zoric Dusan
+15:35
+Maybe this is outside my scope because it’s not the ordering but the delivery. The delivery arrived at the store, and the quantity delivered matches the other quantity.
+
+ZD
+Zoric Dusan
+15:36
+The store employee receives the goods along with the receipt in the classic WWS. So one of these tickets I wrote a comment on how to check in the WWS system.
+
+RA
+Radhika Ashok (DE)
+15:36
+Mm hmm.
+
+RA
+Radhika Ashok (DE)
+15:36
+Stefan do you know who the person responsible could be?
+
+RA
+Radhika Ashok (DE)
+15:36
+That does not look like a store step.
+
+GS
+Gatzweiler, Stephan
+15:36
+What What test case is it?
+
+RA
+Radhika Ashok (DE)
+15:36
+So this is about Post the delivery van receipt and the Ascheps here; which WBS to open and the goods receipt screen to call up, and the defects in the delivery to enter.
+
+GS
+Gatzweiler, Stephan
+15:37
+Huh? Yeah, this is the legacy of warehouse management system.
+
+GS
+Gatzweiler, Stephan
+15:37
+The old one. The old application.
+
+GS
+Gatzweiler, Stephan
+15:37
+And if it's not you, Duchamp, then it's Raffaella.
+
+GS
+Gatzweiler, Stephan
+15:37
+But it's definitely to Yeah, the classic WWS.
+
+ZD
+Zoric Dusan
+15:37
+What is it, Rafaela? Contact
+
+GS
+Gatzweiler, Stephan
+15:37
+This is a legacy application to approve
+
+HT
+Holst, Tobias
+15:37
+I think it's from Peter
+
+HT
+Holst, Tobias
+15:37
+Müllner, right?
+
+GS
+Gatzweiler, Stephan
+15:37
+But Peter is in logistics, isn't he? No, as Raffaella said
+
+HT
+Holst, Tobias
+15:37
+Yes, Fort WWS is logistics.
+
+GS
+Gatzweiler, Stephan
+15:37
+it's the old application in the market.
+
+HT
+Holst, Tobias
+15:38
+Ah. Okay, yes.
+
+HT
+Holst, Tobias
+15:38
+You're Right, you're right. Sorry.
+
+BM
+Bosch Martinez, Francisco
+15:38
+That is the story of events.
+
+GS
+Gatzweiler, Stephan
+15:38
+Story VS, yeah.
+
+BM
+Bosch Martinez, Francisco
+15:38
+Laga PBS.
+
+HT
+Holst, Tobias
+15:38
+I was confused.
+
+GS
+Gatzweiler, Stephan
+15:38
+Ja.
+
+GS
+Gatzweiler, Stephan
+15:38
+And I think Dujan Rafaela knows how to handle that.
+
+ZD
+Zoric Dusan
+15:38
+Okay. Can we check test 35?
+
+RA
+Radhika Ashok (DE)
+15:38
+Yes.
+
+RA
+Radhika Ashok (DE)
+15:38
+This is a partial delivery.
+
+GS
+Gatzweiler, Stephan
+15:39
+But this is not the happy case, Partial delivery?
+
+GS
+Gatzweiler, Stephan
+15:39
+Is it? No? Okay.
+
+RA
+Radhika Ashok (DE)
+15:39
+No, it's not being added there. But yeah, this is another scenario for what we just saw. Yeah.
+
+GS
+Gatzweiler, Stephan
+15:39
+Yes, that
+
+RA
+Radhika Ashok (DE)
+15:39
+Yeah.
+
+ZD
+Zoric Dusan
+15:39
+Okay, so about my question. The open reminder quantity is displayed in the system.
+
+ZD
+Zoric Dusan
+15:39
+That's the last step in this scenario. Provided by Olive or by AI.
+
+ZD
+Zoric Dusan
+15:39
+Also. Where can I check that, and which part of our workflow is that?
+
+GS
+Gatzweiler, Stephan
+15:39
+That is the store WWS as well, right?
+
+ZD
+Zoric Dusan
+15:39
+Yeah, so checking the stock, yeah, the stock is listed with a partial quantity and the remaining quantities are shown in the system. So I should check with my team to see how to check that stock.
+
+ZD
+Zoric Dusan
+15:40
+Is that correct?
+
+GS
+Gatzweiler, Stephan
+15:40
+Yes. That test case will happen in the store WWS.
+
+GS
+Gatzweiler, Stephan
+15:40
+And it's about that you haven't received that quantity of item that you ordered.
+
+RA
+Radhika Ashok (DE)
+15:40
+And if Jafis responds for the positive case, Dushan maybe Rafi can take care of this too.
+
+RA
+Radhika Ashok (DE)
+15:40
+Or do you think that your team is responsible?
+
+ZD
+Zoric Dusan
+15:40
+Well. Someone on WWS will have to provide a fake C test result.
+
+GS
+Gatzweiler, Stephan
+15:41
+Yeah.
+
+ZD
+Zoric Dusan
+15:41
+So what store order is undecided—the proposed order. We decided on some, and we also decided on a quantity: 72FNR.
+
+ZD
+Zoric Dusan
+15:41
+FNR goes to, I don't know, logistics or WWS, and then they need to provide us with faulty data that won't be in sync with what the user ordered, what the user sent to FNR. So we need to have someone over there, right?
+
+ZD
+Zoric Dusan
+15:41
+Or we need to have some test data or XDM.
+
+GS
+Gatzweiler, Stephan
+15:41
+Yeah.
+
+ZD
+Zoric Dusan
+15:41
+A test data package that contains this faulty data, something like that.
+
+GS
+Gatzweiler, Stephan
+15:41
+Exactly, because then it's a precondition to execute the test case because we need to manipulate the order anyway.
+
+ZD
+Zoric Dusan
+15:42
+Right. But I mean, I don't know, is it a... is it a file for working in WWS?
+
+ZD
+Zoric Dusan
+15:42
+Can she do that?
+
+RA
+Radhika Ashok (DE)
+15:42
+I don't think so. Rafaela works in store WWS, right?
+
+RA
+Radhika Ashok (DE)
+15:42
+So that she can't.
+
+GS
+Gatzweiler, Stephan
+15:42
+Yeah.
+
+RA
+Radhika Ashok (DE)
+15:42
+There should be either another test case that happens before this where from lager BBS, the wrong quantity or lesser quantity is delivered and then comes the step where it is told that it doesn't match. Either that or we have a precondition saying that it doesn't match.
+
+GS
+Gatzweiler, Stephan
+15:42
+I think it's rather preconditioned than another test case.
+
+RA
+Radhika Ashok (DE)
+15:42
+Okay. Then we can add a precondition.
+
+RA
+Radhika Ashok (DE)
+15:43
+How would we describe the precondition?
+
+GS
+Gatzweiler, Stephan
+15:43
+It must be somebody from Avondale, right, who will
+
+ZD
+Zoric Dusan
+15:43
+How were these test sets created? Or this scenario?
+
+ZD
+Zoric Dusan
+15:43
+I don't know. I mean, I know how my product works, but it looks like I should know all these workflows in CCG.
+
+ZD
+Zoric Dusan
+15:43
+To set it up.
+
+GS
+Gatzweiler, Stephan
+15:43
+So yeah, but we need somebody who will adjust the quantity of the delivered article. So that it may, that it is not the same quantity as it was ordered.
+
+GS
+Gatzweiler, Stephan
+15:44
+And that we have to do manually. So
+
+RA
+Radhika Ashok (DE)
+15:44
+And do you know who that person could be? A bit of Francisco.
+
+GS
+Gatzweiler, Stephan
+15:44
+Yeah.
+
+BM
+Bosch Martinez, Francisco
+15:44
+And then as a summary, maybe you can write what Yvonne just said.
+
+GS
+Gatzweiler, Stephan
+15:44
+Yeah, that's my suggestion as well. Yeah, right.
+
+GS
+Gatzweiler, Stephan
+15:44
+You are right.
+
+BM
+Bosch Martinez, Francisco
+15:44
+adjust the delivered quantity
+
+BM
+Bosch Martinez, Francisco
+15:44
+be different than the ordered quantity.
+
+RA
+Radhika Ashok (DE)
+15:44
+Nope.
+
+RA
+Radhika Ashok (DE)
+15:44
+I'm also conformed
+
+BM
+Bosch Martinez, Francisco
+15:44
+Maybe you can
+
+RA
+Radhika Ashok (DE)
+15:44
+That's why Peter Müttler. And
+
+RA
+Radhika Ashok (DE)
+15:45
+also no doubt the technical aspect of it on what exactly he needs to do to do that. And you were saying something Francisco?
+
+BM
+Bosch Martinez, Francisco
+15:45
+No. Maybe just a point for right also that is to he has to do it in Lagavarez.
+
+BM
+Bosch Martinez, Francisco
+15:45
+So maybe he knows what we're talking about.
+
+GS
+Gatzweiler, Stephan
+15:45
+Yeah.
+
+RA
+Radhika Ashok (DE)
+15:45
+So with A look back at the time in
+
+RA
+Radhika Ashok (DE)
+15:45
+of time I think we are out of running out of time. We have run out of time already.
+
+RA
+Radhika Ashok (DE)
+15:45
+So as discussed I will compare the Miro steps to the X-ray ones and update them and also contact Peter Mulder to make sure that the preconditions are correct and also see if the existing scenarios are correct because we just now noticed that the happy path is not exactly happy. So I'll correct them.
+
+RA
+Radhika Ashok (DE)
+15:46
+And Frederick let's have a call as well.
+
+GS
+Gatzweiler, Stephan
+15:46
+Okay. And jetzt könnte
+
+GS
+Gatzweiler, Stephan
+15:46
+Back in German. Is it clear to everyone what’s going to be the next set of tasks?
+
+GS
+Gatzweiler, Stephan
+15:46
+So that means once for your products. Take a look at the test cases that have now been generated by AI.
+
+GS
+Gatzweiler, Stephan
+15:46
+We just saw that there’s still quite a bit of information to add there. Among other things, which topics are being processed—at least the topic names should be included.
+
+GS
+Gatzweiler, Stephan
+15:46
+And as for the preconditions, well, that was just a good example of the condition for a precondition. That then applies to the colleagues who aren’t currently actively involved in test execution.
+
+GS
+Gatzweiler, Stephan
+15:46
+But rather in test preparation. So, Mario and you, for example.
+
+GS
+Gatzweiler, Stephan
+15:47
+Would you two be able to have that ready by next week, so that we’re not completely—I don’t expect that we’ll have all the test cases finished by next week. We have a bit of extra time anyway, as you’ve all heard, since the integration test has been pushed back to October.
+
+GS
+Gatzweiler, Stephan
+15:47
+But that will at least be a step further along by next week, so that the whole thing can be discussed again. I think that’s what will happen if you guys now take a look at X-Way, one or two questions might come up again.
+
+GS
+Gatzweiler, Stephan
+15:47
+And then I’d also like to do the 15th next week. 20 minutes, at least, to go over this topic again.
+
+GS
+Gatzweiler, Stephan
+15:47
+Does that work for you all? I only see nodding heads.
+
+GS
+Gatzweiler, Stephan
+15:47
+That looks good.
+
+HT
+Holst, Tobias
+15:47
+Yep. You have Dimi on our team's list of authorized users, too.
+
+GS
+Gatzweiler, Stephan
+15:47
+Yes, exactly.
+
+HT
+Holst, Tobias
+15:47
+I have that now too, I'll set the appointment here as well. It’s not quite the same as that single point of contact anymore, but for us it might make sense if the two of us from the team are there.
+
+GS
+Gatzweiler, Stephan
+15:47
+Perfect.
+
+HT
+Holst, Tobias
+15:48
+Then we won’t always have to deal with vacation handoffs and other things.
+
+GS
+Gatzweiler, Stephan
+15:48
+Yes. Yes.
+
+HT
+Holst, Tobias
+15:48
+I hope that’s okay. I’ll bring him along too, and we’ll work on the test cases together from our end regarding task distribution.
+
+GS
+Gatzweiler, Stephan
+15:48
+Absolutely.
+
+HT
+Holst, Tobias
+15:48
+And we’ll see if there are any points we need to add or whatever. I’ll get back to you either way, probably.
+
+GS
+Gatzweiler, Stephan
+15:48
+Perfect. Great.
+
+RA
+Radhika Ashok (DE)
+15:48
+In regarding the delay in our timeline.
+
+RA
+Radhika Ashok (DE)
+15:48
+The idea is also that we’ll still run the test cases anyway. We’re in the process of doing that anyway, so let’s just go ahead and finish it, and then we can enjoy a little break.
+
+GS
+Gatzweiler, Stephan
+15:48
+Yes. Exactly.
+
+GS
+Gatzweiler, Stephan
+15:48
+Nothing changes in the process. Right.
+
+RA
+Radhika Ashok (DE)
+15:48
+And then we’ll get back to it, exactly.
+
+GS
+Gatzweiler, Stephan
+15:48
+In that respect, we’re currently at a point where, as far as test case creation is concerned, we’re not stuck. So that’s where the developers come in.
+
+GS
+Gatzweiler, Stephan
+15:48
+But if we now do a lot of groundwork, we’ll have a bit of a head start later on. That’s exactly the plan.
+
+GS
+Gatzweiler, Stephan
+15:48
+Yes.
+
+HT
+Holst, Tobias
+15:48
+To go beyond experience, I dare to doubt that we really have any room to spare.
+
+HT
+Holst, Tobias
+15:48
+But I think it’s good that we’re getting right back to it and not putting that aside for now. I think we’ll still have enough areas where we need to improve.
+
+GS
+Gatzweiler, Stephan
+15:49
+Yes, that's right.
+
+RA
+Radhika Ashok (DE)
+15:49
+And we'd love to hear your feedback on whether the AI-generated test cases make sense or if there's simply a lot of extra work involved. And then, based on that, we’ll refine it accordingly.
+
+GS
+Gatzweiler, Stephan
+15:49
+Exactly. So take a look at the AI-generated ones.
+
+GS
+Gatzweiler, Stephan
+15:49
+It was just a first attempt, so you don't get stuck in the middle of nowhere trying to create test cases. That’s why we used the AI.
+
+GS
+Gatzweiler, Stephan
+15:49
+And with that, that was just the idea, so that you can now build on it with the test cases. Okay.
+
+GS
+Gatzweiler, Stephan
+15:49
+Then thank you very, very much for today. Wishing you all a lovely, sunny rest of your Thursday.
+
+GS
+Gatzweiler, Stephan
+15:49
+And if I don’t want to see you anymore, have a great weekend. See you next week.
+
+RA
+Radhika Ashok (DE)
+15:49
+Thank you all.
+
+ZD
+Zoric Dusan
+15:49
+Hi.
+
