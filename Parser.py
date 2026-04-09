@@ -1,10 +1,11 @@
 import streamlit as st
 import re
 import os
-import json
 
 from loader import make_sentence_pairs
 from audio_handler import make_bilingual_mp3, make_audio_byte
+from progress_db import get_progress, save_progress   # ✅ NEW DB FUNCTIONS
+
 
 # -------------------------------------------------
 # Streamlit Settings
@@ -22,30 +23,6 @@ if "pairs" not in st.session_state:
 
 if "audio_cache" not in st.session_state:
     st.session_state.audio_cache = {}
-
-# -------------------------------------------------
-# Save Progress Helpers
-# -------------------------------------------------
-PROGRESS_FILE = "reading_progress.json"
-
-
-def load_progress():
-    if os.path.exists(PROGRESS_FILE):
-        try:
-            with open(PROGRESS_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except:
-            return {}
-    return {}
-
-
-def save_progress(progress):
-    with open(PROGRESS_FILE, "w", encoding="utf-8") as f:
-        json.dump(progress, f, indent=4)
-
-
-# Load existing save state
-progress_state = load_progress()
 
 
 # -------------------------------------------------
@@ -118,7 +95,7 @@ def bilingual_audio(text):
 
 
 # -------------------------------------------------
-#  🔥 NEW SECTION: Book Selector + Chapter Selection + Auto-Save Progress
+#  🔥 BOOK SELECTOR + CHAPTER SELECTION + SAVE PROGRESS IN TURSO
 # -------------------------------------------------
 st.header("📚 Select Files and Chapters")
 
@@ -126,33 +103,36 @@ book_files = load_text_files("textFiles")
 
 if book_files:
 
-    # Use columns to make UI narrower
-    colBook, _ = st.columns([1, 1])   # book selector is half-width
-    colSelect, _ = st.columns([1, 1]) # chapter selector is half-width
-    colA, colB = st.columns(2)        # buttons
+    colBook, _ = st.columns([1, 1])
+    colSelect, _ = st.columns([1, 1])
+    colA, colB = st.columns(2)
 
+    # --------------------------
+    # Select Book
+    # --------------------------
     with colBook:
         selected_book = st.selectbox("Select a book:", book_files)
 
-    # Load full German text
+    # Load full text
     full_path = os.path.join("textFiles", selected_book)
     book_text = load_text(full_path)
 
-    # Split into 10-sentence chapters
+    # Sentence splitting
     sentences = split_into_sentences_german(book_text)
     chapter_size = 10
     num_chapters = (len(sentences) + chapter_size - 1) // chapter_size
-
     st.write(f"**This book contains {num_chapters} chapters** (10 sentences each).")
 
-    # Load saved chapters if available
-    saved_chapters = progress_state.get(selected_book, [])
+    # --------------------------
+    # Load progress from Turso ✅
+    # --------------------------
+    saved_chapters = get_progress(selected_book)
 
     with colSelect:
         selected_chapters = st.multiselect(
             "Choose chapters to load into processor:",
             list(range(1, num_chapters + 1)),
-            default=saved_chapters
+            default=saved_chapters,
         )
 
     # Build combined chapter text
@@ -162,28 +142,23 @@ if book_files:
         end = min(ch * chapter_size, len(sentences))
         combined_text += " ".join(sentences[start:end]) + "\n"
 
-    # ✅ Load + Auto Save Progress
-
-    colA, colB = st.columns(2)
-
+    # --------------------------
+    # Load + Save progress to Turso ✅
+    # --------------------------
     with colA:
         if st.button("➡ Load selected chapters into Text Processor"):
             st.session_state.input_text = combined_text
 
-            # ✅ Automatically save progress
-            progress_state[selected_book] = selected_chapters
-            save_progress(progress_state)
+            # ✅ Save to Turso instead of JSON
+            save_progress(selected_book, selected_chapters)
 
-            # Store a flag to show success in colB
             st.session_state.load_success = True
         else:
             st.session_state.load_success = False
 
-    # ✅ Display success message next to button
     with colB:
         if st.session_state.get("load_success"):
-            st.success("Chapters loaded and progress auto-saved!")
-
+            st.success("Chapters loaded and progress saved to cloud!")
 
 else:
     st.info("No .txt files found in /textFiles. Add files to enable chapter selection.")
