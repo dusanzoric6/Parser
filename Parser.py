@@ -57,7 +57,7 @@ def load_text(path):
 
 
 # -------------------------------------------------
-# Processing text (your original function)
+# Processing text
 # -------------------------------------------------
 def process_the_text(text):
     cleaned = re.sub(r'^\s*\d+\s*$', '', text, flags=re.MULTILINE)
@@ -111,7 +111,7 @@ if book_files:
     # Select Book
     # --------------------------
     with colBook:
-        selected_book = st.selectbox("Select a book:", book_files)
+        selected_book = st.selectbox("",book_files)
 
     # Load full text
     full_path = os.path.join("textFiles", selected_book)
@@ -123,16 +123,18 @@ if book_files:
     num_chapters = (len(sentences) + chapter_size - 1) // chapter_size
     st.write(f"**This book contains {num_chapters} chapters** (10 sentences each).")
 
-    # --------------------------
     # Load progress from Turso ✅
-    # --------------------------
     saved_chapters = get_progress(selected_book)
 
+    # --------------------------
+    # ✅ UPDATED: Hide label to remove search typing UX
+    # --------------------------
     with colSelect:
         selected_chapters = st.multiselect(
             "Choose chapters to load into processor:",
             list(range(1, num_chapters + 1)),
             default=saved_chapters,
+            label_visibility="collapsed",   # ✅ ADDED
         )
 
     # Build combined chapter text
@@ -142,16 +144,11 @@ if book_files:
         end = min(ch * chapter_size, len(sentences))
         combined_text += " ".join(sentences[start:end]) + "\n"
 
-    # --------------------------
-    # Load + Save progress to Turso ✅
-    # --------------------------
+    # Save progress
     with colA:
         if st.button("➡ Load selected chapters into Text Processor"):
             st.session_state.input_text = combined_text
-
-            # ✅ Save to Turso instead of JSON
             save_progress(selected_book, selected_chapters)
-
             st.session_state.load_success = True
         else:
             st.session_state.load_success = False
